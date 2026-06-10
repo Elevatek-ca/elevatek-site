@@ -1,0 +1,662 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Elevatek — GTM systems consultancy. Salesforce, HubSpot, Marketing Cloud.</title>
+<meta name="description" content="Elevatek designs, builds, and runs GTM systems for B2B teams. Salesforce, HubSpot, and Marketing Cloud, wired together so your pipeline numbers stop arguing. A Canadian consultancy serving the Americas and Europe, in French and English.">
+
+<!-- Open Graph -->
+<meta property="og:type" content="website">
+<meta property="og:title" content="Elevatek — GTM systems consultancy">
+<meta property="og:description" content="Salesforce, HubSpot, and Marketing Cloud, wired together so your pipeline numbers stop arguing. Canadian, serving the Americas and Europe.">
+<meta property="og:url" content="https://elevatek.ca/">
+<meta property="og:locale" content="en_CA">
+<meta property="og:locale:alternate" content="fr_CA">
+<!-- TODO: add og:image (1200x630) before launch -->
+
+<link rel="canonical" href="https://elevatek.ca/">
+
+<!-- Fonts: Bricolage Grotesque (display) · Instrument Sans (body) · JetBrains Mono (labels/data) -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,600;12..96,700;12..96,800&family=Instrument+Sans:ital,wght@0,400;0,500;0,600;1,400&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+
+<!-- Structured data: verified NAP only. Add sameAs (LinkedIn) when ready. -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "ProfessionalService",
+  "name": "Elevatek",
+  "legalName": "Elevatek Consulting Inc.",
+  "url": "https://elevatek.ca/",
+  "email": "info@elevatek.ca",
+  "telephone": "+1-514-961-8625",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "2355 Guenette Street",
+    "addressLocality": "Val-David",
+    "addressRegion": "QC",
+    "postalCode": "J0T 2N0",
+    "addressCountry": "CA"
+  },
+  "knowsLanguage": ["en", "fr"],
+  "areaServed": ["North America", "South America", "Europe"],
+  "description": "GTM systems consultancy. Salesforce, HubSpot, and Marketing Cloud implementation, integration, and fractional RevOps for B2B teams."
+}
+</script>
+
+<link rel="stylesheet" href="assets/styles.css">
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+
+<!-- ════════════════════════════════════════════════════
+     COMPONENT: Header.astro
+     ════════════════════════════════════════════════════ -->
+<header class="site-head">
+  <div class="wrap">
+    <a class="wordmark" href="/">ELEV<span class="peak">Λ</span>TEK</a>
+    <button class="nav-toggle" aria-expanded="false" aria-controls="nav" aria-label="Menu">
+      <span></span><span></span><span></span>
+    </button>
+    <nav class="main-nav" id="nav">
+      <a href="#services">What we do</a>
+      <a href="#process">How we work</a>
+      <a href="#pricing">Pricing</a>
+      <a href="#clients">Clients</a>
+      <a href="#faq">FAQ</a>
+      <!-- TODO: swap mailto for your Calendly / booking link -->
+      <a class="btn btn-primary" href="contact.html">Let's talk</a>
+    </nav>
+  </div>
+</header>
+
+<main id="main">
+
+<!-- ════════════════════════════════════════════════════
+     COMPONENT: Hero.astro
+     ════════════════════════════════════════════════════ -->
+<section class="hero">
+  <div class="wrap">
+    <div class="hero-copy">
+      <p class="eyebrow">GTM systems consultancy · Canada</p>
+      <h1>A revenue stack that agrees with itself.</h1>
+      <p class="lead">Your tools each tell a different story. We design, build, and run GTM systems for B2B teams: Salesforce, HubSpot, and Marketing Cloud, wired together so the numbers finally agree and your reps stop fighting the CRM.</p>
+      <div class="hero-cta">
+        <a class="btn btn-primary" href="contact.html?type=session">Book a free strategy session</a>
+        <a class="btn btn-ghost" href="#process">See how we work</a>
+      </div>
+      <div class="proof-row">
+        <span>10+ years in the Salesforce ecosystem</span>
+        <span>16 Salesforce certifications</span>
+        <span>Serving the Americas and Europe, in French and English</span>
+      </div>
+    </div>
+
+    <div class="elevation">
+      <svg viewBox="0 0 640 470" role="img" aria-labelledby="elev-title">
+        <title id="elev-title">A step chart climbing from spreadsheets to one source of truth</title>
+        <!-- elevation gridlines -->
+        <line class="gridline" x1="0" y1="408" x2="640" y2="408"/>
+        <line class="gridline" x1="0" y1="344" x2="640" y2="344"/>
+        <line class="gridline" x1="0" y1="278" x2="640" y2="278"/>
+        <line class="gridline" x1="0" y1="210" x2="640" y2="210"/>
+        <line class="gridline" x1="0" y1="140" x2="640" y2="140"/>
+        <!-- topographic contours -->
+        <path class="contour" d="M0,330 C140,300 260,340 400,250 S600,180 640,150"/>
+        <path class="contour" d="M0,250 C160,230 300,260 460,160 S600,110 640,95"/>
+        <!-- the ascent -->
+        <path class="summit-line" d="M28,408 L110,408 L148,344 L238,344 L276,278 L366,278 L404,210 L494,210 L532,140 L606,140"/>
+        <!-- stack nodes -->
+        <g class="node"><circle cx="28" cy="408" r="6"/><text x="22" y="432">spreadsheets</text></g>
+        <g class="node"><circle cx="148" cy="344" r="6"/><text x="142" y="368">crm</text></g>
+        <g class="node"><circle cx="276" cy="278" r="6"/><text x="270" y="302">marketing automation</text></g>
+        <g class="node"><circle cx="404" cy="210" r="6"/><text x="398" y="234">billing + service</text></g>
+        <g class="node"><circle cx="532" cy="140" r="6"/><text x="526" y="164">warehouse + bi</text></g>
+        <!-- summit -->
+        <g class="summit-flag">
+          <path d="M606,134 L598,118 L606,123 L614,118 Z"/>
+          <text x="614" y="106" text-anchor="end">one source of truth</text>
+        </g>
+      </svg>
+      <p class="chart-caption">Λ Elevation: GTM maturity</p>
+    </div>
+  </div>
+</section>
+
+<!-- ════════════════════════════════════════════════════
+     COMPONENT: LogoBand.astro
+     NOTE: replace text with licensed client logo SVGs.
+     Confirm permission per client before launch — and verify
+     whether HubSpot is a client or a partner badge; label
+     accordingly.
+     ════════════════════════════════════════════════════ -->
+<section class="logos" aria-label="Clients">
+  <div class="wrap">
+    <p class="logos-label">We've built for teams at</p>
+    <!-- Swap each span for a real file when you have it:
+         <img class="client" src="/assets/logos/cabico.svg" alt="Cabico">
+         (CSS renders them white-monochrome automatically) -->
+    <div class="logo-row">
+      <span class="client">CABICO</span>
+      <span class="client">Deloitte.</span>
+      <span class="client">Devolutions</span>
+      <span class="client">HubSpot</span>
+      <span class="client">RYZ</span>
+      <!-- add remaining logos here -->
+    </div>
+  </div>
+</section>
+
+<!-- ════════════════════════════════════════════════════
+     COMPONENT: LeadToCash.astro
+     ════════════════════════════════════════════════════ -->
+<section class="section" id="problem">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <p class="eyebrow">The problem</p>
+      <h2>Lead to cash is one process. Your stack treats it like eight.</h2>
+      <p class="lead">Somewhere between quote and invoice, sales hands the deal to finance and the CRM hands it to the ERP. That seam is where the numbers start drifting. Most of what gets called a reporting problem is a handoff problem.</p>
+    </div>
+    <div class="l2c reveal">
+      <div class="widget-head">
+        <span class="widget-label">Lead to cash · as-is</span>
+        <span class="badge-sample">Typical mid-market stack</span>
+      </div>
+      <div class="l2c-caps">
+        <span><b>crm</b> · sales owns this side</span>
+        <span><b>erp</b> · finance owns this side</span>
+      </div>
+      <div class="l2c-rails">
+        <div class="l2c-side crm">
+          <span class="pill">lead capture</span>
+          <span class="pill">opportunity</span>
+          <span class="pill">quote</span>
+          <span class="pill">contract</span>
+        </div>
+        <div class="l2c-seam" aria-hidden="true"></div>
+        <div class="l2c-side erp">
+          <span class="pill">order</span>
+          <span class="pill">billing</span>
+          <span class="pill">fulfillment</span>
+          <span class="pill">rev rec</span>
+        </div>
+      </div>
+      <div class="l2c-leaks">
+        <span>attribution drops at capture</span>
+        <span>orders re-keyed at the seam</span>
+        <span>rev rec closed by hand</span>
+      </div>
+      <div class="l2c-tools">
+        <span class="chip">marketing automation</span>
+        <span class="chip">enrichment</span>
+        <span class="chip">cpq</span>
+        <span class="chip">e-sign</span>
+        <span class="chip">payments</span>
+        <span class="chip">billing</span>
+        <span class="chip">fulfillment</span>
+        <span class="chip">bi</span>
+      </div>
+      <p class="wnote">each one keeps its own copy of the truth.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ════════════════════════════════════════════════════
+     COMPONENT: Services.astro
+     ════════════════════════════════════════════════════ -->
+<section class="section" id="services">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <p class="eyebrow">What we do</p>
+      <h2>Pick the help you actually need.</h2>
+      <p class="lead">Every engagement starts the same way: we look at what you have before proposing what you should buy.</p>
+    </div>
+    <div class="svc-grid">
+      <article class="svc reveal">
+        <div class="svc-glyph">/r</div>
+        <h3>Fractional RevOps</h3>
+        <p>Senior ops capacity without the senior hire. We join your standups, own a backlog, and ship every week.</p>
+      </article>
+      <article class="svc reveal">
+        <div class="svc-glyph">/g</div>
+        <h3>GTM process design</h3>
+        <p>Lead-to-cash, mapped end to end. We find where deals leak between marketing, sales, and service, then rebuild the handoffs.</p>
+      </article>
+      <article class="svc reveal">
+        <div class="svc-glyph">/d</div>
+        <h3>Data integration</h3>
+        <p>Your CRM, your marketing platform, and your warehouse, all reporting the same numbers. One pipeline. One version of the truth.</p>
+      </article>
+      <article class="svc reveal">
+        <div class="svc-glyph">/c</div>
+        <h3>Team coaching</h3>
+        <p>We train your admins to need us less. Every build documented, every decision explained, handed over for real.</p>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ════════════════════════════════════════════════════
+     COMPONENT: Features.astro
+     ════════════════════════════════════════════════════ -->
+<section class="section" style="padding-top:0">
+  <div class="wrap">
+
+    <div class="feature reveal">
+      <div class="feature-copy">
+        <p class="eyebrow">Salesforce implementation</p>
+        <h3>Implemented like you'll live in it. Because you will.</h3>
+        <p class="lead">A Salesforce org outlives the project that built it. We architect for the team you'll have in three years: a clean data model, automation your admins can read, and AI features with something real to work with.</p>
+        <div class="chip-row">
+          <span class="chip">ai-ready data</span>
+          <span class="chip">documented builds</span>
+          <span class="chip">admin-friendly</span>
+        </div>
+        <!-- Optional cross-link to the sister practice. Set the real URL or delete. -->
+        <div class="sister">
+          Drowning in dirty data first? Our sister practice, <a href="#">Resoluble</a>, scores and cleans Salesforce orgs before anything new gets built on top.
+        </div>
+      </div>
+      <div class="feature-art dark">
+        <div class="widget-head">
+          <span class="widget-label">Build report</span>
+          <span class="badge-sample">Sample</span>
+        </div>
+        <p class="widget-sub">acme-corp · sprint 6 of 8</p>
+        <div class="brow">
+          <div class="brow-top"><span class="brow-name"><b>01</b>data model</span><span class="st done">shipped</span></div>
+          <div class="bar"><i style="--w:100%;--c:var(--good)"></i></div>
+        </div>
+        <div class="brow">
+          <div class="brow-top"><span class="brow-name"><b>02</b>automation</span><span class="st done">shipped</span></div>
+          <div class="bar"><i style="--w:100%;--c:var(--good)"></i></div>
+        </div>
+        <div class="brow">
+          <div class="brow-top"><span class="brow-name"><b>03</b>integrations</span><span class="st doing">in progress</span></div>
+          <div class="bar"><i style="--w:62%;--c:#6E89FF"></i></div>
+        </div>
+        <div class="brow">
+          <div class="brow-top"><span class="brow-name"><b>04</b>ai layer</span><span class="st next">queued</span></div>
+          <div class="bar"><i style="--w:0%"></i></div>
+        </div>
+        <p class="wnote">build order: bottom up. ai ships last, on purpose.</p>
+      </div>
+    </div>
+
+    <div class="feature flip reveal">
+      <div class="feature-copy">
+        <p class="eyebrow">Solution architecture</p>
+        <h3>Architecture before automation.</h3>
+        <p class="lead">Most broken stacks were automated too early. We map your objects, integrations, and ownership first, so every flow you add later has a foundation under it. It's the boring work that makes everything after it cheap.</p>
+        <div class="chip-row">
+          <span class="chip">integration mapping</span>
+          <span class="chip">ownership defined</span>
+          <span class="chip">scales with you</span>
+        </div>
+      </div>
+      <div class="feature-art dark">
+        <div class="widget-head">
+          <span class="widget-label">Sync audit</span>
+          <span class="badge-sample">Sample</span>
+        </div>
+        <p class="widget-sub">acme-corp · crm ↔ erp</p>
+        <svg class="wmap" viewBox="0 0 480 76" role="img" aria-label="A CRM and an ERP exchanging data in both directions">
+          <line class="sync-line" x1="178" y1="28" x2="294" y2="28"/>
+          <polygon points="302,28 290,22 290,34" fill="#6E89FF"/>
+          <line class="sync-line" x1="302" y1="50" x2="186" y2="50"/>
+          <polygon points="178,50 190,44 190,56" fill="#6E89FF"/>
+          <rect class="wmap-node hub" x="24" y="16" width="150" height="46" rx="10"/>
+          <text class="t" x="99" y="44" text-anchor="middle">crm</text>
+          <rect class="wmap-node" x="306" y="16" width="150" height="46" rx="10"/>
+          <text class="t" x="381" y="44" text-anchor="middle">erp</text>
+        </svg>
+        <div class="brow slim">
+          <div class="brow-top"><span class="brow-name">customers &amp; accounts</span><span class="st done">synced</span></div>
+        </div>
+        <div class="brow slim">
+          <div class="brow-top"><span class="brow-name">products &amp; pricing</span><span class="st done">synced</span></div>
+        </div>
+        <div class="brow slim">
+          <div class="brow-top"><span class="brow-name">quotes → orders</span><span class="st warn">manual re-entry</span></div>
+        </div>
+        <div class="brow slim">
+          <div class="brow-top"><span class="brow-name">invoices → crm</span><span class="st warn">manual re-entry</span></div>
+        </div>
+        <div class="brow slim">
+          <div class="brow-top"><span class="brow-name">inventory levels</span><span class="st next">not connected</span></div>
+        </div>
+        <div class="wstats">
+          <div><b>5</b><span>data flows</span></div>
+          <div><b>2</b><span>synced</span></div>
+          <div><b class="warn">3</b><span>by hand</span></div>
+        </div>
+        <p class="wnote">re-keyed data is where the numbers start to disagree.</p>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- ════════════════════════════════════════════════════
+     COMPONENT: Process.astro
+     ════════════════════════════════════════════════════ -->
+<section class="section process" id="process">
+  <div class="wrap on-dark">
+    <div class="section-head reveal">
+      <p class="eyebrow">How we work</p>
+      <h2>Three steps. No mystery.</h2>
+      <p class="lead">Step one costs you thirty minutes. Step three ends with your team not needing us.</p>
+    </div>
+    <div class="steps">
+      <article class="step reveal">
+        <h3>Assess</h3>
+        <p>A free 30-minute session. You walk us through the stack, we tell you what we'd fix first. If we're not the right fit, we say so and point you somewhere better.</p>
+        <div class="mini" aria-hidden="true">
+          <div class="mini-row"><em>data</em><div class="bar"><i style="--w:46%;--c:var(--warn)"></i></div></div>
+          <div class="mini-row"><em>flows</em><div class="bar"><i style="--w:72%;--c:#6E89FF"></i></div></div>
+          <div class="mini-row"><em>owners</em><div class="bar"><i style="--w:31%;--c:var(--warn)"></i></div></div>
+        </div>
+      </article>
+      <article class="step reveal">
+        <h3>Design</h3>
+        <p>A roadmap with priorities, owners, and price tags. You see the whole plan before you commit to any build.</p>
+        <div class="mini" aria-hidden="true">
+          <div class="mini-row"><em>now</em><div class="bar"><i style="--w:38%;--c:#6E89FF"></i></div></div>
+          <div class="mini-row"><em>next</em><div class="bar"><i class="off" style="--x:20%;--w:42%;--c:#4A63D6"></i></div></div>
+          <div class="mini-row"><em>later</em><div class="bar"><i class="off" style="--x:46%;--w:48%;--c:#2F3D74"></i></div></div>
+        </div>
+      </article>
+      <article class="step reveal">
+        <h3>Build &amp; run</h3>
+        <p>We ship in weekly increments, document as we go, and train your team on every piece we hand over.</p>
+        <div class="mini-weeks" aria-hidden="true">
+          <span class="wk done">w1</span>
+          <span class="wk done">w2</span>
+          <span class="wk done">w3</span>
+          <span class="wk now">w4</span>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ════════════════════════════════════════════════════
+     COMPONENT: Calculator.astro
+     User-supplied inputs, visible arithmetic. No claims
+     about Elevatek's impact — by design.
+     ════════════════════════════════════════════════════ -->
+<section class="section" id="cost" style="padding-top:0">
+  <div class="wrap">
+    <div class="section-head center reveal">
+      <p class="eyebrow">Run your numbers</p>
+      <h2>What does disagreement cost you?</h2>
+      <p class="lead">Not our estimate. Yours. Three sliders, visible math.</p>
+    </div>
+    <div class="calc reveal">
+      <div class="widget-head">
+        <span class="widget-label">Reconciliation cost</span>
+        <span class="badge-you">Your numbers</span>
+      </div>
+      <div class="crow">
+        <label for="c-people">People who touch revenue reporting <output id="o-people">3</output></label>
+        <input type="range" id="c-people" min="1" max="15" value="3">
+      </div>
+      <div class="crow">
+        <label for="c-hours">Hours each spends per week reconciling <output id="o-hours">4</output></label>
+        <input type="range" id="c-hours" min="1" max="20" value="4">
+      </div>
+      <div class="crow">
+        <label for="c-rate">Loaded cost per hour <output id="o-rate">$85</output></label>
+        <input type="range" id="c-rate" min="40" max="250" step="5" value="85">
+      </div>
+      <div class="ctotal" aria-live="polite">
+        <b id="c-total">$48,960</b>
+        <span>per year, just making the numbers agree</span>
+      </div>
+      <p class="cmath" id="c-math">3 people × 4 h/week × $85 × 48 weeks</p>
+      <p class="wnote">the strategy session costs none of this.</p>
+      <a class="btn btn-light" href="contact.html?type=session">Book the free session</a>
+    </div>
+  </div>
+</section>
+
+<!-- ════════════════════════════════════════════════════
+     COMPONENT: Pricing.astro
+     ════════════════════════════════════════════════════ -->
+<section class="section" id="pricing">
+  <div class="wrap">
+    <div class="section-head center reveal">
+      <p class="eyebrow">Pricing</p>
+      <h2>Three ways to start.</h2>
+      <p class="lead">A quick answer, on-demand help, or someone who owns the roadmap. Pick your speed.</p>
+    </div>
+    <div class="price-grid">
+      <article class="plan reveal">
+        <p class="plan-tag">Get a read first</p>
+        <p class="plan-name">$0</p>
+        <p class="plan-sub">Free strategy session</p>
+        <ul>
+          <li>A 30-minute call, no prep needed</li>
+          <li>An honest read on your current stack</li>
+          <li>What we'd fix first, and in what order</li>
+          <li>No deck, no pitch, no obligation</li>
+        </ul>
+        <a class="btn btn-ghost" href="contact.html?type=session">Book the session</a>
+      </article>
+      <article class="plan featured reveal">
+        <p class="plan-tag">On-demand</p>
+        <p class="plan-name">Hourly</p>
+        <p class="plan-sub">Flexible contract</p>
+        <ul>
+          <li>Pay as you go</li>
+          <li>No SOW required</li>
+          <li>Senior consultants only</li>
+          <li>Scope as narrow or broad as you need</li>
+        </ul>
+        <a class="btn btn-light" href="contact.html?type=hourly">Start hourly</a>
+      </article>
+      <article class="plan reveal">
+        <p class="plan-tag">Ongoing</p>
+        <p class="plan-name">Retainer</p>
+        <p class="plan-sub">Managed engagements</p>
+        <ul>
+          <li>Three-month minimum</li>
+          <li>A managed backlog, shipped weekly</li>
+          <li>Priority response</li>
+          <li>Volume pricing</li>
+        </ul>
+        <a class="btn btn-ghost" href="contact.html?type=retainer">Talk retainer</a>
+      </article>
+    </div>
+    <p class="fineprint">Not sure which fits? That's what the free session is for.</p>
+  </div>
+</section>
+
+<!-- ════════════════════════════════════════════════════
+     COMPONENT: Testimonials.astro
+     Quotes are verbatim LinkedIn recommendations, copied
+     from the current site. Add profile URLs to each
+     .li-mark when ready. Do not edit the wording.
+     ════════════════════════════════════════════════════ -->
+<section class="section" id="clients" style="padding-top:0">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <p class="eyebrow">Clients</p>
+      <h2>What it's like to work with us.</h2>
+      <p class="lead">Pulled straight from LinkedIn recommendations. Unedited.</p>
+    </div>
+    <div class="quotes">
+      <!-- When photos arrive, swap initials inside any .avatar:
+           <span class="avatar"><img src="/assets/people/alexandre.jpg" alt=""></span> -->
+      <article class="quote reveal">
+        <div class="quote-head">
+          <span class="quote-name"><span class="avatar">AL</span>Alexandre</span>
+          <span class="li-mark" title="LinkedIn recommendation">in</span>
+        </div>
+        <p>I have been working with Simon for years and have always been impressed by his work ethic, intelligence, and dedication. Simon is a one-of-a-kind professional, very curious and tech-savvy, who consistently demonstrates a deep understanding of the subject matter and is always eager to learn more.</p>
+      </article>
+      <article class="quote reveal">
+        <div class="quote-head">
+          <span class="quote-name"><span class="avatar">PA</span>Pierre-Alexandre</span>
+          <span class="li-mark" title="LinkedIn recommendation">in</span>
+        </div>
+        <p lang="fr">Je travaille avec Simon depuis plusieurs années sur divers projets RevOps et collaborer avec lui est un réel plaisir. Son expertise, son sérieux et ses compétences nous aident grandement dans nos projets liés au marketing, aux ventes, au service et aux outils tels que SalesCloud, ServiceCloud et Marketing Cloud de Salesforce. Je recommande fortement Simon et Elevatek et espère collaborer encore longtemps avec lui.</p>
+      </article>
+      <article class="quote reveal">
+        <div class="quote-head">
+          <span class="quote-name"><span class="avatar">AD</span>Adel</span>
+          <span class="li-mark" title="LinkedIn recommendation">in</span>
+        </div>
+        <p lang="fr">J'ai eu la chance de travailler avec Simon sur un projet d'implantation Salesforce dans notre organisation, plus spécifiquement Service Cloud. Il a était extrêmement compétent, son expertise et connaissance de la plateforme était très grande. Il a fait preuve d'un grand professionnalisme et d'une écoute hors pair de nos besoins. Merci Simon.</p>
+      </article>
+      <article class="quote reveal">
+        <div class="quote-head">
+          <span class="quote-name"><span class="avatar">HE</span>Heather</span>
+          <span class="li-mark" title="LinkedIn recommendation">in</span>
+        </div>
+        <p>Simon and I worked together for a few months. He is smart, conscientious and extremely capable. He has that unique blend of MarTech expertise coupled with good design sense, and go-to-market savvy. He comes to work with a smile and positive attitude, ready to tackle any problem with creativity. And to top it off, working with Simon was fun.</p>
+      </article>
+      <article class="quote reveal">
+        <div class="quote-head">
+          <span class="quote-name"><span class="avatar">CI</span>Cindy</span>
+          <span class="li-mark" title="LinkedIn recommendation">in</span>
+        </div>
+        <p>Simon is very knowledgeable in various areas of Salesforce, Automated Sales &amp; Marketing, and Social Media. He easily guides our team through complex processes and helps us implement numerous tools to increase our client outreach, engagement, nurturing, and conversion. Not to mention, we have fun doing it!</p>
+      </article>
+      <article class="quote reveal">
+        <div class="quote-head">
+          <span class="quote-name"><span class="avatar">YA</span>Yann</span>
+          <span class="li-mark" title="LinkedIn recommendation">in</span>
+        </div>
+        <p>We hired Simon for a couple of projects with city of Montreal and Hot Paws. Our clients were really happy to work with him. I'd recommend Simon anytime, he's really reliable.</p>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ════════════════════════════════════════════════════
+     COMPONENT: Faq.astro
+     ════════════════════════════════════════════════════ -->
+<section class="section" id="faq" style="padding-top:0">
+  <div class="wrap">
+    <div class="section-head center reveal">
+      <p class="eyebrow">FAQ</p>
+      <h2>Questions people actually ask.</h2>
+    </div>
+    <div class="faq-list reveal">
+      <details>
+        <summary>Do you replace our ops team or work alongside it?</summary>
+        <p>Alongside, almost always. Fractional means we plug into your existing team, take a slice of the backlog, and hand back working systems plus the documentation to run them. If you have no ops team yet, we can be it for a while, then help you hire.</p>
+      </details>
+      <details>
+        <summary>Our Salesforce project is already off the rails. Can you step in mid-flight?</summary>
+        <p>Yes. Rescue work usually starts with a short audit: what was promised, what was built, what's salvageable. You get that picture before deciding whether we take over the build.</p>
+      </details>
+      <details>
+        <summary>Salesforce or HubSpot, which one do you push?</summary>
+        <p>Neither by default. We work in both ecosystems and recommend based on your team, your budget, and what you already own. Sometimes the honest answer is "keep what you have and fix the plumbing."</p>
+      </details>
+      <details>
+        <summary>What does fractional actually mean in hours?</summary>
+        <p>Anywhere from a few hours a week to a few days. We size it together during the free session, and you can scale it up or down between sprints.</p>
+      </details>
+      <details>
+        <summary>Do you work in French?</summary>
+        <p>Oui. We're Canadian and run projects in French, English, or both, including documentation and training.</p>
+      </details>
+      <details>
+        <summary>Where do you work from?</summary>
+        <p>Canada. We work remotely with clients across the Americas and Europe, in English or French.</p>
+      </details>
+      <details>
+        <summary>What happens when the project ends?</summary>
+        <p>You keep everything: documentation, decision logs, and a trained team. Some clients move to a light retainer for upkeep. Some don't need us anymore. Both outcomes count as success on our end.</p>
+      </details>
+    </div>
+  </div>
+</section>
+
+<!-- ════════════════════════════════════════════════════
+     COMPONENT: Closer.astro
+     ════════════════════════════════════════════════════ -->
+<section class="closer on-dark">
+  <div class="wrap reveal">
+    <p class="eyebrow">Next step</p>
+    <h2>Bring us the stack you're embarrassed by.</h2>
+    <p class="lead">Thirty minutes. A straight answer about what to fix first. Free either way.</p>
+    <a class="btn btn-primary" href="contact.html?type=session">Book a free strategy session</a>
+  </div>
+</section>
+
+<!-- ════════════════════════════════════════════════════
+     COMPONENT: Footer.astro
+     Newsletter form: wire `action` to your provider
+     (the current site already has one running).
+     ════════════════════════════════════════════════════ -->
+<footer class="site-foot" id="contact">
+  <div class="wrap">
+    <div class="foot-grid">
+      <div>
+        <a class="wordmark" href="/">ELEV<span class="peak">Λ</span>TEK</a>
+        <p class="foot-blurb">A Canadian GTM systems consultancy serving the Americas and Europe. Salesforce, HubSpot, Marketing Cloud.</p>
+      </div>
+      <div>
+        <h4>Explore</h4>
+        <ul>
+          <li><a href="#services">What we do</a></li>
+          <li><a href="#process">How we work</a></li>
+          <li><a href="#pricing">Pricing</a></li>
+          <li><a href="#faq">FAQ</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Contact</h4>
+        <ul>
+          <li><a href="mailto:info@elevatek.ca">info@elevatek.ca</a></li>
+          <li><a href="tel:+15149618625">+1 (514) 961-8625</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>One RevOps tip a month</h4>
+        <form class="news-form" action="#" method="post">
+          <input type="email" name="email" placeholder="Email address" required aria-label="Email address">
+          <button class="btn btn-primary" type="submit">Subscribe</button>
+        </form>
+        <p class="news-note">Something you can ship the same week. Unsubscribe anytime.</p>
+      </div>
+    </div>
+    <div class="foot-base">
+      <span>© <span id="year">2026</span> Elevatek Consulting Inc.</span>
+      <span><a href="privacy.html">Privacy</a> · <a href="terms.html">Terms</a></span>
+      <span>Built in Canada.</span>
+    </div>
+  </div>
+</footer>
+
+</main>
+
+<script src="assets/app.js"></script>
+<script>
+// Reconciliation-cost calculator
+const cp = document.getElementById('c-people');
+const ch = document.getElementById('c-hours');
+const cr = document.getElementById('c-rate');
+if (cp && ch && cr) {
+  const recalc = () => {
+    const p = +cp.value, h = +ch.value, r = +cr.value;
+    document.getElementById('o-people').textContent = p;
+    document.getElementById('o-hours').textContent = h;
+    document.getElementById('o-rate').textContent = '$' + r;
+    const total = p * h * r * 48;
+    document.getElementById('c-total').textContent = '$' + total.toLocaleString('en-US');
+    document.getElementById('c-math').textContent =
+      p + (p === 1 ? ' person' : ' people') + ' × ' + h + ' h/week × $' + r + ' × 48 weeks';
+  };
+  [cp, ch, cr].forEach(el => el.addEventListener('input', recalc));
+}
+</script>
+</body>
+</html>

@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Contact — Elevatek</title>
+<meta name="description" content="Tell us what's going on in your stack. Five questions, two minutes, and a human replies with next steps, not a deck.">
+<link rel="canonical" href="https://elevatek.ca/contact">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,600;12..96,700;12..96,800&family=Instrument+Sans:ital,wght@0,400;0,500;0,600;1,400&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/styles.css">
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+
+<!-- ════════════════════════════════════════════════════
+     COMPONENT: Header.astro (shared)
+     ════════════════════════════════════════════════════ -->
+<header class="site-head">
+  <div class="wrap">
+    <a class="wordmark" href="index.html">ELEV<span class="peak">Λ</span>TEK</a>
+    <button class="nav-toggle" aria-expanded="false" aria-controls="nav" aria-label="Menu">
+      <span></span><span></span><span></span>
+    </button>
+    <nav class="main-nav" id="nav">
+      <a href="index.html#services">What we do</a>
+      <a href="index.html#process">How we work</a>
+      <a href="index.html#pricing">Pricing</a>
+      <a href="index.html#clients">Clients</a>
+      <a href="index.html#faq">FAQ</a>
+      <a class="btn btn-primary" href="#form">Let's talk</a>
+    </nav>
+  </div>
+</header>
+
+<main id="main">
+
+<!-- ════════════════════════════════════════════════════
+     COMPONENT: ContactForm.astro
+     Submit: set FORM_ENDPOINT below (Formspree / Netlify
+     function / worker). Until then, submit composes a
+     mailto with the full summary — works with no backend.
+     ════════════════════════════════════════════════════ -->
+<section class="page-hero">
+  <div class="wrap">
+    <p class="eyebrow">Contact</p>
+    <h1>Tell us what's going on in the stack.</h1>
+    <p class="lead">Five questions, two minutes. A human replies with next steps, not a deck.</p>
+  </div>
+</section>
+
+<section>
+  <div class="wrap contact-grid">
+    <form id="form" novalidate>
+      <div class="fsection">
+        <p class="eyebrow">01 · Who's asking</p>
+        <div class="fchips">
+          <label class="fchip"><input type="radio" name="role" value="RevOps"><span>RevOps</span></label>
+          <label class="fchip"><input type="radio" name="role" value="IT / Systems"><span>IT / Systems</span></label>
+          <label class="fchip"><input type="radio" name="role" value="VP Sales or Marketing"><span>VP Sales / Marketing</span></label>
+          <label class="fchip"><input type="radio" name="role" value="Salesforce admin"><span>Salesforce admin</span></label>
+          <label class="fchip"><input type="radio" name="role" value="Founder / CEO"><span>Founder / CEO</span></label>
+          <label class="fchip"><input type="radio" name="role" value="CTO"><span>CTO</span></label>
+          <label class="fchip"><input type="radio" name="role" value="Other"><span>Other</span></label>
+        </div>
+      </div>
+
+      <div class="fsection">
+        <p class="eyebrow">02 · Your stack</p>
+        <div class="fchips">
+          <label class="fchip"><input type="checkbox" name="stack" value="Salesforce"><span>Salesforce</span></label>
+          <label class="fchip"><input type="checkbox" name="stack" value="HubSpot"><span>HubSpot</span></label>
+          <label class="fchip"><input type="checkbox" name="stack" value="Marketing Cloud"><span>Marketing Cloud</span></label>
+          <label class="fchip"><input type="checkbox" name="stack" value="Pardot / MCAE"><span>Pardot / MCAE</span></label>
+          <label class="fchip"><input type="checkbox" name="stack" value="NetSuite"><span>NetSuite</span></label>
+          <label class="fchip"><input type="checkbox" name="stack" value="Dynamics"><span>Dynamics</span></label>
+          <label class="fchip"><input type="checkbox" name="stack" value="Other ERP"><span>Other ERP</span></label>
+          <label class="fchip"><input type="checkbox" name="stack" value="Mostly spreadsheets"><span>Mostly spreadsheets</span></label>
+        </div>
+      </div>
+
+      <div class="fsection">
+        <p class="eyebrow">03 · What you're after</p>
+        <div class="fchips">
+          <label class="fchip"><input type="radio" name="engagement" value="Free strategy session"><span>Free strategy session</span></label>
+          <label class="fchip"><input type="radio" name="engagement" value="Hourly help"><span>Hourly help</span></label>
+          <label class="fchip"><input type="radio" name="engagement" value="Retainer"><span>Retainer</span></label>
+          <label class="fchip"><input type="radio" name="engagement" value="Not sure yet"><span>Not sure yet</span></label>
+        </div>
+      </div>
+
+      <div class="fsection">
+        <p class="eyebrow">04 · How soon</p>
+        <div class="fchips">
+          <label class="fchip"><input type="radio" name="urgency" value="Yesterday"><span>Yesterday</span></label>
+          <label class="fchip"><input type="radio" name="urgency" value="This month"><span>This month</span></label>
+          <label class="fchip"><input type="radio" name="urgency" value="This quarter"><span>This quarter</span></label>
+          <label class="fchip"><input type="radio" name="urgency" value="Just exploring"><span>Just exploring</span></label>
+        </div>
+      </div>
+
+      <div class="fsection">
+        <p class="eyebrow">05 · The details</p>
+        <div class="frow">
+          <div class="field">
+            <label for="f-name">Your name</label>
+            <input type="text" id="f-name" name="name" autocomplete="name" required>
+          </div>
+          <div class="field">
+            <label for="f-company">Company</label>
+            <input type="text" id="f-company" name="company" autocomplete="organization">
+          </div>
+        </div>
+        <div class="field">
+          <label for="f-email">Work email</label>
+          <input type="email" id="f-email" name="email" autocomplete="email" required>
+        </div>
+        <div class="field">
+          <label for="f-msg">What's going on in the stack?</label>
+          <textarea id="f-msg" name="message" placeholder="The symptom is fine. We'll find the cause together."></textarea>
+        </div>
+        <div class="fchips" role="group" aria-label="Preferred language">
+          <label class="fchip"><input type="radio" name="lang" value="English"><span>English</span></label>
+          <label class="fchip"><input type="radio" name="lang" value="Français"><span>Français</span></label>
+          <label class="fchip"><input type="radio" name="lang" value="Either" checked><span>Either / les deux</span></label>
+        </div>
+      </div>
+
+      <!-- honeypot -->
+      <div class="hp" aria-hidden="true">
+        <label>Leave this empty<input type="text" name="website" tabindex="-1" autocomplete="off"></label>
+      </div>
+
+      <button class="btn btn-primary" type="submit">Send it</button>
+      <p class="form-error" id="form-error" role="alert">Name and a valid work email, and we're good.</p>
+      <p class="form-note">Goes straight to our inbox. A human reads it.</p>
+
+      <div class="sister">
+        Allergic to forms? Email <a href="mailto:info@elevatek.ca">info@elevatek.ca</a> or call <a href="tel:+15149618625">+1 (514) 961-8625</a>. Same humans either way.
+      </div>
+    </form>
+
+    <aside class="req reveal in" aria-label="Your request so far">
+      <div class="widget-head">
+        <span class="widget-label">Your request</span>
+        <span class="badge-you">Live</span>
+      </div>
+      <div class="req-rows">
+        <div class="req-row"><b>Role</b><span id="s-role"></span></div>
+        <div class="req-row"><b>Stack</b><span id="s-stack"></span></div>
+        <div class="req-row"><b>After</b><span id="s-engagement"></span></div>
+        <div class="req-row"><b>When</b><span id="s-urgency"></span></div>
+        <div class="req-row"><b>Language</b><span id="s-lang">Either / les deux</span></div>
+      </div>
+      <p class="wnote">we'll come back with next steps, not a pitch.</p>
+    </aside>
+  </div>
+</section>
+
+</main>
+
+<!-- ════════════════════════════════════════════════════
+     COMPONENT: Footer.astro (shared)
+     ════════════════════════════════════════════════════ -->
+<footer class="site-foot" id="contact">
+  <div class="wrap">
+    <div class="foot-grid">
+      <div>
+        <a class="wordmark" href="index.html">ELEV<span class="peak">Λ</span>TEK</a>
+        <p class="foot-blurb">A Canadian GTM systems consultancy serving the Americas and Europe. Salesforce, HubSpot, Marketing Cloud.</p>
+      </div>
+      <div>
+        <h4>Explore</h4>
+        <ul>
+          <li><a href="index.html#services">What we do</a></li>
+          <li><a href="index.html#process">How we work</a></li>
+          <li><a href="index.html#pricing">Pricing</a></li>
+          <li><a href="index.html#faq">FAQ</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Contact</h4>
+        <ul>
+          <li><a href="mailto:info@elevatek.ca">info@elevatek.ca</a></li>
+          <li><a href="tel:+15149618625">+1 (514) 961-8625</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>One RevOps tip a month</h4>
+        <form class="news-form" action="#" method="post">
+          <input type="email" name="email" placeholder="Email address" required aria-label="Email address">
+          <button class="btn btn-primary" type="submit">Subscribe</button>
+        </form>
+        <p class="news-note">Something you can ship the same week. Unsubscribe anytime.</p>
+      </div>
+    </div>
+    <div class="foot-base">
+      <span>© <span id="year">2026</span> Elevatek Consulting Inc.</span>
+      <span><a href="privacy.html">Privacy</a> · <a href="terms.html">Terms</a></span>
+      <span>Built in Canada.</span>
+    </div>
+  </div>
+</footer>
+
+<script src="assets/app.js"></script>
+<script>
+// ── form logic ──────────────────────────────────────────
+const FORM_ENDPOINT = ''; // TODO: set Formspree/Netlify/worker URL. Empty = mailto compose.
+
+const form = document.getElementById('form');
+const err = document.getElementById('form-error');
+
+const read = () => {
+  const v = n => (form.querySelector(`input[name="${n}"]:checked`) || {}).value || '';
+  return {
+    role: v('role'),
+    stack: [...form.querySelectorAll('input[name="stack"]:checked')].map(i => i.value).join(', '),
+    engagement: v('engagement'),
+    urgency: v('urgency'),
+    lang: v('lang'),
+    name: form.name.value.trim(),
+    company: form.company.value.trim(),
+    email: form.email.value.trim(),
+    message: form.message.value.trim()
+  };
+};
+
+// live summary
+const sync = () => {
+  const d = read();
+  document.getElementById('s-role').textContent = d.role;
+  document.getElementById('s-stack').textContent = d.stack;
+  document.getElementById('s-engagement').textContent = d.engagement;
+  document.getElementById('s-urgency').textContent = d.urgency;
+  document.getElementById('s-lang').textContent = d.lang;
+};
+form.addEventListener('change', sync);
+
+// ?type= preselect from homepage CTAs
+const type = new URLSearchParams(location.search).get('type');
+const map = { session: 'Free strategy session', hourly: 'Hourly help', retainer: 'Retainer' };
+if (map[type]) {
+  const input = form.querySelector(`input[name="engagement"][value="${map[type]}"]`);
+  if (input) { input.checked = true; sync(); }
+}
+
+// submit
+form.addEventListener('submit', async e => {
+  e.preventDefault();
+  if (form.website.value) return; // honeypot
+  const d = read();
+  const valid = d.name && /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(d.email);
+  err.classList.toggle('show', !valid);
+  if (!valid) return;
+
+  const lines = [
+    'Role: ' + (d.role || '-'),
+    'Stack: ' + (d.stack || '-'),
+    'After: ' + (d.engagement || '-'),
+    'When: ' + (d.urgency || '-'),
+    'Language: ' + (d.lang || '-'),
+    'Company: ' + (d.company || '-'),
+    'Name: ' + d.name,
+    'Email: ' + d.email,
+    '',
+    d.message
+  ];
+
+  if (FORM_ENDPOINT) {
+    try {
+      const res = await fetch(FORM_ENDPOINT, {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json', 'Accept': 'application/json' },
+        body: JSON.stringify(d)
+      });
+      if (!res.ok) throw new Error();
+      form.outerHTML = '<div class="sent"><h2>Got it.</h2><p>A human will read this and reply with next steps. Talk soon.</p></div>';
+    } catch {
+      err.textContent = "That didn't go through. Email us directly: info@elevatek.ca";
+      err.classList.add('show');
+    }
+  } else {
+    const subject = 'Elevatek — ' + (d.engagement || 'inquiry') + (d.company ? ' — ' + d.company : '');
+    location.href = 'mailto:info@elevatek.ca?subject=' + encodeURIComponent(subject) +
+                    '&body=' + encodeURIComponent(lines.join('\n'));
+  }
+});
+</script>
+</body>
+</html>
