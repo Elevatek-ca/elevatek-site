@@ -91,11 +91,11 @@ h3{font-size:clamp(1.35rem,2.2vw,1.7rem);line-height:1.15}
 }
 .wordmark .peak{color:var(--blue)}
 .main-nav{display:flex;align-items:center;gap:32px}
-.main-nav a{
+.main-nav a:not(.btn){
   text-decoration:none;font-weight:500;font-size:.95rem;color:var(--slate);
   transition:color .15s ease;
 }
-.main-nav a:hover{color:var(--ink)}
+.main-nav a:not(.btn):hover{color:var(--ink)}
 .main-nav .btn{padding:.6em 1.15em;font-size:.92rem}
 .nav-toggle{display:none;background:none;border:0;cursor:pointer;padding:10px}
 .nav-toggle span{display:block;width:22px;height:2px;background:var(--ink);margin:5px 0;transition:transform .2s ease,opacity .2s ease}
