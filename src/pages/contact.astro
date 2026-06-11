@@ -148,7 +148,7 @@ const read = () => {
     engagement: v('engagement'),
     urgency: v('urgency'),
     lang: v('lang'),
-    name: form.name.value.trim(),
+    name: form.querySelector('input[name="name"]').value.trim(),
     company: form.company.value.trim(),
     email: form.email.value.trim(),
     message: form.message.value.trim()
