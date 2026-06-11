@@ -12,9 +12,9 @@ import Testimonials from '../components/Testimonials.astro';
 import Faq from '../components/Faq.astro';
 import Closer from '../components/Closer.astro';
 
-// Head extras are injected via set:html so the HTML comments (incl. the og:image
-// TODO and the structured-data note) survive the build verbatim — Astro strips
-// comments that sit directly inside a named <Fragment slot> otherwise.
+// Head extras are injected via set:html so the structured-data note (an HTML
+// comment) survives the build verbatim — Astro strips comments that sit
+// directly inside a named <Fragment slot> otherwise.
 const ogHead = `<!-- Open Graph -->
 <meta property="og:type" content="website">
 <meta property="og:title" content="Elevatek — GTM systems consultancy">
@@ -22,7 +22,6 @@ const ogHead = `<!-- Open Graph -->
 <meta property="og:url" content="https://elevatek.ca/">
 <meta property="og:locale" content="en_CA">
 <meta property="og:locale:alternate" content="fr_CA">
-<!-- TODO: add og:image (1200x630) before launch -->
 
 <link rel="canonical" href="https://elevatek.ca/">`;
 
