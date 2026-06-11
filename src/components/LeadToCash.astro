@@ -13,29 +13,33 @@
         <span class="widget-label">Lead to cash · as-is</span>
         <span class="badge-sample">Typical mid-market stack</span>
       </div>
-      <div class="l2c-caps">
-        <span><b>crm</b> · sales owns this side</span>
-        <span><b>erp</b> · finance owns this side</span>
-      </div>
       <div class="l2c-rails">
-        <div class="l2c-side crm">
-          <span class="pill">lead capture</span>
-          <span class="pill">opportunity</span>
-          <span class="pill">quote</span>
-          <span class="pill">contract</span>
+        <div class="l2c-lane crm">
+          <p class="l2c-cap"><b>crm</b> · sales owns this side</p>
+          <div class="l2c-side">
+            <span class="pill">lead capture</span>
+            <span class="l2c-step"><span class="sep" aria-hidden="true">›</span><span class="pill">opportunity</span></span>
+            <span class="l2c-step"><span class="sep" aria-hidden="true">›</span><span class="pill">quote</span></span>
+            <span class="l2c-step"><span class="sep" aria-hidden="true">›</span><span class="pill">contract</span></span>
+          </div>
         </div>
-        <div class="l2c-seam" aria-hidden="true"></div>
-        <div class="l2c-side erp">
-          <span class="pill">order</span>
-          <span class="pill">billing</span>
-          <span class="pill">fulfillment</span>
-          <span class="pill">rev rec</span>
+        <div class="l2c-seam">
+          <span class="l2c-seam-chip">the handoff</span>
+        </div>
+        <div class="l2c-lane erp">
+          <p class="l2c-cap"><b>erp</b> · finance owns this side</p>
+          <div class="l2c-side">
+            <span class="pill">order</span>
+            <span class="l2c-step"><span class="sep" aria-hidden="true">›</span><span class="pill">billing</span></span>
+            <span class="l2c-step"><span class="sep" aria-hidden="true">›</span><span class="pill">fulfillment</span></span>
+            <span class="l2c-step"><span class="sep" aria-hidden="true">›</span><span class="pill">rev rec</span></span>
+          </div>
         </div>
       </div>
       <div class="l2c-leaks">
-        <span>attribution drops at capture</span>
-        <span>orders re-keyed at the seam</span>
-        <span>rev rec closed by hand</span>
+        <span class="leak start">attribution drops at capture</span>
+        <span class="leak mid">orders re-keyed at the seam</span>
+        <span class="leak end">rev rec closed by hand</span>
       </div>
       <div class="l2c-tools">
         <span class="chip">marketing automation</span>
