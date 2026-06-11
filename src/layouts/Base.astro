@@ -1,0 +1,124 @@
+---
+import '../styles/global.css';
+
+export interface Props {
+  title: string;
+  description?: string;
+  noindex?: boolean;
+  /** Home page uses in-page anchors (#services); inner pages link back to /#services. */
+  home?: boolean;
+  /** "Let's talk" button target. Contact page overrides to the in-page #form. */
+  ctaHref?: string;
+  /** Legal + 404 pages use the slim footer. */
+  minimalFooter?: boolean;
+}
+
+const {
+  title,
+  description,
+  noindex = false,
+  home = false,
+  ctaHref = '/contact',
+  minimalFooter = false,
+} = Astro.props;
+
+// Anchor prefix: empty on the home page (same-page scroll), "/" elsewhere.
+const a = home ? '' : '/';
+---
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>{title}</title>
+{description && <meta name="description" content={description} />}
+{noindex && <meta name="robots" content="noindex" />}
+<slot name="head" />
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,600;12..96,700;12..96,800&family=Instrument+Sans:ital,wght@0,400;0,500;0,600;1,400&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<slot name="head-end" />
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+
+<header class="site-head">
+  <div class="wrap">
+    <a class="wordmark" href="/">ELEV<span class="peak">Λ</span>TEK</a>
+    <button class="nav-toggle" aria-expanded="false" aria-controls="nav" aria-label="Menu">
+      <span></span><span></span><span></span>
+    </button>
+    <nav class="main-nav" id="nav">
+      <a href={`${a}#services`}>What we do</a>
+      <a href={`${a}#process`}>How we work</a>
+      <a href={`${a}#pricing`}>Pricing</a>
+      <a href={`${a}#clients`}>Clients</a>
+      <a href={`${a}#faq`}>FAQ</a>
+      {home && <Fragment set:html={`<!-- TODO: swap mailto for your Calendly / booking link -->`} />}
+      <a class="btn btn-primary" href={ctaHref}>Let's talk</a>
+    </nav>
+  </div>
+</header>
+
+<main id="main">
+  <slot />
+</main>
+
+{minimalFooter ? (
+  <footer class="site-foot">
+    <div class="wrap">
+      <div class="foot-base" style="border-top:0;padding-top:0">
+        <span>© <span id="year">2026</span> Elevatek Consulting Inc.</span>
+        <span><a href="/privacy">Privacy</a> · <a href="/terms">Terms</a> · <a href="/contact">Contact</a></span>
+        <span>Built in Canada.</span>
+      </div>
+    </div>
+  </footer>
+) : (
+  <footer class="site-foot" id="contact">
+    <div class="wrap">
+      <div class="foot-grid">
+        <div>
+          <a class="wordmark" href="/">ELEV<span class="peak">Λ</span>TEK</a>
+          <p class="foot-blurb">A Canadian GTM systems consultancy serving the Americas and Europe. Salesforce, HubSpot, Marketing Cloud.</p>
+        </div>
+        <div>
+          <h4>Explore</h4>
+          <ul>
+            <li><a href={`${a}#services`}>What we do</a></li>
+            <li><a href={`${a}#process`}>How we work</a></li>
+            <li><a href={`${a}#pricing`}>Pricing</a></li>
+            <li><a href={`${a}#faq`}>FAQ</a></li>
+            <li><a href="/contact">Contact</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Contact</h4>
+          <ul>
+            <li><a href="mailto:info@elevatek.ca">info@elevatek.ca</a></li>
+            <li><a href="tel:+15149618625">+1 (514) 961-8625</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>One RevOps tip a month</h4>
+          {home && <Fragment set:html={`<!-- Newsletter form: wire \`action\` to your provider (the current site already has one running). -->`} />}
+          <form class="news-form" action="#" method="post">
+            <input type="email" name="email" placeholder="Email address" required aria-label="Email address">
+            <button class="btn btn-primary" type="submit">Subscribe</button>
+          </form>
+          <p class="news-note">Something you can ship the same week. Unsubscribe anytime.</p>
+        </div>
+      </div>
+      <div class="foot-base">
+        <span>© <span id="year">2026</span> Elevatek Consulting Inc.</span>
+        <span><a href="/privacy">Privacy</a> · <a href="/terms">Terms</a></span>
+        <span>Built in Canada.</span>
+      </div>
+    </div>
+  </footer>
+)}
+
+<script is:inline src="/app.js"></script>
+<slot name="body-end" />
+</body>
+</html>

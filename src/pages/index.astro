@@ -1,0 +1,72 @@
+---
+import Base from '../layouts/Base.astro';
+import Hero from '../components/Hero.astro';
+import LogoBand from '../components/LogoBand.astro';
+import LeadToCash from '../components/LeadToCash.astro';
+import Services from '../components/Services.astro';
+import Features from '../components/Features.astro';
+import Process from '../components/Process.astro';
+import Calculator from '../components/Calculator.astro';
+import Pricing from '../components/Pricing.astro';
+import Testimonials from '../components/Testimonials.astro';
+import Faq from '../components/Faq.astro';
+import Closer from '../components/Closer.astro';
+
+// Head extras are injected via set:html so the HTML comments (incl. the og:image
+// TODO and the structured-data note) survive the build verbatim — Astro strips
+// comments that sit directly inside a named <Fragment slot> otherwise.
+const ogHead = `<!-- Open Graph -->
+<meta property="og:type" content="website">
+<meta property="og:title" content="Elevatek — GTM systems consultancy">
+<meta property="og:description" content="Salesforce, HubSpot, and Marketing Cloud, wired together so your pipeline numbers stop arguing. Canadian, serving the Americas and Europe.">
+<meta property="og:url" content="https://elevatek.ca/">
+<meta property="og:locale" content="en_CA">
+<meta property="og:locale:alternate" content="fr_CA">
+<!-- TODO: add og:image (1200x630) before launch -->
+
+<link rel="canonical" href="https://elevatek.ca/">`;
+
+const structuredData = `<!-- Structured data: verified NAP only. Add sameAs (LinkedIn) when ready. -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "ProfessionalService",
+  "name": "Elevatek",
+  "legalName": "Elevatek Consulting Inc.",
+  "url": "https://elevatek.ca/",
+  "email": "info@elevatek.ca",
+  "telephone": "+1-514-961-8625",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "2355 Guenette Street",
+    "addressLocality": "Val-David",
+    "addressRegion": "QC",
+    "postalCode": "J0T 2N0",
+    "addressCountry": "CA"
+  },
+  "knowsLanguage": ["en", "fr"],
+  "areaServed": ["North America", "South America", "Europe"],
+  "description": "GTM systems consultancy. Salesforce, HubSpot, and Marketing Cloud implementation, integration, and fractional RevOps for B2B teams."
+}
+</script>`;
+---
+<Base
+  title="Elevatek — GTM systems consultancy. Salesforce, HubSpot, Marketing Cloud."
+  description="Elevatek designs, builds, and runs GTM systems for B2B teams. Salesforce, HubSpot, and Marketing Cloud, wired together so your pipeline numbers stop arguing. A Canadian consultancy serving the Americas and Europe, in French and English."
+  home={true}
+>
+  <Fragment slot="head" set:html={ogHead} />
+  <Fragment slot="head-end" set:html={structuredData} />
+
+  <Hero />
+  <LogoBand />
+  <LeadToCash />
+  <Services />
+  <Features />
+  <Process />
+  <Calculator />
+  <Pricing />
+  <Testimonials />
+  <Faq />
+  <Closer />
+</Base>

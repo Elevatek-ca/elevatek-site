@@ -1,0 +1,59 @@
+<!-- ════════════════════════════════════════════════════
+     COMPONENT: Calculator.astro
+     User-supplied inputs, visible arithmetic. No claims
+     about Elevatek's impact — by design.
+     ════════════════════════════════════════════════════ -->
+<section class="section" id="cost" style="padding-top:0">
+  <div class="wrap">
+    <div class="section-head center reveal">
+      <p class="eyebrow">Run your numbers</p>
+      <h2>What does disagreement cost you?</h2>
+      <p class="lead">Not our estimate. Yours. Three sliders, visible math.</p>
+    </div>
+    <div class="calc reveal">
+      <div class="widget-head">
+        <span class="widget-label">Reconciliation cost</span>
+        <span class="badge-you">Your numbers</span>
+      </div>
+      <div class="crow">
+        <label for="c-people">People who touch revenue reporting <output id="o-people">3</output></label>
+        <input type="range" id="c-people" min="1" max="15" value="3">
+      </div>
+      <div class="crow">
+        <label for="c-hours">Hours each spends per week reconciling <output id="o-hours">4</output></label>
+        <input type="range" id="c-hours" min="1" max="20" value="4">
+      </div>
+      <div class="crow">
+        <label for="c-rate">Loaded cost per hour <output id="o-rate">$85</output></label>
+        <input type="range" id="c-rate" min="40" max="250" step="5" value="85">
+      </div>
+      <div class="ctotal" aria-live="polite">
+        <b id="c-total">$48,960</b>
+        <span>per year, just making the numbers agree</span>
+      </div>
+      <p class="cmath" id="c-math">3 people × 4 h/week × $85 × 48 weeks</p>
+      <p class="wnote">the strategy session costs none of this.</p>
+      <a class="btn btn-light" href="/contact?type=session">Book the free session</a>
+    </div>
+  </div>
+</section>
+
+<script is:inline>
+// Reconciliation-cost calculator
+const cp = document.getElementById('c-people');
+const ch = document.getElementById('c-hours');
+const cr = document.getElementById('c-rate');
+if (cp && ch && cr) {
+  const recalc = () => {
+    const p = +cp.value, h = +ch.value, r = +cr.value;
+    document.getElementById('o-people').textContent = p;
+    document.getElementById('o-hours').textContent = h;
+    document.getElementById('o-rate').textContent = '$' + r;
+    const total = p * h * r * 48;
+    document.getElementById('c-total').textContent = '$' + total.toLocaleString('en-US');
+    document.getElementById('c-math').textContent =
+      p + (p === 1 ? ' person' : ' people') + ' × ' + h + ' h/week × $' + r + ' × 48 weeks';
+  };
+  [cp, ch, cr].forEach(el => el.addEventListener('input', recalc));
+}
+</script>

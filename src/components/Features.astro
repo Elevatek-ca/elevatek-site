@@ -1,0 +1,100 @@
+<!-- ════════════════════════════════════════════════════
+     COMPONENT: Features.astro
+     ════════════════════════════════════════════════════ -->
+<section class="section" style="padding-top:0">
+  <div class="wrap">
+
+    <div class="feature reveal">
+      <div class="feature-copy">
+        <p class="eyebrow">Salesforce implementation</p>
+        <h3>Implemented like you'll live in it. Because you will.</h3>
+        <p class="lead">A Salesforce org outlives the project that built it. We architect for the team you'll have in three years: a clean data model, automation your admins can read, and AI features with something real to work with.</p>
+        <div class="chip-row">
+          <span class="chip">ai-ready data</span>
+          <span class="chip">documented builds</span>
+          <span class="chip">admin-friendly</span>
+        </div>
+        <!-- Optional cross-link to the sister practice. Set the real URL or delete. -->
+        <div class="sister">
+          Drowning in dirty data first? Our sister practice, <a href="#">Resoluble</a>, scores and cleans Salesforce orgs before anything new gets built on top.
+        </div>
+      </div>
+      <div class="feature-art dark">
+        <div class="widget-head">
+          <span class="widget-label">Build report</span>
+          <span class="badge-sample">Sample</span>
+        </div>
+        <p class="widget-sub">acme-corp · sprint 6 of 8</p>
+        <div class="brow">
+          <div class="brow-top"><span class="brow-name"><b>01</b>data model</span><span class="st done">shipped</span></div>
+          <div class="bar"><i style="--w:100%;--c:var(--good)"></i></div>
+        </div>
+        <div class="brow">
+          <div class="brow-top"><span class="brow-name"><b>02</b>automation</span><span class="st done">shipped</span></div>
+          <div class="bar"><i style="--w:100%;--c:var(--good)"></i></div>
+        </div>
+        <div class="brow">
+          <div class="brow-top"><span class="brow-name"><b>03</b>integrations</span><span class="st doing">in progress</span></div>
+          <div class="bar"><i style="--w:62%;--c:#6E89FF"></i></div>
+        </div>
+        <div class="brow">
+          <div class="brow-top"><span class="brow-name"><b>04</b>ai layer</span><span class="st next">queued</span></div>
+          <div class="bar"><i style="--w:0%"></i></div>
+        </div>
+        <p class="wnote">build order: bottom up. ai ships last, on purpose.</p>
+      </div>
+    </div>
+
+    <div class="feature flip reveal">
+      <div class="feature-copy">
+        <p class="eyebrow">Solution architecture</p>
+        <h3>Architecture before automation.</h3>
+        <p class="lead">Most broken stacks were automated too early. We map your objects, integrations, and ownership first, so every flow you add later has a foundation under it. It's the boring work that makes everything after it cheap.</p>
+        <div class="chip-row">
+          <span class="chip">integration mapping</span>
+          <span class="chip">ownership defined</span>
+          <span class="chip">scales with you</span>
+        </div>
+      </div>
+      <div class="feature-art dark">
+        <div class="widget-head">
+          <span class="widget-label">Sync audit</span>
+          <span class="badge-sample">Sample</span>
+        </div>
+        <p class="widget-sub">acme-corp · crm ↔ erp</p>
+        <svg class="wmap" viewBox="0 0 480 76" role="img" aria-label="A CRM and an ERP exchanging data in both directions">
+          <line class="sync-line" x1="178" y1="28" x2="294" y2="28"/>
+          <polygon points="302,28 290,22 290,34" fill="#6E89FF"/>
+          <line class="sync-line" x1="302" y1="50" x2="186" y2="50"/>
+          <polygon points="178,50 190,44 190,56" fill="#6E89FF"/>
+          <rect class="wmap-node hub" x="24" y="16" width="150" height="46" rx="10"/>
+          <text class="t" x="99" y="44" text-anchor="middle">crm</text>
+          <rect class="wmap-node" x="306" y="16" width="150" height="46" rx="10"/>
+          <text class="t" x="381" y="44" text-anchor="middle">erp</text>
+        </svg>
+        <div class="brow slim">
+          <div class="brow-top"><span class="brow-name">customers &amp; accounts</span><span class="st done">synced</span></div>
+        </div>
+        <div class="brow slim">
+          <div class="brow-top"><span class="brow-name">products &amp; pricing</span><span class="st done">synced</span></div>
+        </div>
+        <div class="brow slim">
+          <div class="brow-top"><span class="brow-name">quotes → orders</span><span class="st warn">manual re-entry</span></div>
+        </div>
+        <div class="brow slim">
+          <div class="brow-top"><span class="brow-name">invoices → crm</span><span class="st warn">manual re-entry</span></div>
+        </div>
+        <div class="brow slim">
+          <div class="brow-top"><span class="brow-name">inventory levels</span><span class="st next">not connected</span></div>
+        </div>
+        <div class="wstats">
+          <div><b>5</b><span>data flows</span></div>
+          <div><b>2</b><span>synced</span></div>
+          <div><b class="warn">3</b><span>by hand</span></div>
+        </div>
+        <p class="wnote">re-keyed data is where the numbers start to disagree.</p>
+      </div>
+    </div>
+
+  </div>
+</section>
