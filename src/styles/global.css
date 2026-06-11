@@ -20,7 +20,7 @@
   --inkline:#232C45;      /* hairlines on dark */
   --display:"Bricolage Grotesque",sans-serif;
   --body:"Instrument Sans",sans-serif;
-  --mono:"JetBrains Mono",monospace;
+  --mono:"IBM Plex Mono",monospace;
   --r:14px;
   --wrap:1140px;
 }
@@ -49,8 +49,8 @@ h3{font-size:clamp(1.35rem,2.2vw,1.7rem);line-height:1.15}
 
 /* Λ eyebrow — the signature label system */
 .eyebrow{
-  font-family:var(--mono);font-size:.78rem;font-weight:500;
-  letter-spacing:.14em;text-transform:uppercase;color:var(--blue);
+  font-family:var(--mono);font-size:.8rem;font-weight:500;
+  letter-spacing:.1em;text-transform:uppercase;color:var(--blue);
   display:inline-flex;align-items:center;gap:.6em;margin-bottom:18px;
 }
 .eyebrow::before{content:"Λ";font-weight:500}
@@ -147,7 +147,7 @@ h3{font-size:clamp(1.35rem,2.2vw,1.7rem);line-height:1.15}
 .logos{background:var(--ink);color:#fff;padding:54px 0}
 .logos-label{
   text-align:center;font-family:var(--mono);font-size:.75rem;
-  letter-spacing:.16em;text-transform:uppercase;color:var(--mist);margin-bottom:34px;
+  letter-spacing:.1em;text-transform:uppercase;color:var(--mist);margin-bottom:34px;
 }
 .logo-row{display:flex;flex-wrap:wrap;justify-content:center;align-items:center;gap:22px 56px}
 .logo-row .client{
@@ -201,8 +201,8 @@ h3{font-size:clamp(1.35rem,2.2vw,1.7rem);line-height:1.15}
 /* ── report widgets (resoluble-style sample dashboards) ── */
 .feature-art.dark{background:var(--ink);border-color:var(--ink);padding:28px;color:#fff}
 .widget-head{display:flex;justify-content:space-between;align-items:center;gap:12px}
-.widget-label{font-family:var(--mono);font-size:.7rem;letter-spacing:.18em;text-transform:uppercase;color:var(--mist)}
-.badge-sample{font-family:var(--mono);font-size:.66rem;letter-spacing:.14em;text-transform:uppercase;color:var(--good);display:inline-flex;align-items:center;gap:.55em}
+.widget-label{font-family:var(--mono);font-size:.7rem;letter-spacing:.1em;text-transform:uppercase;color:var(--mist)}
+.badge-sample{font-family:var(--mono);font-size:.66rem;letter-spacing:.1em;text-transform:uppercase;color:var(--good);display:inline-flex;align-items:center;gap:.55em}
 .badge-sample::before{content:"";width:7px;height:7px;border-radius:50%;background:var(--good)}
 .widget-sub{font-family:var(--mono);font-size:.84rem;color:#E6EAF5;margin:10px 0 8px}
 .brow{border-top:1px solid var(--inkline);padding:13px 0 15px}
@@ -229,7 +229,7 @@ h3{font-size:clamp(1.35rem,2.2vw,1.7rem);line-height:1.15}
 .wstats div{display:grid;gap:3px}
 .wstats b{font-family:var(--display);font-weight:700;font-size:1.4rem;line-height:1}
 .wstats b.warn{color:var(--warn)}
-.wstats span{font-family:var(--mono);font-size:.62rem;letter-spacing:.12em;text-transform:uppercase;color:var(--mist)}
+.wstats span{font-family:var(--mono);font-size:.62rem;letter-spacing:.1em;text-transform:uppercase;color:var(--mist)}
 /* mini visuals inside process steps */
 .mini{margin-top:22px;display:grid;gap:9px}
 .mini-row{display:grid;grid-template-columns:56px 1fr;align-items:center;gap:12px}
@@ -242,7 +242,7 @@ h3{font-size:clamp(1.35rem,2.2vw,1.7rem);line-height:1.15}
 
 /* ── lead-to-cash band ──────────────────────────────── */
 .l2c{background:var(--ink);border-radius:var(--r);padding:30px;color:#fff}
-.l2c-caps{display:flex;justify-content:space-between;gap:12px;font-family:var(--mono);font-size:.64rem;letter-spacing:.14em;text-transform:uppercase;color:var(--mist);margin:18px 0 12px}
+.l2c-caps{display:flex;justify-content:space-between;gap:12px;font-family:var(--mono);font-size:.64rem;letter-spacing:.1em;text-transform:uppercase;color:var(--mist);margin:18px 0 12px}
 .l2c-caps b{color:#9DB1FF;font-weight:500}
 .l2c-rails{display:flex;align-items:stretch;gap:14px}
 .l2c-side{display:flex;flex-wrap:wrap;gap:10px;flex:1;align-content:flex-start}
@@ -261,7 +261,7 @@ h3{font-size:clamp(1.35rem,2.2vw,1.7rem);line-height:1.15}
 
 /* ── reconciliation-cost calculator ─────────────────── */
 .calc{max-width:640px;margin:0 auto;background:var(--ink);border-radius:var(--r);padding:30px 30px 28px;color:#fff}
-.badge-you{font-family:var(--mono);font-size:.66rem;letter-spacing:.14em;text-transform:uppercase;color:#9DB1FF;display:inline-flex;align-items:center;gap:.55em}
+.badge-you{font-family:var(--mono);font-size:.66rem;letter-spacing:.1em;text-transform:uppercase;color:#9DB1FF;display:inline-flex;align-items:center;gap:.55em}
 .badge-you::before{content:"";width:7px;height:7px;border-radius:50%;background:#6E89FF}
 .crow{margin-top:20px}
 .crow label{display:flex;justify-content:space-between;align-items:baseline;gap:14px;font-size:.93rem;font-weight:600}
@@ -304,7 +304,7 @@ h3{font-size:clamp(1.35rem,2.2vw,1.7rem);line-height:1.15}
   padding:34px 30px;display:flex;flex-direction:column;
 }
 .plan-tag{
-  font-family:var(--mono);font-size:.72rem;letter-spacing:.12em;
+  font-family:var(--mono);font-size:.72rem;letter-spacing:.1em;
   text-transform:uppercase;color:var(--slate);margin-bottom:14px;
 }
 .plan-name{font-family:var(--display);font-weight:800;font-size:2.1rem;letter-spacing:-.01em;margin-bottom:6px}
@@ -371,7 +371,7 @@ h3{font-size:clamp(1.35rem,2.2vw,1.7rem);line-height:1.15}
 .foot-grid{display:grid;grid-template-columns:1.4fr 1fr 1fr 1.2fr;gap:48px;margin-bottom:56px}
 .foot-grid h4{
   font-family:var(--mono);font-size:.74rem;font-weight:500;
-  letter-spacing:.14em;text-transform:uppercase;color:var(--slate);margin-bottom:18px;
+  letter-spacing:.1em;text-transform:uppercase;color:var(--slate);margin-bottom:18px;
 }
 .foot-grid ul{list-style:none;display:grid;gap:10px}
 .foot-grid a{text-decoration:none;color:var(--slate);font-size:.95rem}
@@ -477,7 +477,7 @@ h3{font-size:clamp(1.35rem,2.2vw,1.7rem);line-height:1.15}
 .req{position:sticky;top:96px;background:var(--ink);border-radius:var(--r);padding:26px;color:#fff}
 .req-rows{margin-top:14px}
 .req-row{display:flex;justify-content:space-between;gap:16px;border-top:1px solid var(--inkline);padding:11px 0;font-size:.9rem}
-.req-row b{font-family:var(--mono);font-size:.64rem;letter-spacing:.12em;text-transform:uppercase;color:var(--mist);font-weight:500;flex:none;padding-top:.25em}
+.req-row b{font-family:var(--mono);font-size:.64rem;letter-spacing:.1em;text-transform:uppercase;color:var(--mist);font-weight:500;flex:none;padding-top:.25em}
 .req-row span{text-align:right;color:#E6EAF5;font-weight:500}
 .req-row span:empty::before{content:"—";color:var(--mist);font-weight:400}
 /* ── prose pages (privacy / terms) ──────────────────── */
