@@ -110,8 +110,9 @@ import Base from '../layouts/Base.astro';
         <p class="form-error" id="form-error" role="alert">Name and a valid work email, and we're good.</p>
         <p class="form-note">Goes straight to our inbox. A human reads it.</p>
 
-        <div class="sister">
-          Allergic to forms? Email <a href="mailto:info@elevatek.ca">info@elevatek.ca</a> or call <a href="tel:+15149618625">+1 (514) 961-8625</a>. Same humans either way.
+        <div class="sister book">
+          <p class="book-line">Ready to book? <a class="btn btn-primary book-btn" id="calendly-link" href="https://calendly.com/elevatek-consulting/intro-call">Pick a time →</a></p>
+          <p>Email <a href="mailto:info@elevatek.ca">info@elevatek.ca</a> or call <a href="tel:+15149618625">+1 (514) 961-8625</a>. Same humans either way.</p>
         </div>
       </form>
 
@@ -215,6 +216,37 @@ form.addEventListener('submit', async e => {
                     '&body=' + encodeURIComponent(lines.join('\n'));
   }
 });
+
+// ── Calendly popup ──────────────────────────────────────
+// Lazy: no Calendly assets touch the page until the first click. The link's
+// href is the real Calendly URL, so it still works with JS disabled.
+const calendlyUrl = 'https://calendly.com/elevatek-consulting/intro-call';
+const calendlyLink = document.getElementById('calendly-link');
+let calendlyReady = false;
+if (calendlyLink) {
+  calendlyLink.addEventListener('click', e => {
+    e.preventDefault();
+    const openPopup = () => { if (window.Calendly) Calendly.initPopupWidget({ url: calendlyUrl }); };
+    if (calendlyReady) { openPopup(); return; } // assets already injected
+    calendlyReady = true;
+    const css = document.createElement('link');
+    css.rel = 'stylesheet';
+    css.href = 'https://assets.calendly.com/assets/external/widget.css';
+    document.head.appendChild(css);
+    const js = document.createElement('script');
+    js.src = 'https://assets.calendly.com/assets/external/widget.js';
+    js.onload = openPopup;
+    document.body.appendChild(js);
+  });
+}
     </script>
   </Fragment>
 </Base>
+
+<style>
+  /* booking panel — two lines, small-button link */
+  .book{display:flex;flex-direction:column;gap:10px}
+  .book p{margin:0}
+  .book-line{display:flex;align-items:center;gap:12px;flex-wrap:wrap}
+  .book .book-btn{padding:.5em 1.05em;font-size:.9rem}
+</style>
