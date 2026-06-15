@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://elevatek.ca/sitemap-index.xml
+Sitemap: https://www.elevatek.ca/sitemap-index.xml

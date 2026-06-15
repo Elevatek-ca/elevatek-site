@@ -24,10 +24,10 @@ Three steps: assess (a free 30-minute session), design (a roadmap with prioritie
 
 ## Pages
 
-- [Home](https://elevatek.ca/): what we do, how we work, pricing, and FAQ.
-- [Contact](https://elevatek.ca/contact): start a conversation or book a free strategy session.
-- [Privacy policy](https://elevatek.ca/privacy)
-- [Terms of service](https://elevatek.ca/terms)
+- [Home](https://www.elevatek.ca/): what we do, how we work, pricing, and FAQ.
+- [Contact](https://www.elevatek.ca/contact): start a conversation or book a free strategy session.
+- [Privacy policy](https://www.elevatek.ca/privacy)
+- [Terms of service](https://www.elevatek.ca/terms)
 
 ## Contact
 
