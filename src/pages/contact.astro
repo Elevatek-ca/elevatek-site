@@ -26,7 +26,8 @@ import Base from '../layouts/Base.astro';
 
   <section>
     <div class="wrap contact-grid">
-      <form id="form" novalidate>
+      <form id="form" name="contact" method="POST" data-netlify="true" netlify-honeypot="website" novalidate>
+        <input type="hidden" name="form-name" value="contact">
         <div class="fsection">
           <p class="eyebrow">01 · Who's asking</p>
           <div class="fchips">
@@ -197,20 +198,19 @@ form.addEventListener('submit', async e => {
     d.message
   ];
 
-  if (FORM_ENDPOINT) {
-    try {
-      const res = await fetch(FORM_ENDPOINT, {
-        method: 'POST',
-        headers: { 'Content-Type': 'application/json', 'Accept': 'application/json' },
-        body: JSON.stringify(d)
-      });
-      if (!res.ok) throw new Error();
-      form.outerHTML = '<div class="sent"><h2>Got it.</h2><p>A human will read this and reply with next steps. Talk soon.</p></div>';
-    } catch {
-      err.textContent = "That didn't go through. Email us directly: info@elevatek.ca";
-      err.classList.add('show');
-    }
-  } else {
+  // Netlify Forms is the primary path: POST url-encoded (including form-name and
+  // the honeypot) to "/". FORM_ENDPOINT, if ever set, overrides the target. The
+  // mailto compose stays as the failure fallback (catch). read()/summary/preselect
+  // and the honeypot guard above are untouched.
+  try {
+    const res = await fetch(FORM_ENDPOINT || '/', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
+      body: new URLSearchParams(new FormData(form)).toString()
+    });
+    if (!res.ok) throw new Error();
+    form.outerHTML = '<div class="sent"><h2>Got it.</h2><p>A human will read this and reply with next steps. Talk soon.</p></div>';
+  } catch {
     const subject = 'Elevatek — ' + (d.engagement || 'inquiry') + (d.company ? ' — ' + d.company : '');
     location.href = 'mailto:info@elevatek.ca?subject=' + encodeURIComponent(subject) +
                     '&body=' + encodeURIComponent(lines.join('\n'));
