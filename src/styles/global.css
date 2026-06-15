@@ -534,9 +534,11 @@ h3{font-size:clamp(1.35rem,2.2vw,1.7rem);line-height:1.15}
 .consent-title{font-family:var(--display);font-weight:700;font-size:1.12rem;margin-bottom:8px}
 .consent-body{color:var(--mist);font-size:.92rem;line-height:1.55}
 .consent-body a{color:#9DB1FF;text-decoration:underline}
-.consent-actions{display:flex;flex-wrap:wrap;align-items:center;gap:10px;margin-top:18px}
-.consent-actions .btn{padding:.6em 1.3em;font-size:.92rem}
-.consent-more{background:none;border:0;color:var(--mist);font:inherit;font-size:.9rem;cursor:pointer;text-decoration:underline;text-underline-offset:2px;padding:.6em .4em;margin-left:auto}
+.consent-actions{display:flex;align-items:center;gap:10px;margin-top:18px}
+.consent-actions .btn{flex:1 1 0;padding:.6em 1.3em;font-size:.92rem;justify-content:center}
+/* Customise: a quiet secondary text link below the two equal buttons — not a third button. */
+.consent-customise{margin-top:12px}
+.consent-more{background:none;border:0;color:var(--mist);font:inherit;font-size:.82rem;cursor:pointer;text-decoration:underline;text-underline-offset:2px;padding:0}
 .consent-more:hover{color:#fff}
 .consent-panel{margin-top:16px;padding-top:16px;border-top:1px solid var(--inkline);display:grid;gap:14px}
 .consent-panel[hidden]{display:none}
@@ -549,6 +551,4 @@ h3{font-size:clamp(1.35rem,2.2vw,1.7rem);line-height:1.15}
 @media (max-width:520px){
   .consent{padding:10px}
   .consent-actions{gap:8px}
-  .consent-actions .btn{flex:1 1 auto;justify-content:center}
-  .consent-more{margin-left:0;width:100%;text-align:center}
 }
