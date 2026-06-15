@@ -241,12 +241,15 @@ h3{font-size:clamp(1.35rem,2.2vw,1.7rem);line-height:1.15}
 .wk.now{color:#9DB1FF;border-color:#3D4A77;background:rgba(126,150,255,.08)}
 
 /* ── lead-to-cash band ──────────────────────────────── */
-.l2c{background:var(--ink);border-radius:var(--r);padding:30px;color:#fff}
+.l2c{background:var(--ink);border-radius:var(--r);padding:30px;color:#fff;--l2c-seam:7rem;--l2c-erp:26.5rem}
 .l2c-rails{display:flex;align-items:stretch;gap:10px;margin-top:18px}
-/* swim lanes: ownership is a property of the lane */
-.l2c-lane{flex:1;min-width:0;padding:14px;border-radius:12px;display:flex;flex-direction:column;gap:12px}
-.l2c-lane.crm{background:rgba(110,137,255,.07);border:1px solid rgba(110,137,255,.18)}
-.l2c-lane.erp{background:rgba(255,255,255,.03);border:1px solid var(--inkline)}
+/* swim lanes: ownership is a property of the lane.
+   CRM's labels run longer, so CRM takes the slack (flex-grow) while ERP is
+   content-floored to a fixed track that never wraps. The leak row below
+   reuses --l2c-seam / --l2c-erp so its notes stay anchored to these tracks. */
+.l2c-lane{min-width:0;padding:14px;border-radius:12px;display:flex;flex-direction:column;gap:12px}
+.l2c-lane.crm{flex:1 1 0;background:rgba(110,137,255,.07);border:1px solid rgba(110,137,255,.18)}
+.l2c-lane.erp{flex:0 0 var(--l2c-erp);background:rgba(255,255,255,.03);border:1px solid var(--inkline)}
 .l2c-cap{font-family:var(--mono);font-size:.64rem;letter-spacing:.1em;text-transform:uppercase;color:var(--mist)}
 .l2c-cap b{color:#9DB1FF;font-weight:500}
 .l2c-side{display:flex;flex-wrap:wrap;align-items:center;gap:8px}
@@ -259,18 +262,20 @@ h3{font-size:clamp(1.35rem,2.2vw,1.7rem);line-height:1.15}
 .l2c-lane.crm .sep{color:#C3D0FF;opacity:.5}
 .l2c-lane.erp .sep{color:#C6CFE6;opacity:.5}
 /* the seam: dashed amber line with the focal chip knocking it out */
-.l2c-seam{position:relative;display:flex;align-items:center;justify-content:center;padding:0 8px}
+.l2c-seam{flex:0 0 var(--l2c-seam);position:relative;display:flex;align-items:center;justify-content:center}
 .l2c-seam::before{content:"";position:absolute;top:0;bottom:0;left:50%;transform:translateX(-50%);border-left:2px dashed var(--warn)}
 .l2c-seam-chip{position:relative;z-index:1;background:var(--ink);border:1px solid var(--warn);color:var(--warn);font-family:var(--mono);font-size:.58rem;font-weight:500;letter-spacing:.1em;text-transform:uppercase;padding:.5em .75em;border-radius:999px;white-space:nowrap}
-/* leak notes anchored under their locations, each with a tick upward */
-.l2c-leaks{display:grid;grid-template-columns:1fr 1fr 1fr;gap:8px 20px;margin-top:16px}
-.l2c-leaks .leak{position:relative;padding-top:15px;font-family:var(--mono);font-size:.64rem;letter-spacing:.04em;color:var(--warn);max-width:18em}
+/* leak notes anchored under their locations, each with a tick upward.
+   The row mirrors the rail tracks (same flex bases) so: start=CRM lane,
+   mid=seam (centered on it), end=ERP lane (right edge). */
+.l2c-leaks{display:flex;gap:10px;margin-top:16px}
+.l2c-leaks .leak{position:relative;padding-top:15px;font-family:var(--mono);font-size:.64rem;letter-spacing:.04em;color:var(--warn)}
 .l2c-leaks .leak::before{content:"";position:absolute;top:0;height:10px;border-left:1px dashed var(--warn)}
-.l2c-leaks .leak.start{justify-self:start;text-align:left}
+.l2c-leaks .leak.start{flex:1 1 0;min-width:0;text-align:left}
 .l2c-leaks .leak.start::before{left:0}
-.l2c-leaks .leak.mid{justify-self:center;text-align:center}
+.l2c-leaks .leak.mid{flex:0 0 var(--l2c-seam);min-width:0;text-align:center;white-space:nowrap}
 .l2c-leaks .leak.mid::before{left:50%}
-.l2c-leaks .leak.end{justify-self:end;text-align:right}
+.l2c-leaks .leak.end{flex:0 0 var(--l2c-erp);text-align:right}
 .l2c-leaks .leak.end::before{right:0}
 .l2c-tools{display:flex;flex-wrap:wrap;gap:8px;margin-top:18px;padding-top:16px;border-top:1px solid var(--inkline)}
 .l2c-tools .chip{background:#121A38;color:var(--mist);border:1px solid var(--inkline)}
@@ -429,10 +434,11 @@ h3{font-size:clamp(1.35rem,2.2vw,1.7rem);line-height:1.15}
 }
 @media (max-width:900px){
   .l2c-rails{flex-direction:column;gap:0}
-  .l2c-seam{padding:12px 0}
+  .l2c-lane.crm,.l2c-lane.erp{flex:0 0 auto}
+  .l2c-seam{flex:0 0 auto;padding:12px 0}
   .l2c-seam::before{top:50%;bottom:auto;left:0;right:0;transform:translateY(-50%);border-left:0;border-top:2px dashed var(--warn)}
-  .l2c-leaks{grid-template-columns:1fr;gap:12px}
-  .l2c-leaks .leak.start,.l2c-leaks .leak.mid,.l2c-leaks .leak.end{justify-self:start;text-align:left}
+  .l2c-leaks{flex-direction:column;gap:12px}
+  .l2c-leaks .leak.start,.l2c-leaks .leak.mid,.l2c-leaks .leak.end{flex:0 0 auto;text-align:left;white-space:normal}
   .l2c-leaks .leak.mid::before,.l2c-leaks .leak.end::before{left:0;right:auto}
   .hero .wrap{grid-template-columns:1fr;gap:48px}
   .feature{grid-template-columns:1fr;gap:36px;padding:48px 0}
