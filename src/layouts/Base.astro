@@ -109,7 +109,9 @@ const a = home ? '' : '/';
         <div>
           <h4>One RevOps tip a month</h4>
           {home && <Fragment set:html={`<!-- Newsletter form: wire \`action\` to your provider (the current site already has one running). -->`} />}
-          <form class="news-form" action="#" method="post">
+          <form class="news-form" name="newsletter" method="POST" action="/" data-netlify="true" netlify-honeypot="bot-field">
+            <input type="hidden" name="form-name" value="newsletter">
+            <p class="hp" aria-hidden="true"><label>Leave this empty<input name="bot-field" tabindex="-1" autocomplete="off"></label></p>
             <input type="email" name="email" placeholder="Email address" required aria-label="Email address">
             <button class="btn btn-primary" type="submit">Subscribe</button>
           </form>
@@ -126,6 +128,31 @@ const a = home ? '' : '/';
 )}
 
 <script is:inline src="/app.js"></script>
+<script is:inline>
+// Newsletter -> Netlify Forms. Static markup (data-netlify + form-name) is what
+// Netlify detects at deploy; this posts url-encoded (incl. form-name + honeypot)
+// to "/". Present only where the full footer renders; guarded for the others.
+(() => {
+  const nf = document.querySelector('.news-form');
+  if (!nf) return;
+  nf.addEventListener('submit', async e => {
+    e.preventDefault();
+    try {
+      const res = await fetch('/', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
+        body: new URLSearchParams(new FormData(nf)).toString()
+      });
+      if (!res.ok) throw new Error();
+      nf.outerHTML = "<p class='news-note'>Thanks — you're on the list.</p>";
+    } catch {
+      let err = nf.parentElement.querySelector('.news-err');
+      if (!err) { err = document.createElement('p'); err.className = 'news-note news-err'; err.style.color = '#B4400E'; nf.after(err); }
+      err.textContent = "That didn't go through. Please try again.";
+    }
+  });
+})();
+</script>
 <slot name="body-end" />
 </body>
 </html>
