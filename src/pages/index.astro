@@ -12,19 +12,9 @@ import Testimonials from '../components/Testimonials.astro';
 import Faq from '../components/Faq.astro';
 import Closer from '../components/Closer.astro';
 
-// Head extras are injected via set:html so the structured-data note (an HTML
-// comment) survives the build verbatim — Astro strips comments that sit
-// directly inside a named <Fragment slot> otherwise.
-const ogHead = `<!-- Open Graph -->
-<meta property="og:type" content="website">
-<meta property="og:title" content="Elevatek — GTM systems consultancy">
-<meta property="og:description" content="Salesforce, HubSpot, and Marketing Cloud, wired together so your pipeline numbers stop arguing. Canadian, serving the Americas and Europe.">
-<meta property="og:url" content="https://elevatek.ca/">
-<meta property="og:locale" content="en_CA">
-<meta property="og:locale:alternate" content="fr_CA">
-
-<link rel="canonical" href="https://elevatek.ca/">`;
-
+// JSON-LD is injected via set:html so its leading HTML comment survives the build
+// (Astro strips comments inside named slots otherwise). Canonical + Open Graph now
+// come from Base props.
 const structuredData = `<!-- Structured data: verified NAP only. Add sameAs (LinkedIn) when ready. -->
 <script type="application/ld+json">
 {
@@ -50,11 +40,13 @@ const structuredData = `<!-- Structured data: verified NAP only. Add sameAs (Lin
 </script>`;
 ---
 <Base
-  title="Elevatek — GTM systems consultancy. Salesforce, HubSpot, Marketing Cloud."
-  description="Elevatek designs, builds, and runs GTM systems for B2B teams. Salesforce, HubSpot, and Marketing Cloud, wired together so your pipeline numbers stop arguing. A Canadian consultancy serving the Americas and Europe, in French and English."
+  title="GTM systems consultancy — Salesforce & HubSpot | Elevatek"
+  description="Elevatek is a Canadian GTM systems consultancy. We design, build, and run Salesforce, HubSpot, and Marketing Cloud so your revenue numbers finally agree."
+  canonical="https://elevatek.ca/"
+  ogTitle="Elevatek — GTM systems consultancy"
+  ogDescription="Salesforce, HubSpot, and Marketing Cloud, wired together so your pipeline numbers stop arguing. Canadian, serving the Americas and Europe."
   home={true}
 >
-  <Fragment slot="head" set:html={ogHead} />
   <Fragment slot="head-end" set:html={structuredData} />
 
   <Hero />
