@@ -12,28 +12,51 @@ import Base from '../layouts/Base.astro';
     <h1>Privacy policy</h1>
   </div></section>
   <div class="wrap"><div class="page">
-    <p class="updated">Draft — last updated June 2026</p>
-    <div class="flag">Draft for review. Confirm with counsel before launch, and fill in the form provider and analytics tool once chosen.</div>
+    <!-- INTERNAL: counsel review pending before launch. Confirm subprocessor names,
+         data residency, and cookie/analytics status. Remove this comment once a
+         lawyer has signed off. -->
+    <p class="updated">Last updated: June 2026</p>
+
+    <p>This policy explains what personal information we handle through this website, why we handle it, and the choices you have. It covers the website only. Work we do under a signed engagement is also governed by that agreement.</p>
 
     <h2>Who we are</h2>
-    <p>Elevatek is a trade name of Elevatek Consulting Inc., a company incorporated in Québec, Canada. For anything privacy-related, write to <a href="mailto:info@elevatek.ca">info@elevatek.ca</a>. Our designated privacy officer can be reached at the same address.</p>
+    <p>Elevatek is a trade name of Elevatek Consulting Inc., a go-to-market systems consultancy incorporated in Québec, Canada. We decide why and how your information is handled, which makes us responsible for it under Canadian privacy law. For anything privacy-related, email <a href="mailto:info@elevatek.ca">info@elevatek.ca</a>. Our privacy officer can be reached at the same address.</p>
 
-    <h2>What we collect</h2>
-    <p>When you use the contact form, we receive what you typed: your name, work email, company, role, stack details, and your message. When you subscribe to the newsletter, we keep your email address. Our hosting provider keeps standard server logs. If you book a call, scheduling runs through Calendly, which receives the details you enter there. <!-- TODO: name the form provider and analytics tool here once chosen --></p>
+    <h2>What information we collect</h2>
+    <p><b>Information you give us.</b> When you use the contact form, we receive what you type: your name, work email, company, role, the tools in your stack, and your message. When you subscribe to the newsletter, we keep your email address. If you book a call, you enter your details in our scheduling tool to set up the meeting.</p>
+    <p><b>Information collected automatically.</b> Our hosting provider, Netlify, keeps standard server logs for visits to the site. These can include your IP address, browser type, the pages you open, and the date and time. We use them to keep the site running and secure, not to identify you.<!-- TODO: name the form provider and analytics tool here once chosen --></p>
 
     <h2>Why we collect it</h2>
-    <p>To reply to you, to scope and deliver consulting work you ask us about, and to send the newsletter you signed up for. We don't sell or rent your information, and we don't use it for advertising.</p>
+    <p>We use your information to reply to you, to scope and deliver the consulting work you ask us about, and to send the newsletter you signed up for. That is all we use it for. We don't sell or rent your information, and we don't use it for advertising.</p>
+
+    <h2>Who we share it with</h2>
+    <p>We don't share your information except with the service providers that help us run the site and our work. Each one only processes your data to provide its service to us, and only as far as that needs.</p>
+    <ul>
+      <li><b>Hosting and forms:</b> Netlify hosts the site and receives contact-form and newsletter submissions through Netlify Forms.</li>
+      <li><b>Email and newsletter delivery:</b> a dedicated provider is not yet in place; for now, newsletter sign-ups are held with the form submissions above. <!-- TODO: name the email/newsletter provider once chosen and describe what it receives --></li>
+      <li><b>Scheduling:</b> if you book a call, Calendly receives the details you enter to arrange the meeting.</li>
+    </ul>
+    <!-- TODO: confirm the full subprocessor list before launch — Netlify (hosting + forms),
+         the email/newsletter provider once chosen, and Calendly — and link each one's terms. -->
 
     <h2>How long we keep it</h2>
-    <p>Contact submissions are kept as long as needed to handle your request and any engagement that follows. Newsletter emails are kept until you unsubscribe, which you can do from any issue.</p>
+    <p>We keep contact submissions for as long as we need them to handle your request and any engagement that follows, then dispose of them. We keep newsletter emails until you unsubscribe, which you can do from any issue.</p>
 
-    <h2>Your rights</h2>
-    <p>Under PIPEDA and Québec's Law 25, you can ask what personal information we hold about you, ask us to correct it, or ask us to delete it. Email <a href="mailto:info@elevatek.ca">info@elevatek.ca</a> and we'll handle it.</p>
+    <h2>Where it's processed</h2>
+    <p>Some of our providers may store or process your information outside Canada, including in the United States. Québec's Law 25 asks us to tell you when that can happen, so we're telling you here. If you'd like more detail before you send us anything, email us first.</p>
+    <!-- TODO: confirm each provider's data-residency / processing region (Netlify, Calendly,
+         and the email provider) and state it here once verified. -->
+
+    <h2>Your rights under PIPEDA and Law 25</h2>
+    <p>Under Canada's PIPEDA and Québec's Law 25, you can ask what personal information we hold about you, ask us to correct it, ask us to delete it, and withdraw a consent you gave us — for example, by unsubscribing. To exercise any of these, email <a href="mailto:info@elevatek.ca">info@elevatek.ca</a>. We'll confirm your identity, respond within the time the law allows, and tell you if there's any reason we can't act on a request.</p>
 
     <h2>Cookies</h2>
-    <p>This site works without tracking cookies. <!-- TODO: update if analytics is added; Law 25 requires consent for non-essential cookies --></p>
+    <p>This site uses no tracking cookies and no advertising cookies, and we don't profile you across other sites. <!-- TODO: update if analytics is added; Law 25 requires consent for non-essential cookies --></p>
 
     <h2>Changes</h2>
-    <p>If this policy changes, the date above changes with it.</p>
+    <p>If this policy changes, we'll update it here and change the effective date at the top. A meaningful change will be clear from that date.</p>
+
+    <h2>Contact</h2>
+    <p>Questions about your privacy or about this policy? Email our privacy officer at <a href="mailto:info@elevatek.ca">info@elevatek.ca</a> and we'll help.</p>
   </div></div>
 </Base>
