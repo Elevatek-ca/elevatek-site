@@ -1,0 +1,36 @@
+# Elevatek
+
+> Elevatek is a Canadian go-to-market (GTM) systems consultancy. We design, build, and run Salesforce, HubSpot, and Marketing Cloud for B2B teams so their revenue numbers agree. We work remotely with clients across the Americas and Europe, in English and French.
+
+Elevatek is a trade name of Elevatek Consulting Inc., incorporated in Québec, Canada. Every engagement starts by looking at what you already have before proposing what to buy.
+
+## Services
+
+- Fractional RevOps — senior operations capacity without the senior hire; we join your standups, own a backlog, and ship weekly.
+- GTM process design — lead-to-cash mapped end to end, fixing where deals leak between marketing, sales, and service.
+- Data integration — your CRM, marketing platform, and warehouse all reporting the same numbers.
+- Salesforce implementation — a clean data model and automation your admins can read, documented and built to last.
+- Team coaching — training your admins so they need us less.
+
+## How we work
+
+Three steps: assess (a free 30-minute session), design (a roadmap with priorities, owners, and price tags), then build and run (weekly increments, documented, with your team trained on every handover).
+
+## Pricing
+
+- Free 30-minute strategy session — an honest read on your current stack, no obligation.
+- Hourly — flexible, pay as you go, no statement of work required.
+- Retainer — three-month minimum, a managed backlog shipped weekly.
+
+## Pages
+
+- [Home](https://elevatek.ca/): what we do, how we work, pricing, and FAQ.
+- [Contact](https://elevatek.ca/contact): start a conversation or book a free strategy session.
+- [Privacy policy](https://elevatek.ca/privacy)
+- [Terms of service](https://elevatek.ca/terms)
+
+## Contact
+
+- Email: info@elevatek.ca
+- Phone: +1 (514) 961-8625
+- Based in Québec, Canada; serving the Americas and Europe in English and French.
