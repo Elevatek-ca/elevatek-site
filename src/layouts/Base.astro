@@ -206,7 +206,8 @@ const a = home ? '' : '/';
 // the visitor accepts analytics — never on page load. Before consent and on decline
 // there are zero GA cookies and zero googletagmanager/google-analytics requests.
 (() => {
-  const KEY = 'elevatek-consent';        // stored choice: 'accepted' | 'declined'
+  const KEY = 'elevatek-consent';            // persistent choice: 'accepted' | 'declined'
+  const DISMISS_KEY = 'elevatek-consent-dismissed'; // session-only dismiss (records no choice)
   const GA_ID = 'G-2J6WPHDXZQ';
   const banner = document.getElementById('consent');
   if (!banner) return;
@@ -217,6 +218,10 @@ const a = home ? '' : '/';
 
   const read = () => { try { return localStorage.getItem(KEY); } catch (e) { return null; } };
   const save = (v) => { try { localStorage.setItem(KEY, v); } catch (e) {} };
+  // Session-only dismiss (Esc / ask-me-later): sessionStorage, never the consent key.
+  const dismissedThisSession = () => { try { return sessionStorage.getItem(DISMISS_KEY) === '1'; } catch (e) { return false; } };
+  const markDismissed = () => { try { sessionStorage.setItem(DISMISS_KEY, '1'); } catch (e) {} };
+  let lastTrigger = null; // element that opened the banner, for focus return
 
   function loadGA() {
     if (gaLoaded) return; gaLoaded = true;
@@ -235,13 +240,25 @@ const a = home ? '' : '/';
   }
 
   function closePanel() { if (panel) panel.hidden = true; if (moreBtn) moreBtn.setAttribute('aria-expanded', 'false'); }
-  function showBanner() { banner.hidden = false; closePanel(); if (toggle) toggle.checked = (read() === 'accepted'); }
-  function decide(choice) { save(choice); if (choice === 'accepted') loadGA(); banner.hidden = true; closePanel(); }
+  function returnFocus() {
+    // banner is about to hide; if focus sits inside it, move somewhere sane
+    if (!banner.contains(document.activeElement)) return;
+    if (lastTrigger && lastTrigger.isConnected) lastTrigger.focus();
+    else if (document.activeElement && document.activeElement.blur) document.activeElement.blur();
+  }
+  function showBanner(trigger) { lastTrigger = trigger || null; banner.hidden = false; closePanel(); if (toggle) toggle.checked = (read() === 'accepted'); }
+  function decide(choice) { save(choice); if (choice === 'accepted') loadGA(); returnFocus(); banner.hidden = true; closePanel(); }
+  // Esc / ask-me-later: hide for this session only — record NO choice, write nothing
+  // to the persistent consent key, and leave GA off (consent stays default-denied).
+  function dismiss() { markDismissed(); returnFocus(); banner.hidden = true; closePanel(); }
 
-  // First paint: honour a stored choice; show the banner only on first visit.
+  // First paint: honour a stored choice; a session-only dismiss suppresses the banner
+  // for this session but records no consent, so it returns on the next visit.
   const saved = read();
   if (saved === 'accepted') loadGA();
-  else if (saved !== 'declined') showBanner();
+  else if (saved === 'declined') { /* persisted refusal: stay off, no banner */ }
+  else if (dismissedThisSession()) { /* dismissed this session: GA stays default-denied */ }
+  else showBanner();
 
   document.addEventListener('click', (e) => {
     const el = e.target.closest('[data-consent]'); if (!el) return;
@@ -255,7 +272,25 @@ const a = home ? '' : '/';
       panel.hidden = !opening;
       if (moreBtn) moreBtn.setAttribute('aria-expanded', String(opening));
       if (toggle) toggle.checked = (read() === 'accepted');
-    } else if (action === 'reopen') { e.preventDefault(); showBanner(); }
+    } else if (action === 'reopen') {
+      e.preventDefault();
+      showBanner(el);
+      const accept = banner.querySelector('[data-consent="accept"]');
+      if (accept) accept.focus();
+    }
+  });
+
+  // Esc dismisses the banner (privacy-protective; in addition to the visible
+  // buttons, not a replacement). If the Customise panel is open, Esc steps back to
+  // the banner first; otherwise it dismisses for this session only.
+  document.addEventListener('keydown', (e) => {
+    if (e.key !== 'Escape' || banner.hidden) return;
+    if (panel && !panel.hidden) {
+      closePanel();
+      if (moreBtn) moreBtn.focus();
+    } else {
+      dismiss();
+    }
   });
 })();
 </script>
