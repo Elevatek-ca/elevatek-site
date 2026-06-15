@@ -526,3 +526,29 @@ h3{font-size:clamp(1.35rem,2.2vw,1.7rem);line-height:1.15}
   .req{position:static}
   .frow{grid-template-columns:1fr}
 }
+/* ── cookie consent banner ──────────────────────────── */
+.consent{position:fixed;left:0;right:0;bottom:0;z-index:90;display:flex;justify-content:center;padding:16px}
+.consent[hidden]{display:none}
+.consent-card{background:var(--ink);color:#fff;border:1px solid var(--inkline);border-radius:var(--r);padding:22px 24px;max-width:540px;width:100%;box-shadow:0 12px 44px rgba(0,0,0,.4)}
+.consent-label{font-family:var(--mono);font-size:.62rem;letter-spacing:.1em;text-transform:uppercase;color:var(--mist);margin-bottom:8px}
+.consent-title{font-family:var(--display);font-weight:700;font-size:1.12rem;margin-bottom:8px}
+.consent-body{color:var(--mist);font-size:.92rem;line-height:1.55}
+.consent-body a{color:#9DB1FF;text-decoration:underline}
+.consent-actions{display:flex;flex-wrap:wrap;align-items:center;gap:10px;margin-top:18px}
+.consent-actions .btn{padding:.6em 1.3em;font-size:.92rem}
+.consent-more{background:none;border:0;color:var(--mist);font:inherit;font-size:.9rem;cursor:pointer;text-decoration:underline;text-underline-offset:2px;padding:.6em .4em;margin-left:auto}
+.consent-more:hover{color:#fff}
+.consent-panel{margin-top:16px;padding-top:16px;border-top:1px solid var(--inkline);display:grid;gap:14px}
+.consent-panel[hidden]{display:none}
+.consent-toggle{display:flex;justify-content:space-between;align-items:center;gap:18px;cursor:pointer}
+.consent-toggle b{display:block;font-size:.95rem}
+.consent-toggle .consent-toggle-sub{color:var(--mist);font-size:.82rem}
+.consent-toggle input{flex:none;width:20px;height:20px;accent-color:var(--blue);cursor:pointer}
+.cookie-prefs{background:none;border:0;color:inherit;font:inherit;cursor:pointer;text-decoration:none;padding:0}
+.cookie-prefs:hover{color:var(--ink)}
+@media (max-width:520px){
+  .consent{padding:10px}
+  .consent-actions{gap:8px}
+  .consent-actions .btn{flex:1 1 auto;justify-content:center}
+  .consent-more{margin-left:0;width:100%;text-align:center}
+}

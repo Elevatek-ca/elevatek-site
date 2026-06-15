@@ -101,7 +101,7 @@ const a = home ? '' : '/';
     <div class="wrap">
       <div class="foot-base" style="border-top:0;padding-top:0">
         <span>© <span id="year">2026</span> Elevatek Consulting Inc.</span>
-        <span><a href="/privacy">Privacy</a> · <a href="/terms">Terms</a> · <a href="/contact">Contact</a></span>
+        <span><a href="/privacy">Privacy</a> · <a href="/terms">Terms</a> · <a href="/contact">Contact</a> · <button type="button" class="cookie-prefs" data-consent="reopen">Cookie preferences</button></span>
         <span>Built in Canada.</span>
       </div>
     </div>
@@ -145,12 +145,33 @@ const a = home ? '' : '/';
       </div>
       <div class="foot-base">
         <span>© <span id="year">2026</span> Elevatek Consulting Inc.</span>
-        <span><a href="/privacy">Privacy</a> · <a href="/terms">Terms</a></span>
+        <span><a href="/privacy">Privacy</a> · <a href="/terms">Terms</a> · <button type="button" class="cookie-prefs" data-consent="reopen">Cookie preferences</button></span>
         <span>Built in Canada.</span>
       </div>
     </div>
   </footer>
 )}
+
+<!-- Cookie consent — gates GA4 (Law 25: consent before non-essential cookies). -->
+<aside class="consent" id="consent" role="dialog" aria-labelledby="consent-title" aria-describedby="consent-body" hidden>
+  <div class="consent-card">
+    <p class="consent-label">Cookies</p>
+    <p class="consent-title" id="consent-title">Cookies on this site</p>
+    <p class="consent-body" id="consent-body">We use analytics cookies to understand how the site is used — nothing more. You can accept, decline, or customise. See our <a href="/privacy">privacy policy</a>.</p>
+    <div class="consent-actions">
+      <button type="button" class="btn btn-primary" data-consent="accept">Accept</button>
+      <button type="button" class="btn btn-light" data-consent="decline">Decline</button>
+      <button type="button" class="consent-more" data-consent="customise" aria-expanded="false" aria-controls="consent-panel">Customise</button>
+    </div>
+    <div class="consent-panel" id="consent-panel" hidden>
+      <label class="consent-toggle">
+        <span><b>Analytics</b><span class="consent-toggle-sub">Anonymous usage stats via Google Analytics. Off by default.</span></span>
+        <input type="checkbox" id="consent-analytics">
+      </label>
+      <button type="button" class="btn btn-primary" data-consent="save">Save choices</button>
+    </div>
+  </div>
+</aside>
 
 <script is:inline src="/app.js"></script>
 <script is:inline>
@@ -175,6 +196,64 @@ const a = home ? '' : '/';
       if (!err) { err = document.createElement('p'); err.className = 'news-note news-err'; err.style.color = '#B4400E'; nf.after(err); }
       err.textContent = "That didn't go through. Please try again.";
     }
+  });
+})();
+</script>
+<script is:inline>
+// Cookie consent + GA4 gating (Google Consent Mode v2). GA4 is injected ONLY after
+// the visitor accepts analytics — never on page load. Before consent and on decline
+// there are zero GA cookies and zero googletagmanager/google-analytics requests.
+(() => {
+  const KEY = 'elevatek-consent';        // stored choice: 'accepted' | 'declined'
+  const GA_ID = 'G-2J6WPHDXZQ';
+  const banner = document.getElementById('consent');
+  if (!banner) return;
+  const panel = document.getElementById('consent-panel');
+  const toggle = document.getElementById('consent-analytics');
+  const moreBtn = banner.querySelector('[data-consent="customise"]');
+  let gaLoaded = false;
+
+  const read = () => { try { return localStorage.getItem(KEY); } catch (e) { return null; } };
+  const save = (v) => { try { localStorage.setItem(KEY, v); } catch (e) {} };
+
+  function loadGA() {
+    if (gaLoaded) return; gaLoaded = true;
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    window.gtag = gtag;
+    // Consent Mode v2: all denied by default, only analytics granted on consent.
+    gtag('consent', 'default', { ad_storage: 'denied', ad_user_data: 'denied', ad_personalization: 'denied', analytics_storage: 'denied' });
+    gtag('consent', 'update', { analytics_storage: 'granted' });
+    gtag('js', new Date());
+    gtag('config', GA_ID);
+    const s = document.createElement('script');
+    s.async = true;
+    s.src = 'https://www.googletagmanager.com/gtag/js?id=' + GA_ID;
+    document.head.appendChild(s);
+  }
+
+  function closePanel() { if (panel) panel.hidden = true; if (moreBtn) moreBtn.setAttribute('aria-expanded', 'false'); }
+  function showBanner() { banner.hidden = false; closePanel(); if (toggle) toggle.checked = (read() === 'accepted'); }
+  function decide(choice) { save(choice); if (choice === 'accepted') loadGA(); banner.hidden = true; closePanel(); }
+
+  // First paint: honour a stored choice; show the banner only on first visit.
+  const saved = read();
+  if (saved === 'accepted') loadGA();
+  else if (saved !== 'declined') showBanner();
+
+  document.addEventListener('click', (e) => {
+    const el = e.target.closest('[data-consent]'); if (!el) return;
+    const action = el.getAttribute('data-consent');
+    if (action === 'accept') decide('accepted');
+    else if (action === 'decline') decide('declined');
+    else if (action === 'save') decide(toggle && toggle.checked ? 'accepted' : 'declined');
+    else if (action === 'customise') {
+      if (!panel) return;
+      const opening = panel.hidden;
+      panel.hidden = !opening;
+      if (moreBtn) moreBtn.setAttribute('aria-expanded', String(opening));
+      if (toggle) toggle.checked = (read() === 'accepted');
+    } else if (action === 'reopen') { e.preventDefault(); showBanner(); }
   });
 })();
 </script>
