@@ -15,7 +15,7 @@ import Closer from '../components/Closer.astro';
 // JSON-LD is injected via set:html so its leading HTML comment survives the build
 // (Astro strips comments inside named slots otherwise). Canonical + Open Graph now
 // come from Base props.
-const structuredData = `<!-- Structured data: verified NAP only. Add sameAs (LinkedIn) when ready. -->
+const structuredData = `<!-- Structured data: verified NAP + real on-site assets only. TODO: add sameAs (LinkedIn, etc.) once profile URLs are confirmed; priceRange omitted by choice. -->
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -23,6 +23,8 @@ const structuredData = `<!-- Structured data: verified NAP only. Add sameAs (Lin
   "name": "Elevatek",
   "legalName": "Elevatek Consulting Inc.",
   "url": "https://elevatek.ca/",
+  "logo": "https://elevatek.ca/apple-touch-icon.png",
+  "image": "https://elevatek.ca/og.png",
   "email": "info@elevatek.ca",
   "telephone": "+1-514-961-8625",
   "address": {
@@ -32,6 +34,14 @@ const structuredData = `<!-- Structured data: verified NAP only. Add sameAs (Lin
     "addressRegion": "QC",
     "postalCode": "J0T 2N0",
     "addressCountry": "CA"
+  },
+  "contactPoint": {
+    "@type": "ContactPoint",
+    "contactType": "customer support",
+    "telephone": "+1-514-961-8625",
+    "email": "info@elevatek.ca",
+    "areaServed": ["North America", "South America", "Europe"],
+    "availableLanguage": ["en", "fr"]
   },
   "knowsLanguage": ["en", "fr"],
   "areaServed": ["North America", "South America", "Europe"],
