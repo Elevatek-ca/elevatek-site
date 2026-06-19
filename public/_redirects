@@ -1,0 +1,12 @@
+# 301 redirects for retired URLs from previous versions of the site.
+# Goal: pass link equity to the closest live page and clear them out of
+# Search Console's "Crawled - currently not indexed" bucket.
+#
+# Host canonicalization (www -> apex, http -> https) is handled by Netlify's
+# primary-domain setting, not here. These are path-only rules.
+
+/about                /             301
+/services             /#services    301
+/salesforce-services  /#services    301
+/legal                /privacy      301
+/newsletter           /             301

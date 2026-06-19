@@ -4,7 +4,7 @@ import sitemap from '@astrojs/sitemap';
 
 // https://astro.build/config
 export default defineConfig({
-  site: 'https://www.elevatek.ca',
+  site: 'https://elevatek.ca',
   integrations: [
     sitemap({
       // Keep noindex pages (privacy, terms, 404) out of the sitemap.
