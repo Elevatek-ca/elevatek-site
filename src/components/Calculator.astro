@@ -4,6 +4,10 @@ const lang = Astro.currentLocale;
 const t = useTranslations(lang);
 const lp = (p: string) => localizePath(p, lang);
 const M = t('calculator.js');
+// Initial slider values rendered server-side; keep them locale-consistent with the
+// JS recompute (e.g. "$85" / "$48,960" in en, "85 $" / "48 960 $" in fr).
+const initRate = M.currencyPrefix + 85 + M.currencySuffix;
+const initTotal = M.currencyPrefix + (3 * 4 * 85 * 48).toLocaleString(M.numberLocale) + M.currencySuffix;
 ---
 <!-- ════════════════════════════════════════════════════
      COMPONENT: Calculator.astro
@@ -31,11 +35,11 @@ const M = t('calculator.js');
         <input type="range" id="c-hours" min="1" max="20" value="4">
       </div>
       <div class="crow">
-        <label for="c-rate">{t('calculator.rateLabel')} <output id="o-rate">$85</output></label>
+        <label for="c-rate">{t('calculator.rateLabel')} <output id="o-rate">{initRate}</output></label>
         <input type="range" id="c-rate" min="40" max="250" step="5" value="85">
       </div>
       <div class="ctotal" aria-live="polite">
-        <b id="c-total">$48,960</b>
+        <b id="c-total">{initTotal}</b>
         <span>{t('calculator.totalSuffix')}</span>
       </div>
       <p class="cmath" id="c-math">{t('calculator.mathInitial')}</p>
@@ -55,11 +59,11 @@ if (cp && ch && cr) {
     const p = +cp.value, h = +ch.value, r = +cr.value;
     document.getElementById('o-people').textContent = p;
     document.getElementById('o-hours').textContent = h;
-    document.getElementById('o-rate').textContent = M.currency + r;
+    document.getElementById('o-rate').textContent = M.currencyPrefix + r + M.currencySuffix;
     const total = p * h * r * 48;
-    document.getElementById('c-total').textContent = M.currency + total.toLocaleString(M.numberLocale);
+    document.getElementById('c-total').textContent = M.currencyPrefix + total.toLocaleString(M.numberLocale) + M.currencySuffix;
     document.getElementById('c-math').textContent =
-      p + (p === 1 ? M.person1 : M.personN) + M.mid + h + M.hours + r + M.weeks;
+      p + (p === 1 ? M.person1 : M.personN) + M.mid + h + M.perWeek + M.currencyPrefix + r + M.currencySuffix + M.weeks;
   };
   [cp, ch, cr].forEach(el => el.addEventListener('input', recalc));
 }

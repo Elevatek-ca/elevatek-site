@@ -225,11 +225,12 @@
     "cta": "Book the free session",
     "js": {
       "numberLocale": "en-US",
-      "currency": "$",
+      "currencyPrefix": "$",
+      "currencySuffix": "",
       "person1": " person",
       "personN": " people",
       "mid": " × ",
-      "hours": " h/week × $",
+      "perWeek": " h/week × ",
       "weeks": " × 48 weeks"
     }
   },
