@@ -1,13 +1,17 @@
+---
+import { useTranslations } from '../i18n/utils';
+const t = useTranslations(Astro.currentLocale);
+---
 <!-- ════════════════════════════════════════════════════
      COMPONENT: LogoBand.astro
      NOTE: replace text with licensed client logo SVGs.
      Confirm permission per client before launch — and verify
      whether HubSpot is a client or a partner badge; label
-     accordingly.
+     accordingly. Client names are proper nouns — not translated.
      ════════════════════════════════════════════════════ -->
-<section class="logos" aria-label="Clients">
+<section class="logos" aria-label={t('logos.aria')}>
   <div class="wrap">
-    <p class="logos-label">We've built for teams at</p>
+    <p class="logos-label">{t('logos.label')}</p>
     <!-- CSS renders these white-monochrome (filter: brightness(0) invert(1)). -->
     <div class="logo-row">
       <img class="client" src="/assets/logos/deloitte.png" alt="Deloitte" width="1200" height="261">

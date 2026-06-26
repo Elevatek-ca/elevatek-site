@@ -1,25 +1,22 @@
 ---
-import Base from '../layouts/Base.astro';
-import Hero from '../components/Hero.astro';
-import LogoBand from '../components/LogoBand.astro';
-import LeadToCash from '../components/LeadToCash.astro';
-import Services from '../components/Services.astro';
-import Features from '../components/Features.astro';
-import Process from '../components/Process.astro';
-import Calculator from '../components/Calculator.astro';
-import Pricing from '../components/Pricing.astro';
-import Testimonials from '../components/Testimonials.astro';
-import Faq from '../components/Faq.astro';
-import Closer from '../components/Closer.astro';
-import { useTranslations } from '../i18n/utils';
+import Base from '../../layouts/Base.astro';
+import Hero from '../../components/Hero.astro';
+import LogoBand from '../../components/LogoBand.astro';
+import LeadToCash from '../../components/LeadToCash.astro';
+import Services from '../../components/Services.astro';
+import Features from '../../components/Features.astro';
+import Process from '../../components/Process.astro';
+import Calculator from '../../components/Calculator.astro';
+import Pricing from '../../components/Pricing.astro';
+import Testimonials from '../../components/Testimonials.astro';
+import Faq from '../../components/Faq.astro';
+import Closer from '../../components/Closer.astro';
+import { useTranslations } from '../../i18n/utils';
 
-const lang = Astro.currentLocale ?? 'en';
+const lang = Astro.currentLocale ?? 'fr';
 const t = useTranslations(lang);
 const homeUrl = lang === 'fr' ? 'https://elevatek.ca/fr/' : 'https://elevatek.ca/';
 
-// JSON-LD is injected via set:html so its leading HTML comment survives the build
-// (Astro strips comments inside named slots otherwise). Canonical + Open Graph come
-// from Base props; description + inLanguage are localized.
 const ld = {
   '@context': 'https://schema.org',
   '@type': 'ProfessionalService',

@@ -1,26 +1,32 @@
+---
+import { useTranslations, localizePath } from '../i18n/utils';
+const lang = Astro.currentLocale;
+const t = useTranslations(lang);
+const lp = (p: string) => localizePath(p, lang);
+const proof = t('hero.proof');
+const nodes = t('hero.nodes');
+---
 <!-- ════════════════════════════════════════════════════
      COMPONENT: Hero.astro
      ════════════════════════════════════════════════════ -->
 <section class="hero">
   <div class="wrap">
     <div class="hero-copy">
-      <p class="eyebrow">GTM systems consultancy · Canada</p>
-      <h1>A revenue stack that agrees with itself.</h1>
-      <p class="lead">Your tools each tell a different story. We design, build, and run GTM systems for B2B teams: Salesforce, HubSpot, and Marketing Cloud, wired together so the numbers finally agree and your reps stop fighting the CRM.</p>
+      <p class="eyebrow">{t('hero.eyebrow')}</p>
+      <h1>{t('hero.headline')}</h1>
+      <p class="lead">{t('hero.lead')}</p>
       <div class="hero-cta">
-        <a class="btn btn-primary" href="/contact?type=session">Book a free strategy session</a>
-        <a class="btn btn-ghost" href="#process">See how we work</a>
+        <a class="btn btn-primary" href={lp('/contact?type=session')}>{t('hero.ctaPrimary')}</a>
+        <a class="btn btn-ghost" href="#process">{t('hero.ctaGhost')}</a>
       </div>
       <div class="proof-row">
-        <span>10+ years in the Salesforce ecosystem</span>
-        <span>16 Salesforce certifications</span>
-        <span>Serving the Americas and Europe, in French and English</span>
+        {proof.map((p: string) => <span>{p}</span>)}
       </div>
     </div>
 
     <div class="elevation">
       <svg viewBox="0 0 640 470" role="img" aria-labelledby="elev-title">
-        <title id="elev-title">A step chart climbing from spreadsheets to one source of truth</title>
+        <title id="elev-title">{t('hero.svgTitle')}</title>
         <!-- elevation gridlines -->
         <line class="gridline" x1="0" y1="408" x2="640" y2="408"/>
         <line class="gridline" x1="0" y1="344" x2="640" y2="344"/>
@@ -33,18 +39,18 @@
         <!-- the ascent -->
         <path class="summit-line" d="M28,408 L110,408 L148,344 L238,344 L276,278 L366,278 L404,210 L494,210 L532,140 L606,140"/>
         <!-- stack nodes -->
-        <g class="node"><circle cx="28" cy="408" r="6"/><text x="22" y="432">spreadsheets</text></g>
-        <g class="node"><circle cx="148" cy="344" r="6"/><text x="142" y="368">crm</text></g>
-        <g class="node"><circle cx="276" cy="278" r="6"/><text x="270" y="302">marketing automation</text></g>
-        <g class="node"><circle cx="404" cy="210" r="6"/><text x="398" y="234">billing + service</text></g>
-        <g class="node"><circle cx="532" cy="140" r="6"/><text x="526" y="164">warehouse + bi</text></g>
+        <g class="node"><circle cx="28" cy="408" r="6"/><text x="22" y="432">{nodes[0]}</text></g>
+        <g class="node"><circle cx="148" cy="344" r="6"/><text x="142" y="368">{nodes[1]}</text></g>
+        <g class="node"><circle cx="276" cy="278" r="6"/><text x="270" y="302">{nodes[2]}</text></g>
+        <g class="node"><circle cx="404" cy="210" r="6"/><text x="398" y="234">{nodes[3]}</text></g>
+        <g class="node"><circle cx="532" cy="140" r="6"/><text x="526" y="164">{nodes[4]}</text></g>
         <!-- summit -->
         <g class="summit-flag">
           <path d="M606,134 L598,118 L606,123 L614,118 Z"/>
-          <text x="614" y="106" text-anchor="end">one source of truth</text>
+          <text x="614" y="106" text-anchor="end">{t('hero.summit')}</text>
         </g>
       </svg>
-      <p class="chart-caption">Λ Elevation: GTM maturity</p>
+      <p class="chart-caption">Λ {t('hero.caption')}</p>
     </div>
   </div>
 </section>

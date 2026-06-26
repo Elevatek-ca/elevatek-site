@@ -1,0 +1,510 @@
+{
+  "meta": {
+    "home": {
+      "title": "GTM systems consultancy — Salesforce & HubSpot | Elevatek",
+      "description": "Elevatek is a Canadian GTM systems consultancy. We design, build, and run Salesforce, HubSpot, and Marketing Cloud so your revenue numbers finally agree.",
+      "ogTitle": "Elevatek — GTM systems consultancy",
+      "ogDescription": "Salesforce, HubSpot, and Marketing Cloud, wired together so your pipeline numbers stop arguing. Canadian, serving the Americas and Europe.",
+      "jsonldDescription": "GTM systems consultancy. Salesforce, HubSpot, and Marketing Cloud implementation, integration, and fractional RevOps for B2B teams."
+    },
+    "contact": {
+      "title": "Contact Elevatek — Salesforce & HubSpot consulting",
+      "description": "Tell us what's going on in your stack. Five questions, two minutes, and a human replies with next steps — not a deck. Salesforce, HubSpot, RevOps."
+    },
+    "privacy": {
+      "title": "Privacy policy — Elevatek",
+      "description": "What Elevatek collects, why, and your rights under PIPEDA and Québec's Law 25."
+    },
+    "terms": {
+      "title": "Terms of service — Elevatek",
+      "description": "The terms that govern Elevatek's website and consulting engagements."
+    },
+    "notFound": {
+      "title": "Page not found — Elevatek",
+      "description": "This page is off the map."
+    }
+  },
+
+  "nav": {
+    "skip": "Skip to content",
+    "menu": "Menu",
+    "services": "What we do",
+    "process": "How we work",
+    "pricing": "Pricing",
+    "proof": "Proof",
+    "faq": "FAQ",
+    "cta": "Let's talk"
+  },
+
+  "footer": {
+    "blurb": "A Canadian GTM systems consultancy serving the Americas and Europe. Salesforce, HubSpot, Marketing Cloud.",
+    "exploreTitle": "Explore",
+    "contactTitle": "Contact",
+    "contactLink": "Contact",
+    "newsletterTitle": "One RevOps tip a month",
+    "copyright": "Elevatek Consulting Inc.",
+    "builtIn": "Built in Canada.",
+    "privacy": "Privacy",
+    "terms": "Terms",
+    "cookiePrefs": "Cookie preferences",
+    "news": {
+      "hpLabel": "Leave this empty",
+      "placeholder": "Email address",
+      "button": "Subscribe",
+      "note": "Something you can ship the same week. Unsubscribe anytime.",
+      "success": "Thanks — you're on the list.",
+      "error": "That didn't go through. Please try again."
+    }
+  },
+
+  "consent": {
+    "label": "Cookies",
+    "title": "Cookies on this site",
+    "bodyBefore": "We use analytics cookies to understand how the site is used — nothing more. You can accept, decline, or customise. See our ",
+    "privacyLink": "privacy policy",
+    "bodyAfter": ".",
+    "accept": "Accept",
+    "decline": "Decline",
+    "customise": "Customise",
+    "analyticsTitle": "Analytics",
+    "analyticsSub": "Anonymous usage stats via Google Analytics. Off by default.",
+    "save": "Save choices"
+  },
+
+  "hero": {
+    "eyebrow": "GTM systems consultancy · Canada",
+    "headline": "A revenue stack that agrees with itself.",
+    "lead": "Your tools each tell a different story. We design, build, and run GTM systems for B2B teams: Salesforce, HubSpot, and Marketing Cloud, wired together so the numbers finally agree and your reps stop fighting the CRM.",
+    "ctaPrimary": "Book a free strategy session",
+    "ctaGhost": "See how we work",
+    "proof": [
+      "10+ years in the Salesforce ecosystem",
+      "16 Salesforce certifications",
+      "Serving the Americas and Europe, in French and English"
+    ],
+    "svgTitle": "A step chart climbing from spreadsheets to one source of truth",
+    "nodes": ["spreadsheets", "crm", "marketing automation", "billing + service", "warehouse + bi"],
+    "summit": "one source of truth",
+    "caption": "Elevation: GTM maturity"
+  },
+
+  "logos": {
+    "aria": "Clients",
+    "label": "We've built for teams at"
+  },
+
+  "l2c": {
+    "eyebrow": "The problem",
+    "headline": "Lead to cash is one process. Your stack treats it like eight.",
+    "lead": "Somewhere between quote and invoice, sales hands the deal to finance and the CRM hands it to the ERP. That seam is where the numbers start drifting. Most of what gets called a reporting problem is a handoff problem.",
+    "widgetLabel": "Lead to cash · as-is",
+    "badge": "Typical mid-market stack",
+    "crmCap": "<b>crm</b> · sales owns this side",
+    "erpCap": "<b>erp</b> · finance owns this side",
+    "crmSteps": ["lead capture", "opportunity", "quote", "contract"],
+    "erpSteps": ["order", "billing", "fulfillment", "rev rec"],
+    "seamChip": "the handoff",
+    "leaks": [
+      "attribution drops at capture",
+      "orders re-keyed at the seam",
+      "rev rec closed by hand"
+    ],
+    "tools": ["marketing automation", "enrichment", "cpq", "e-sign", "payments", "billing", "fulfillment", "bi"],
+    "wnote": "each one keeps its own copy of the truth."
+  },
+
+  "services": {
+    "eyebrow": "What we do",
+    "headline": "Pick the help you actually need.",
+    "lead": "Every engagement starts the same way: we look at what you have before proposing what you should buy.",
+    "items": [
+      {
+        "glyph": "/r",
+        "title": "Fractional RevOps",
+        "body": "Senior ops capacity without the senior hire. We join your standups, own a backlog, and ship every week."
+      },
+      {
+        "glyph": "/g",
+        "title": "GTM process design",
+        "body": "Lead-to-cash, mapped end to end. We find where deals leak between marketing, sales, and service, then rebuild the handoffs."
+      },
+      {
+        "glyph": "/d",
+        "title": "Data integration",
+        "body": "Your CRM, your marketing platform, and your warehouse, all reporting the same numbers. One pipeline. One version of the truth."
+      },
+      {
+        "glyph": "/c",
+        "title": "Team coaching",
+        "body": "We train your admins to need us less. Every build documented, every decision explained, handed over for real."
+      }
+    ]
+  },
+
+  "features": {
+    "s1": {
+      "eyebrow": "Salesforce implementation",
+      "headline": "Implemented like you'll live in it. Because you will.",
+      "lead": "A Salesforce org outlives the project that built it. We architect for the team you'll have in three years: a clean data model, automation your admins can read, and AI features with something real to work with.",
+      "chips": ["ai-ready data", "documented builds", "admin-friendly"],
+      "sister": "Drowning in dirty data first? Our sister practice, <a href=\"https://www.resoluble.com\" target=\"_blank\" rel=\"noopener\">Resoluble</a>, scores and cleans Salesforce orgs before anything new gets built on top.",
+      "widgetLabel": "Build report",
+      "badge": "Sample",
+      "sub": "acme-corp · sprint 6 of 8",
+      "rows": [
+        { "n": "01", "name": "data model", "st": "shipped" },
+        { "n": "02", "name": "automation", "st": "shipped" },
+        { "n": "03", "name": "integrations", "st": "in progress" },
+        { "n": "04", "name": "ai layer", "st": "queued" }
+      ],
+      "wnote": "build order: bottom up. ai ships last, on purpose."
+    },
+    "s2": {
+      "eyebrow": "Solution architecture",
+      "headline": "Architecture before automation.",
+      "lead": "Most broken stacks were automated too early. We map your objects, integrations, and ownership first, so every flow you add later has a foundation under it. It's the boring work that makes everything after it cheap.",
+      "chips": ["integration mapping", "ownership defined", "scales with you"],
+      "widgetLabel": "Sync audit",
+      "badge": "Sample",
+      "sub": "acme-corp · crm ↔ erp",
+      "svgAria": "A CRM and an ERP exchanging data in both directions",
+      "crm": "crm",
+      "erp": "erp",
+      "rows": [
+        { "name": "customers & accounts", "st": "synced" },
+        { "name": "products & pricing", "st": "synced" },
+        { "name": "quotes → orders", "st": "manual re-entry" },
+        { "name": "invoices → crm", "st": "manual re-entry" },
+        { "name": "inventory levels", "st": "not connected" }
+      ],
+      "stats": [
+        { "b": "5", "label": "data flows" },
+        { "b": "2", "label": "synced" },
+        { "b": "3", "label": "by hand" }
+      ],
+      "wnote": "re-keyed data is where the numbers start to disagree."
+    }
+  },
+
+  "process": {
+    "eyebrow": "How we work",
+    "headline": "Three steps. No mystery.",
+    "lead": "Step one costs you thirty minutes. Step three ends with your team not needing us.",
+    "step1": {
+      "title": "Assess",
+      "body": "A free 30-minute session. You walk us through the stack, we tell you what we'd fix first. If we're not the right fit, we say so and point you somewhere better.",
+      "miniData": "data",
+      "miniFlows": "flows",
+      "miniOwners": "owners"
+    },
+    "step2": {
+      "title": "Design",
+      "body": "A roadmap with priorities, owners, and price tags. You see the whole plan before you commit to any build.",
+      "miniNow": "now",
+      "miniNext": "next",
+      "miniLater": "later"
+    },
+    "step3": {
+      "title": "Build & run",
+      "body": "We ship in weekly increments, document as we go, and train your team on every piece we hand over."
+    }
+  },
+
+  "calculator": {
+    "eyebrow": "Run your numbers",
+    "headline": "What does disagreement cost you?",
+    "lead": "Not our estimate. Yours. Three sliders, visible math.",
+    "widgetLabel": "Reconciliation cost",
+    "badge": "Your numbers",
+    "peopleLabel": "People who touch revenue reporting",
+    "hoursLabel": "Hours each spends per week reconciling",
+    "rateLabel": "Loaded cost per hour",
+    "totalSuffix": "per year, just making the numbers agree",
+    "mathInitial": "3 people × 4 h/week × $85 × 48 weeks",
+    "wnote": "the strategy session costs none of this.",
+    "cta": "Book the free session",
+    "js": {
+      "numberLocale": "en-US",
+      "currency": "$",
+      "person1": " person",
+      "personN": " people",
+      "mid": " × ",
+      "hours": " h/week × $",
+      "weeks": " × 48 weeks"
+    }
+  },
+
+  "pricing": {
+    "eyebrow": "Pricing",
+    "headline": "Three ways to start.",
+    "lead": "A quick answer, on-demand help, or someone who owns the roadmap. Pick your speed.",
+    "plans": [
+      {
+        "tag": "Get a read first",
+        "name": "$0",
+        "sub": "Free strategy session",
+        "features": [
+          "A 30-minute call, no prep needed",
+          "An honest read on your current stack",
+          "What we'd fix first, and in what order",
+          "No deck, no pitch, no obligation"
+        ],
+        "cta": "Book the session"
+      },
+      {
+        "tag": "On-demand",
+        "name": "Hourly",
+        "sub": "Flexible contract",
+        "features": [
+          "Pay as you go",
+          "No SOW required",
+          "Senior consultants only",
+          "Scope as narrow or broad as you need"
+        ],
+        "cta": "Start hourly"
+      },
+      {
+        "tag": "Ongoing",
+        "name": "Retainer",
+        "sub": "Managed engagements",
+        "features": [
+          "Three-month minimum",
+          "A managed backlog, shipped weekly",
+          "Priority response",
+          "Volume pricing"
+        ],
+        "cta": "Talk retainer"
+      }
+    ],
+    "fineprint": "Not sure which fits? That's what the free session is for."
+  },
+
+  "testimonials": {
+    "_doNotTranslate": "Quotes are verbatim LinkedIn recommendations — keep each one in its original language; never translate the `quote` fields.",
+    "eyebrow": "Proof",
+    "headline": "What it's like to work with us.",
+    "lead": "Pulled straight from LinkedIn recommendations. Unedited.",
+    "liTitle": "LinkedIn recommendation",
+    "items": [
+      {
+        "name": "Alexandre",
+        "img": "/assets/people/alexandre.jpg",
+        "quote": "I have been working with Simon for years and have always been impressed by his work ethic, intelligence, and dedication. Simon is a one-of-a-kind professional, very curious and tech-savvy, who consistently demonstrates a deep understanding of the subject matter and is always eager to learn more."
+      },
+      {
+        "name": "Pierre-Alexandre",
+        "img": "/assets/people/pierre-alexandre.jpg",
+        "lang": "fr",
+        "quote": "Je travaille avec Simon depuis plusieurs années sur divers projets RevOps et collaborer avec lui est un réel plaisir. Son expertise, son sérieux et ses compétences nous aident grandement dans nos projets liés au marketing, aux ventes, au service et aux outils tels que SalesCloud, ServiceCloud et Marketing Cloud de Salesforce. Je recommande fortement Simon et Elevatek et espère collaborer encore longtemps avec lui."
+      },
+      {
+        "name": "Adel",
+        "img": "/assets/people/adel.jpg",
+        "lang": "fr",
+        "quote": "J'ai eu la chance de travailler avec Simon sur un projet d'implantation Salesforce dans notre organisation, plus spécifiquement Service Cloud. Il a était extrêmement compétent, son expertise et connaissance de la plateforme était très grande. Il a fait preuve d'un grand professionnalisme et d'une écoute hors pair de nos besoins. Merci Simon."
+      },
+      {
+        "name": "Heather",
+        "img": "/assets/people/heather.jpg",
+        "quote": "Simon and I worked together for a few months. He is smart, conscientious and extremely capable. He has that unique blend of MarTech expertise coupled with good design sense, and go-to-market savvy. He comes to work with a smile and positive attitude, ready to tackle any problem with creativity. And to top it off, working with Simon was fun."
+      },
+      {
+        "name": "Cindy",
+        "img": "/assets/people/cindy.jpg",
+        "quote": "Simon is very knowledgeable in various areas of Salesforce, Automated Sales & Marketing, and Social Media. He easily guides our team through complex processes and helps us implement numerous tools to increase our client outreach, engagement, nurturing, and conversion. Not to mention, we have fun doing it!"
+      },
+      {
+        "name": "Yann",
+        "img": "/assets/people/yann.jpg",
+        "quote": "We hired Simon for a couple of projects with city of Montreal and Hot Paws. Our clients were really happy to work with him. I'd recommend Simon anytime, he's really reliable."
+      }
+    ]
+  },
+
+  "faq": {
+    "eyebrow": "FAQ",
+    "headline": "Questions people actually ask.",
+    "items": [
+      {
+        "q": "Do you replace our ops team or work alongside it?",
+        "a": "Alongside, almost always. Fractional means we plug into your existing team, take a slice of the backlog, and hand back working systems plus the documentation to run them. If you have no ops team yet, we can be it for a while, then help you hire."
+      },
+      {
+        "q": "Our Salesforce project is already off the rails. Can you step in mid-flight?",
+        "a": "Yes. Rescue work usually starts with a short audit: what was promised, what was built, what's salvageable. You get that picture before deciding whether we take over the build."
+      },
+      {
+        "q": "Salesforce or HubSpot, which one do you push?",
+        "a": "Neither by default. We work in both ecosystems and recommend based on your team, your budget, and what you already own. Sometimes the honest answer is \"keep what you have and fix the plumbing.\""
+      },
+      {
+        "q": "What does fractional actually mean in hours?",
+        "a": "Anywhere from a few hours a week to a few days. We size it together during the free session, and you can scale it up or down between sprints."
+      },
+      {
+        "q": "Do you work in French?",
+        "a": "Oui. We're Canadian and run projects in French, English, or both, including documentation and training."
+      },
+      {
+        "q": "Where do you work from?",
+        "a": "Canada. We work remotely with clients across the Americas and Europe, in English or French."
+      },
+      {
+        "q": "What happens when the project ends?",
+        "a": "You keep everything: documentation, decision logs, and a trained team. Some clients move to a light retainer for upkeep. Some don't need us anymore. Both outcomes count as success on our end."
+      }
+    ]
+  },
+
+  "closer": {
+    "eyebrow": "Next step",
+    "headline": "Bring us the stack you're embarrassed by.",
+    "lead": "Thirty minutes. A straight answer about what to fix first. Free either way.",
+    "cta": "Book a free strategy session"
+  },
+
+  "contact": {
+    "hero": {
+      "eyebrow": "Contact",
+      "headline": "Tell us what's going on in the stack.",
+      "lead": "Five questions, two minutes. A human replies with next steps, not a deck."
+    },
+    "form": {
+      "s1Eyebrow": "01 · Who's asking",
+      "roles": [
+        { "value": "RevOps", "label": "RevOps" },
+        { "value": "IT / Systems", "label": "IT / Systems" },
+        { "value": "VP Sales or Marketing", "label": "VP Sales / Marketing" },
+        { "value": "Salesforce admin", "label": "Salesforce admin" },
+        { "value": "Founder / CEO", "label": "Founder / CEO" },
+        { "value": "CTO", "label": "CTO" },
+        { "value": "Other", "label": "Other" }
+      ],
+      "s2Eyebrow": "02 · Your stack",
+      "stack": ["Salesforce", "HubSpot", "Marketing Cloud", "Pardot / MCAE", "NetSuite", "Dynamics", "Other ERP", "Mostly spreadsheets"],
+      "s3Eyebrow": "03 · What you're after",
+      "engagement": ["Free strategy session", "Hourly help", "Retainer", "Not sure yet"],
+      "s4Eyebrow": "04 · How soon",
+      "urgency": ["Yesterday", "This month", "This quarter", "Just exploring"],
+      "s5Eyebrow": "05 · The details",
+      "nameLabel": "Your name",
+      "companyLabel": "Company",
+      "emailLabel": "Work email",
+      "messageLabel": "What's going on in the stack?",
+      "messagePlaceholder": "The symptom is fine. We'll find the cause together.",
+      "langAria": "Preferred language",
+      "langs": [
+        { "value": "English", "label": "English" },
+        { "value": "Français", "label": "Français" },
+        { "value": "Either", "label": "Either / les deux" }
+      ],
+      "hpLabel": "Leave this empty",
+      "submit": "Send it",
+      "error": "Name and a valid work email, and we're good.",
+      "note": "Goes straight to our inbox. A human reads it.",
+      "bookLine": "Ready to book?",
+      "bookBtn": "Pick a time →",
+      "bookContact": "Email <a href=\"mailto:info@elevatek.ca\">info@elevatek.ca</a> or call <a href=\"tel:+15149618625\">+1 (514) 961-8625</a>. Same humans either way.",
+      "sentTitle": "Got it.",
+      "sentBody": "A human will read this and reply with next steps. Talk soon."
+    },
+    "req": {
+      "aria": "Your request so far",
+      "widgetLabel": "Your request",
+      "badge": "Live",
+      "role": "Role",
+      "stack": "Stack",
+      "after": "After",
+      "when": "When",
+      "language": "Language",
+      "langDefault": "Either / les deux",
+      "wnote": "we'll come back with next steps, not a pitch."
+    }
+  },
+
+  "legal": {
+    "eyebrow": "Legal",
+    "updated": "Last updated: June 2026"
+  },
+
+  "privacy": {
+    "h1": "Privacy policy",
+    "intro": "This policy explains what personal information we handle through this website, why we handle it, and the choices you have. It covers the website only. Work we do under a signed engagement is also governed by that agreement.",
+    "whoTitle": "Who we are",
+    "whoBody": "Elevatek is a trade name of Elevatek Consulting Inc., a go-to-market systems consultancy incorporated in Québec, Canada. We decide why and how your information is handled, which makes us responsible for it under Canadian privacy law. For anything privacy-related, email <a href=\"mailto:info@elevatek.ca\">info@elevatek.ca</a>. Our privacy officer can be reached at the same address.",
+    "collectTitle": "What information we collect",
+    "collectGive": "<b>Information you give us.</b> When you use the contact form, we receive what you type: your name, work email, company, role, the tools in your stack, and your message. When you subscribe to the newsletter, we keep your email address. If you book a call, you enter your details in our scheduling tool to set up the meeting.",
+    "collectAuto": "<b>Information collected automatically.</b> Our hosting provider, Netlify, keeps standard server logs for visits to the site. These can include your IP address, browser type, the pages you open, and the date and time. We use them to keep the site running and secure, not to identify you.",
+    "whyTitle": "Why we collect it",
+    "whyBody": "We use your information to reply to you, to scope and deliver the consulting work you ask us about, and to send the newsletter you signed up for. That is all we use it for. We don't sell or rent your information, and we don't use it for advertising.",
+    "shareTitle": "Who we share it with",
+    "shareIntro": "We don't share your information except with the service providers that help us run the site and our work. Each one only processes your data to provide its service to us, and only as far as that needs.",
+    "shareList": [
+      "<b>Hosting and forms:</b> Netlify hosts the site and receives contact-form and newsletter submissions through Netlify Forms.",
+      "<b>Email and newsletter delivery:</b> a dedicated provider is not yet in place; for now, newsletter sign-ups are held with the form submissions above.",
+      "<b>Scheduling:</b> if you book a call, Calendly receives the details you enter to arrange the meeting.",
+      "<b>Analytics:</b> Google Analytics 4, and only if you accept analytics cookies. Google receives anonymous usage data to provide the analytics service; nothing loads until you consent."
+    ],
+    "retainTitle": "How long we keep it",
+    "retainBody": "We keep contact submissions for as long as we need them to handle your request and any engagement that follows, then dispose of them. We keep newsletter emails until you unsubscribe, which you can do from any issue.",
+    "whereTitle": "Where it's processed",
+    "whereBody": "Some of our providers may store or process your information outside Canada, including in the United States. Québec's Law 25 asks us to tell you when that can happen, so we're telling you here. If you'd like more detail before you send us anything, email us first.",
+    "rightsTitle": "Your rights under PIPEDA and Law 25",
+    "rightsBody": "Under Canada's PIPEDA and Québec's Law 25, you can ask what personal information we hold about you, ask us to correct it, ask us to delete it, and withdraw a consent you gave us — for example, by unsubscribing. To exercise any of these, email <a href=\"mailto:info@elevatek.ca\">info@elevatek.ca</a>. We'll confirm your identity, respond within the time the law allows, and tell you if there's any reason we can't act on a request.",
+    "cookiesTitle": "Cookies",
+    "cookiesBody": "We use Google Analytics 4 to understand how the site is used — which pages people open, roughly where visits come from, and how people move through the site. It sets cookies and shares that usage data with Google. These cookies are off until you accept them: nothing analytics-related loads before you consent in our cookie banner, and choosing decline keeps it off. We don't use advertising cookies and don't profile you across other sites. You can change or withdraw your choice any time through the \"Cookie preferences\" link in the footer.",
+    "changesTitle": "Changes",
+    "changesBody": "If this policy changes, we'll update it here and change the effective date at the top. A meaningful change will be clear from that date.",
+    "contactTitle": "Contact",
+    "contactBody": "Questions about your privacy or about this policy? Email our privacy officer at <a href=\"mailto:info@elevatek.ca\">info@elevatek.ca</a> and we'll help."
+  },
+
+  "terms": {
+    "h1": "Terms of service",
+    "intro": "These terms cover your use of this website. Consulting engagements are governed first by their signed statement of work or written agreement; these terms fill the gaps and set the rules for the site itself.",
+    "sections": [
+      {
+        "title": "The basics",
+        "body": "This website is operated by Elevatek Consulting Inc. (\"Elevatek\", \"we\", \"us\"). By using the site, you agree to these terms. If you don't agree with them, please don't use the site."
+      },
+      {
+        "title": "Acceptable use",
+        "body": "Please use the site in good faith. Don't try to break it, overload it, or reach parts that aren't meant to be public. Don't use it for anything unlawful, and don't copy or scrape it to pass our material off as your own. If the site is being misused, we may limit or block access."
+      },
+      {
+        "title": "Services",
+        "body": "We provide consulting on go-to-market systems: implementation, integration, fractional revenue operations, and related coaching. The site describes what we do, but nothing on it is an offer or a promise of a particular result. The scope, timeline, and fees for any engagement are set in writing before work starts."
+      },
+      {
+        "title": "Intellectual property",
+        "body": "The content of this site — text, design, and graphics — belongs to Elevatek unless we note otherwise. For engagement work, you own the deliverables we build for you once you've paid in full. We keep ownership of our pre-existing tools, templates, and methods, and you get a license to keep using anything of ours that's built into your deliverables."
+      },
+      {
+        "title": "Confidentiality",
+        "body": "We treat your data and business information as confidential, and we expect the same for ours. A signed agreement can set this out in more detail."
+      },
+      {
+        "title": "No warranty",
+        "body": "The website is provided \"as is\" and \"as available\", without warranties of any kind. We can't promise it will always be available, error-free, or secure. This applies to the website only. It does not change the commitments we make for engagement deliverables, which stay governed by the statement of work or written agreement."
+      },
+      {
+        "title": "Limitation of liability",
+        "body": "To the extent the law allows, our total liability for any engagement is capped at the fees you paid us for that engagement. Neither side is liable to the other for indirect, incidental, or consequential damages. Nothing here limits anything that can't be limited by law."
+      },
+      {
+        "title": "Governing law",
+        "body": "These terms are governed by the laws of the Province of Québec and the federal laws of Canada that apply there."
+      },
+      {
+        "title": "Changes",
+        "body": "We may update these terms from time to time. When we do, we'll change the effective date at the top. If you keep using the site after a change, that means you accept the updated terms."
+      }
+    ]
+  },
+
+  "notFound": {
+    "eyebrow": "Off the map",
+    "lead": "This page isn't on the trail. The link is broken, or the page moved.",
+    "cta": "Back to base camp"
+  }
+}

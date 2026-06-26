@@ -1,57 +1,60 @@
+---
+import { useTranslations } from '../i18n/utils';
+const t = useTranslations(Astro.currentLocale);
+const crmSteps = t('l2c.crmSteps');
+const erpSteps = t('l2c.erpSteps');
+const leaks = t('l2c.leaks');
+const tools = t('l2c.tools');
+---
 <!-- ════════════════════════════════════════════════════
      COMPONENT: LeadToCash.astro
      ════════════════════════════════════════════════════ -->
 <section class="section" id="problem">
   <div class="wrap">
     <div class="section-head reveal">
-      <p class="eyebrow">The problem</p>
-      <h2>Lead to cash is one process. Your stack treats it like eight.</h2>
-      <p class="lead">Somewhere between quote and invoice, sales hands the deal to finance and the CRM hands it to the ERP. That seam is where the numbers start drifting. Most of what gets called a reporting problem is a handoff problem.</p>
+      <p class="eyebrow">{t('l2c.eyebrow')}</p>
+      <h2>{t('l2c.headline')}</h2>
+      <p class="lead">{t('l2c.lead')}</p>
     </div>
     <div class="l2c reveal">
       <div class="widget-head">
-        <span class="widget-label">Lead to cash · as-is</span>
-        <span class="badge-sample">Typical mid-market stack</span>
+        <span class="widget-label">{t('l2c.widgetLabel')}</span>
+        <span class="badge-sample">{t('l2c.badge')}</span>
       </div>
       <div class="l2c-rails">
         <div class="l2c-lane crm">
-          <p class="l2c-cap"><b>crm</b> · sales owns this side</p>
+          <p class="l2c-cap" set:html={t('l2c.crmCap')}></p>
           <div class="l2c-side">
-            <span class="pill">lead capture</span>
-            <span class="l2c-step"><span class="sep" aria-hidden="true">›</span><span class="pill">opportunity</span></span>
-            <span class="l2c-step"><span class="sep" aria-hidden="true">›</span><span class="pill">quote</span></span>
-            <span class="l2c-step"><span class="sep" aria-hidden="true">›</span><span class="pill">contract</span></span>
+            {crmSteps.map((s: string, i: number) => (
+              i === 0
+                ? <span class="pill">{s}</span>
+                : <span class="l2c-step"><span class="sep" aria-hidden="true">›</span><span class="pill">{s}</span></span>
+            ))}
           </div>
         </div>
         <div class="l2c-seam">
-          <span class="l2c-seam-chip">the handoff</span>
+          <span class="l2c-seam-chip">{t('l2c.seamChip')}</span>
         </div>
         <div class="l2c-lane erp">
-          <p class="l2c-cap"><b>erp</b> · finance owns this side</p>
+          <p class="l2c-cap" set:html={t('l2c.erpCap')}></p>
           <div class="l2c-side">
-            <span class="pill">order</span>
-            <span class="l2c-step"><span class="sep" aria-hidden="true">›</span><span class="pill">billing</span></span>
-            <span class="l2c-step"><span class="sep" aria-hidden="true">›</span><span class="pill">fulfillment</span></span>
-            <span class="l2c-step"><span class="sep" aria-hidden="true">›</span><span class="pill">rev rec</span></span>
+            {erpSteps.map((s: string, i: number) => (
+              i === 0
+                ? <span class="pill">{s}</span>
+                : <span class="l2c-step"><span class="sep" aria-hidden="true">›</span><span class="pill">{s}</span></span>
+            ))}
           </div>
         </div>
       </div>
       <div class="l2c-leaks">
-        <span class="leak start">attribution drops at capture</span>
-        <span class="leak mid">orders re-keyed at the seam</span>
-        <span class="leak end">rev rec closed by hand</span>
+        <span class="leak start">{leaks[0]}</span>
+        <span class="leak mid">{leaks[1]}</span>
+        <span class="leak end">{leaks[2]}</span>
       </div>
       <div class="l2c-tools">
-        <span class="chip">marketing automation</span>
-        <span class="chip">enrichment</span>
-        <span class="chip">cpq</span>
-        <span class="chip">e-sign</span>
-        <span class="chip">payments</span>
-        <span class="chip">billing</span>
-        <span class="chip">fulfillment</span>
-        <span class="chip">bi</span>
+        {tools.map((tool: string) => <span class="chip">{tool}</span>)}
       </div>
-      <p class="wnote">each one keeps its own copy of the truth.</p>
+      <p class="wnote">{t('l2c.wnote')}</p>
     </div>
   </div>
 </section>

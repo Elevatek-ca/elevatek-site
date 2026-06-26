@@ -1,11 +1,17 @@
+---
+import { useTranslations, localizePath } from '../i18n/utils';
+const lang = Astro.currentLocale;
+const t = useTranslations(lang);
+const lp = (p: string) => localizePath(p, lang);
+---
 <!-- ════════════════════════════════════════════════════
      COMPONENT: Closer.astro
      ════════════════════════════════════════════════════ -->
 <section class="closer on-dark">
   <div class="wrap reveal">
-    <p class="eyebrow">Next step</p>
-    <h2>Bring us the stack you're embarrassed by.</h2>
-    <p class="lead">Thirty minutes. A straight answer about what to fix first. Free either way.</p>
-    <a class="btn btn-primary" href="/contact?type=session">Book a free strategy session</a>
+    <p class="eyebrow">{t('closer.eyebrow')}</p>
+    <h2>{t('closer.headline')}</h2>
+    <p class="lead">{t('closer.lead')}</p>
+    <a class="btn btn-primary" href={lp('/contact?type=session')}>{t('closer.cta')}</a>
   </div>
 </section>

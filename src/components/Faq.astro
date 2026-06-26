@@ -1,38 +1,12 @@
 ---
+import { useTranslations } from '../i18n/utils';
+const t = useTranslations(Astro.currentLocale);
+
 // One source of truth: the visible <details> list and the FAQPage JSON-LD are both
 // rendered from this array, so the structured data always matches the on-page text
 // verbatim. Native <details> keeps the answers in the static HTML (collapsed, not
 // JS-injected), so crawlers and AI models can read and cite them.
-const faqs = [
-  {
-    q: `Do you replace our ops team or work alongside it?`,
-    a: `Alongside, almost always. Fractional means we plug into your existing team, take a slice of the backlog, and hand back working systems plus the documentation to run them. If you have no ops team yet, we can be it for a while, then help you hire.`,
-  },
-  {
-    q: `Our Salesforce project is already off the rails. Can you step in mid-flight?`,
-    a: `Yes. Rescue work usually starts with a short audit: what was promised, what was built, what's salvageable. You get that picture before deciding whether we take over the build.`,
-  },
-  {
-    q: `Salesforce or HubSpot, which one do you push?`,
-    a: `Neither by default. We work in both ecosystems and recommend based on your team, your budget, and what you already own. Sometimes the honest answer is "keep what you have and fix the plumbing."`,
-  },
-  {
-    q: `What does fractional actually mean in hours?`,
-    a: `Anywhere from a few hours a week to a few days. We size it together during the free session, and you can scale it up or down between sprints.`,
-  },
-  {
-    q: `Do you work in French?`,
-    a: `Oui. We're Canadian and run projects in French, English, or both, including documentation and training.`,
-  },
-  {
-    q: `Where do you work from?`,
-    a: `Canada. We work remotely with clients across the Americas and Europe, in English or French.`,
-  },
-  {
-    q: `What happens when the project ends?`,
-    a: `You keep everything: documentation, decision logs, and a trained team. Some clients move to a light retainer for upkeep. Some don't need us anymore. Both outcomes count as success on our end.`,
-  },
-];
+const faqs: { q: string; a: string }[] = t('faq.items');
 
 const faqLd = {
   '@context': 'https://schema.org',
@@ -50,8 +24,8 @@ const faqLd = {
 <section class="section" id="faq" style="padding-top:0">
   <div class="wrap">
     <div class="section-head center reveal">
-      <p class="eyebrow">FAQ</p>
-      <h2>Questions people actually ask.</h2>
+      <p class="eyebrow">{t('faq.eyebrow')}</p>
+      <h2>{t('faq.headline')}</h2>
     </div>
     <div class="faq-list reveal">
       {faqs.map((f) => (

@@ -1,51 +1,49 @@
+---
+import { useTranslations, localizePath } from '../i18n/utils';
+const lang = Astro.currentLocale;
+const t = useTranslations(lang);
+const lp = (p: string) => localizePath(p, lang);
+const plans = t('pricing.plans');
+---
 <!-- ════════════════════════════════════════════════════
      COMPONENT: Pricing.astro
      ════════════════════════════════════════════════════ -->
 <section class="section" id="pricing">
   <div class="wrap">
     <div class="section-head center reveal">
-      <p class="eyebrow">Pricing</p>
-      <h2>Three ways to start.</h2>
-      <p class="lead">A quick answer, on-demand help, or someone who owns the roadmap. Pick your speed.</p>
+      <p class="eyebrow">{t('pricing.eyebrow')}</p>
+      <h2>{t('pricing.headline')}</h2>
+      <p class="lead">{t('pricing.lead')}</p>
     </div>
     <div class="price-grid">
       <article class="plan reveal">
-        <p class="plan-tag">Get a read first</p>
-        <p class="plan-name">$0</p>
-        <p class="plan-sub">Free strategy session</p>
+        <p class="plan-tag">{plans[0].tag}</p>
+        <p class="plan-name">{plans[0].name}</p>
+        <p class="plan-sub">{plans[0].sub}</p>
         <ul>
-          <li>A 30-minute call, no prep needed</li>
-          <li>An honest read on your current stack</li>
-          <li>What we'd fix first, and in what order</li>
-          <li>No deck, no pitch, no obligation</li>
+          {plans[0].features.map((f: string) => <li>{f}</li>)}
         </ul>
-        <a class="btn btn-ghost" href="/contact?type=session">Book the session</a>
+        <a class="btn btn-ghost" href={lp('/contact?type=session')}>{plans[0].cta}</a>
       </article>
       <article class="plan featured reveal">
-        <p class="plan-tag">On-demand</p>
-        <p class="plan-name">Hourly</p>
-        <p class="plan-sub">Flexible contract</p>
+        <p class="plan-tag">{plans[1].tag}</p>
+        <p class="plan-name">{plans[1].name}</p>
+        <p class="plan-sub">{plans[1].sub}</p>
         <ul>
-          <li>Pay as you go</li>
-          <li>No SOW required</li>
-          <li>Senior consultants only</li>
-          <li>Scope as narrow or broad as you need</li>
+          {plans[1].features.map((f: string) => <li>{f}</li>)}
         </ul>
-        <a class="btn btn-light" href="/contact?type=hourly">Start hourly</a>
+        <a class="btn btn-light" href={lp('/contact?type=hourly')}>{plans[1].cta}</a>
       </article>
       <article class="plan reveal">
-        <p class="plan-tag">Ongoing</p>
-        <p class="plan-name">Retainer</p>
-        <p class="plan-sub">Managed engagements</p>
+        <p class="plan-tag">{plans[2].tag}</p>
+        <p class="plan-name">{plans[2].name}</p>
+        <p class="plan-sub">{plans[2].sub}</p>
         <ul>
-          <li>Three-month minimum</li>
-          <li>A managed backlog, shipped weekly</li>
-          <li>Priority response</li>
-          <li>Volume pricing</li>
+          {plans[2].features.map((f: string) => <li>{f}</li>)}
         </ul>
-        <a class="btn btn-ghost" href="/contact?type=retainer">Talk retainer</a>
+        <a class="btn btn-ghost" href={lp('/contact?type=retainer')}>{plans[2].cta}</a>
       </article>
     </div>
-    <p class="fineprint">Not sure which fits? That's what the free session is for.</p>
+    <p class="fineprint">{t('pricing.fineprint')}</p>
   </div>
 </section>
