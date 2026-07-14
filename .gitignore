@@ -22,3 +22,6 @@ pnpm-debug.log*
 
 # jetbrains setting folder
 .idea/
+
+# translation review scratch file (not part of the build)
+fr-review.md

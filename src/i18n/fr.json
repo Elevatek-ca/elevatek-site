@@ -1,15 +1,15 @@
 {
   "meta": {
     "home": {
-      "title": "Conseil en systèmes GTM — Salesforce et HubSpot | Elevatek",
-      "description": "Elevatek est un cabinet-conseil canadien en systèmes GTM. On conçoit, on bâtit et on opère Salesforce, HubSpot et Marketing Cloud pour que vos chiffres de revenus finissent par concorder.",
-      "ogTitle": "Elevatek — conseil en systèmes GTM",
-      "ogDescription": "Salesforce, HubSpot et Marketing Cloud, branchés ensemble pour que vos chiffres de pipeline arrêtent de se contredire. Canadien, au service des Amériques et de l'Europe.",
-      "jsonldDescription": "Conseil en systèmes GTM. Implémentation et intégration de Salesforce, HubSpot et Marketing Cloud, et RevOps fractionné pour les équipes B2B."
+      "title": "Conseil et implémentation Salesforce | Elevatek (Canada)",
+      "description": "Elevatek est un cabinet-conseil Salesforce canadien. On aligne la business et la tech de votre organisation — un modèle de données propre, de l'automatisation que vos équipes adoptent, une fondation prête pour l'IA. Peu importe votre secteur.",
+      "ogTitle": "Elevatek — conseil Salesforce",
+      "ogDescription": "On met la business et la tech d'accord sur Salesforce : données propres, adoption qui dure, fondation prête pour l'IA. Cabinet-conseil canadien, dans tous les secteurs.",
+      "jsonldDescription": "Conseil et implémentation Salesforce. On aligne la business et la tech de votre organisation — modèle de données, automatisation, intégration, adoption et données prêtes pour l'IA — dans plusieurs secteurs (haute technologie, services professionnels, manufacturier, services financiers, médias, santé et sciences de la vie)."
     },
     "contact": {
       "title": "Contactez Elevatek — conseil Salesforce et HubSpot",
-      "description": "Dites-nous ce qui se passe dans votre stack. Cinq questions, deux minutes, et un humain vous répond avec les prochaines étapes — pas un deck. Salesforce, HubSpot, RevOps."
+      "description": "Dites-nous ce qui se passe dans votre stack. Cinq questions, deux minutes, et un humain vous répond avec les prochaines étapes. Salesforce, HubSpot, Marketing Cloud, RevOps consulting."
     },
     "privacy": {
       "title": "Politique de confidentialité — Elevatek",
@@ -31,13 +31,13 @@
     "services": "Ce qu'on fait",
     "process": "Comment on travaille",
     "pricing": "Tarifs",
-    "proof": "Preuves",
+    "proof": "Témoignages",
     "faq": "FAQ",
-    "cta": "Parlons-nous"
+    "cta": "Contactez-nous"
   },
 
   "footer": {
-    "blurb": "Un cabinet-conseil canadien en systèmes GTM au service des Amériques et de l'Europe. Salesforce, HubSpot, Marketing Cloud.",
+    "blurb": "Un cabinet-conseil Salesforce canadien qui aligne la business et la tech de votre organisation. Au service de nos clients en Amérique du Nord, du Sud et en Europe.",
     "exploreTitle": "Explorer",
     "contactTitle": "Contact",
     "contactLink": "Contact",
@@ -72,20 +72,20 @@
   },
 
   "hero": {
-    "eyebrow": "Conseil en systèmes GTM · Canada",
-    "headline": "Une stack de revenus qui concorde avec elle-même.",
-    "lead": "Chacun de vos outils raconte une histoire différente. On conçoit, on bâtit et on opère des systèmes GTM pour les équipes B2B : Salesforce, HubSpot et Marketing Cloud, branchés ensemble pour que les chiffres concordent enfin et que vos représentants arrêtent de se battre avec le CRM.",
-    "ctaPrimary": "Réservez une séance stratégique gratuite",
+    "eyebrow": "Conseil Salesforce · Canada",
+    "headline": "Un Salesforce qui s'entend avec la business.",
+    "lead": "Vos solutions technologiques racontent des histoires différentes. On conçoit, on bâtit et on opère vos plateformes CRM et marketing (Salesforce, HubSpot, Marketing Cloud) pour que la business et la tech finissent par s'entendre — un modèle de données propre, de l'automatisation que vos admins comprennent, une fondation prête pour l'IA. En haute technologie, services professionnels, manufacturier, services financiers, médias, santé et sciences de la vie.",
+    "ctaPrimary": "Réservez une séance gratuite",
     "ctaGhost": "Voyez comment on travaille",
     "proof": [
       "Plus de 10 ans dans l'écosystème Salesforce",
       "16 certifications Salesforce",
-      "Au service des Amériques et de l'Europe, en français et en anglais"
+      "Au service de nos clients en Amérique du Nord, du Sud et en Europe"
     ],
-    "svgTitle": "Un graphique en escalier qui grimpe des feuilles de calcul à une source unique de vérité",
+    "svgTitle": "Un graphique qui montre comment passer de feuilles de calcul à une source unique de vérité",
     "nodes": ["feuilles de calcul", "crm", "automatisation marketing", "facturation + service", "entrepôt + bi"],
     "summit": "une source unique de vérité",
-    "caption": "Élévation : maturité GTM"
+    "caption": "Élévation : maturité de la stack"
   },
 
   "logos": {
@@ -327,32 +327,40 @@
     "headline": "Les questions que les gens posent vraiment.",
     "items": [
       {
-        "q": "Est-ce que vous remplacez notre équipe ops ou travaillez à ses côtés ?",
-        "a": "À ses côtés, presque toujours. Fractionné, ça veut dire qu'on s'intègre à votre équipe existante, qu'on prend une part du backlog, et qu'on vous remet des systèmes fonctionnels plus la documentation pour les opérer. Si vous n'avez pas encore d'équipe ops, on peut l'être un temps, puis vous aider à embaucher."
+        "q": "Pouvez-vous réparer un org Salesforce en désordre ou raté ?",
+        "a": "Oui — c'est une grande partie de ce qu'on fait. Un org en service qui a dérivé — doublons, automatisation que personne ne comprend, rapports auxquels personne ne se fie — n'a habituellement pas besoin d'être refait au complet. Il a besoin de quelqu'un pour le démêler. On cartographie ce qui est là, on répare ce qui est essentiel, et on retire le reste."
       },
       {
         "q": "Notre projet Salesforce a déjà déraillé. Pouvez-vous embarquer en cours de route ?",
-        "a": "Oui. Le sauvetage commence habituellement par un court audit : ce qui a été promis, ce qui a été bâti, ce qui est récupérable. Vous avez ce portrait avant de décider si on reprend la réalisation."
+        "a": "Oui. On commence par un court audit — ce qui a été promis, ce qui a été bâti, ce qui est récupérable — pour que vous puissiez décider si on reprend la réalisation ou si on remet votre équipe sur les rails. La plupart des projets qui déraillent ont été mal cadrés, pas mal bâtis."
       },
       {
-        "q": "Salesforce ou HubSpot, lequel poussez-vous ?",
-        "a": "Ni l'un ni l'autre par défaut. On travaille dans les deux écosystèmes et on recommande selon votre équipe, votre budget et ce que vous possédez déjà. Parfois, la réponse honnête, c'est « gardez ce que vous avez et réparez la plomberie »."
+        "q": "Êtes-vous un conseiller Salesforce ou un partenaire d'implémentation ?",
+        "a": "Les deux, volontairement. La plupart des firmes font la stratégie ou la réalisation — vous avez généralement besoin de quelqu'un qui aligne le côté business et qui livre la partie technique. On cadre ce dont la business a vraiment besoin, on le bâtit dans Salesforce, et on vous le remet documenté."
       },
       {
-        "q": "Concrètement, ça veut dire combien d'heures, fractionné ?",
-        "a": "De quelques heures par semaine à quelques jours. On le dimensionne ensemble pendant la séance gratuite, et vous pouvez l'ajuster à la hausse ou à la baisse entre les sprints."
+        "q": "Notre équipe des ventes n'adopte pas Salesforce. Pouvez-vous aider ?",
+        "a": "Presque toujours — et c'est habituellement un problème de conception, pas de formation. On rebâtit les parties qui nuisent à la façon dont votre équipe travaille vraiment : moins de clics, de l'automatisation fiable, des données justes. Le CRM arrête d'être la chose que tout le monde évite."
       },
       {
-        "q": "Travaillez-vous en français ?",
-        "a": "Oui. On est canadiens et on mène des projets en français, en anglais, ou les deux, incluant la documentation et la formation."
+        "q": "Dans quelles industries travaillez-vous ?",
+        "a": "Haute technologie, services professionnels, manufacturier, services financiers, médias, santé et sciences de la vie. Les problèmes Salesforce se ressemblent d'une industrie à l'autre — données en désordre, aucune responsabilité claire, systèmes qui ne se parlent pas — et c'est cette couche qu'on travaille."
       },
       {
-        "q": "D'où travaillez-vous ?",
-        "a": "Du Canada. On travaille à distance avec des clients partout dans les Amériques et en Europe, en anglais ou en français."
+        "q": "Salesforce ou HubSpot — lequel recommandez-vous ?",
+        "a": "Ni l'un ni l'autre par défaut. On travaille dans les deux et on recommande selon votre équipe, votre budget et ce que vous possédez déjà. Parfois, la réponse honnête, c'est : gardez ce que vous avez et réparez la plomberie."
+      },
+      {
+        "q": "Qu'est-ce qu'un org Salesforce « prêt pour l'IA » veut vraiment dire ?",
+        "a": "Ça veut dire que vos données sont propres, gouvernées et connectées — pour qu'Agentforce et les autres fonctions IA aient de quoi vraiment travailler. La plupart des projets d'IA bloquent sur les mauvaises données, pas sur les mauvais modèles. On règle la fondation d'abord ; la partie IA devient pas mal plus facile après."
       },
       {
         "q": "Qu'est-ce qui arrive quand le projet se termine ?",
-        "a": "Vous gardez tout : documentation, journaux de décisions et une équipe formée. Certains clients passent à un léger forfait d'entretien. D'autres n'ont plus besoin de nous. Les deux résultats comptent comme un succès de notre côté."
+        "a": "Vous gardez tout : documentation, journaux de décisions et une équipe formée. Certains clients passent à un léger forfait d'entretien ; d'autres n'ont plus besoin de nous. Les deux comptent comme un succès de notre côté."
+      },
+      {
+        "q": "Êtes-vous au Canada ? Travaillez-vous en français ?",
+        "a": "Oui. On est canadiens, on travaille à distance avec des clients partout dans les Amériques et en Europe, et on mène des projets en français, en anglais, ou les deux — documentation et formation incluses."
       }
     ]
   },
@@ -432,7 +440,7 @@
     "h1": "Politique de confidentialité",
     "intro": "Cette politique explique quels renseignements personnels nous traitons via ce site web, pourquoi, et les choix qui s'offrent à vous. Elle couvre uniquement le site web. Le travail réalisé dans le cadre d'un mandat signé est aussi régi par cette entente.",
     "whoTitle": "Qui nous sommes",
-    "whoBody": "Elevatek est un nom commercial d'Elevatek Consulting Inc., un cabinet-conseil en systèmes go-to-market constitué au Québec, Canada. Nous décidons pourquoi et comment vos renseignements sont traités, ce qui nous en rend responsables en vertu des lois canadiennes sur la protection des renseignements personnels. Pour toute question liée à la vie privée, écrivez à <a href=\"mailto:info@elevatek.ca\">info@elevatek.ca</a>. Notre responsable de la protection des renseignements personnels est joignable à la même adresse.",
+    "whoBody": "Elevatek est un nom commercial d'Elevatek Consulting Inc., un cabinet-conseil Salesforce constitué au Québec, Canada. Nous décidons pourquoi et comment vos renseignements sont traités, ce qui nous en rend responsables en vertu des lois canadiennes sur la protection des renseignements personnels. Pour toute question liée à la vie privée, écrivez à <a href=\"mailto:info@elevatek.ca\">info@elevatek.ca</a>. Notre responsable de la protection des renseignements personnels est joignable à la même adresse.",
     "collectTitle": "Quels renseignements nous recueillons",
     "collectGive": "<b>Les renseignements que vous nous fournissez.</b> Quand vous utilisez le formulaire de contact, nous recevons ce que vous saisissez : votre nom, votre courriel professionnel, votre entreprise, votre rôle, les outils de votre stack et votre message. Quand vous vous abonnez à l'infolettre, nous conservons votre adresse courriel. Si vous réservez un appel, vous saisissez vos coordonnées dans notre outil de planification pour fixer la rencontre.",
     "collectAuto": "<b>Les renseignements recueillis automatiquement.</b> Notre hébergeur, Netlify, conserve des journaux de serveur standards pour les visites du site. Ils peuvent inclure votre adresse IP, le type de navigateur, les pages que vous ouvrez, ainsi que la date et l'heure. Nous les utilisons pour garder le site fonctionnel et sécurisé, pas pour vous identifier.",
@@ -474,7 +482,7 @@
       },
       {
         "title": "Services",
-        "body": "Nous offrons du conseil en systèmes go-to-market : implémentation, intégration, opérations de revenus fractionnées et coaching connexe. Le site décrit ce que nous faisons, mais rien n'y constitue une offre ni une promesse d'un résultat particulier. La portée, l'échéancier et les honoraires de tout mandat sont établis par écrit avant le début des travaux."
+        "body": "Nous offrons du conseil sur Salesforce et les systèmes go-to-market : implémentation, intégration, opérations de revenus fractionnées et coaching connexe. Le site décrit ce que nous faisons, mais rien n'y constitue une offre ni une promesse d'un résultat particulier. La portée, l'échéancier et les honoraires de tout mandat sont établis par écrit avant le début des travaux."
       },
       {
         "title": "Propriété intellectuelle",

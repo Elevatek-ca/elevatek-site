@@ -17,9 +17,17 @@ const lang = Astro.currentLocale ?? 'fr';
 const t = useTranslations(lang);
 const homeUrl = lang === 'fr' ? 'https://elevatek.ca/fr/' : 'https://elevatek.ca/';
 
+// Service catalog reuses the localized service names so schema mirrors visible copy.
+const offerNames = [
+  t('features.s1.eyebrow'),
+  t('features.s2.eyebrow'),
+  ...t('services.items').map((s: { title: string }) => s.title),
+];
+
 const ld = {
   '@context': 'https://schema.org',
   '@type': 'ProfessionalService',
+  '@id': 'https://elevatek.ca/#organization',
   name: 'Elevatek',
   legalName: 'Elevatek Consulting Inc.',
   url: homeUrl,
@@ -27,6 +35,7 @@ const ld = {
   image: 'https://elevatek.ca/og.png',
   email: 'info@elevatek.ca',
   telephone: '+1-514-961-8625',
+  serviceType: 'Salesforce consulting and implementation',
   address: {
     '@type': 'PostalAddress',
     streetAddress: '2355 Guenette Street',
@@ -45,10 +54,23 @@ const ld = {
   },
   knowsLanguage: ['en', 'fr'],
   areaServed: ['North America', 'South America', 'Europe'],
+  knowsAbout: [
+    'Salesforce', 'Salesforce implementation', 'Salesforce integration',
+    'CRM', 'Revenue Operations', 'Salesforce Data Cloud', 'Agentforce',
+    'HubSpot', 'Marketing Cloud', 'business and technology alignment',
+  ],
+  hasOfferCatalog: {
+    '@type': 'OfferCatalog',
+    name: 'Salesforce consulting services',
+    itemListElement: offerNames.map((n: string) => ({
+      '@type': 'Offer',
+      itemOffered: { '@type': 'Service', name: n, serviceType: 'Salesforce consulting' },
+    })),
+  },
   inLanguage: lang === 'fr' ? 'fr-CA' : 'en-CA',
   description: t('meta.home.jsonldDescription'),
 };
-const structuredData = `<!-- Structured data: verified NAP + real on-site assets only. TODO: add sameAs (LinkedIn, etc.) once profile URLs are confirmed; priceRange omitted by choice. -->
+const structuredData = `<!-- Structured data: ProfessionalService + service catalog (entity clarity for AI answer engines). TODO: add sameAs (LinkedIn / AppExchange / Clutch) once profiles are live; priceRange omitted by choice. -->
 <script type="application/ld+json">${JSON.stringify(ld)}</script>`;
 ---
 <Base

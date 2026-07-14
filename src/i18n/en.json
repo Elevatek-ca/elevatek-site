@@ -1,11 +1,11 @@
 {
   "meta": {
     "home": {
-      "title": "GTM systems consultancy — Salesforce & HubSpot | Elevatek",
-      "description": "Elevatek is a Canadian GTM systems consultancy. We design, build, and run Salesforce, HubSpot, and Marketing Cloud so your revenue numbers finally agree.",
-      "ogTitle": "Elevatek — GTM systems consultancy",
-      "ogDescription": "Salesforce, HubSpot, and Marketing Cloud, wired together so your pipeline numbers stop arguing. Canadian, serving the Americas and Europe.",
-      "jsonldDescription": "GTM systems consultancy. Salesforce, HubSpot, and Marketing Cloud implementation, integration, and fractional RevOps for B2B teams."
+      "title": "Salesforce consulting & implementation | Elevatek (Canada)",
+      "description": "Elevatek is a Canadian Salesforce consultancy. We align the business and tech sides of your org — a clean data model, automation that gets adopted, an AI-ready foundation — across industries.",
+      "ogTitle": "Elevatek — Salesforce consulting",
+      "ogDescription": "We get the business and tech sides to agree on Salesforce: clean data, adoption that sticks, an AI-ready foundation. Canadian, across industries.",
+      "jsonldDescription": "Salesforce consulting and implementation. We align the business and tech sides of your organization — data model, automation, integration, adoption, and AI-ready data — across industries (tech, professional services, manufacturing, financial services, media, healthcare, and life sciences)."
     },
     "contact": {
       "title": "Contact Elevatek — Salesforce & HubSpot consulting",
@@ -37,7 +37,7 @@
   },
 
   "footer": {
-    "blurb": "A Canadian GTM systems consultancy serving the Americas and Europe. Salesforce, HubSpot, Marketing Cloud.",
+    "blurb": "A Canadian Salesforce consultancy, aligning the business and tech sides of your org. Serving clients in North America, South America, and Europe.",
     "exploreTitle": "Explore",
     "contactTitle": "Contact",
     "contactLink": "Contact",
@@ -72,20 +72,20 @@
   },
 
   "hero": {
-    "eyebrow": "GTM systems consultancy · Canada",
-    "headline": "A revenue stack that agrees with itself.",
-    "lead": "Your tools each tell a different story. We design, build, and run GTM systems for B2B teams: Salesforce, HubSpot, and Marketing Cloud, wired together so the numbers finally agree and your reps stop fighting the CRM.",
+    "eyebrow": "Salesforce consulting · Canada",
+    "headline": "A Salesforce org that agrees with the business.",
+    "lead": "Your tools tell different stories. We design, build, and run your CRM and marketing platforms (Salesforce, HubSpot, Marketing Cloud) so the business and tech sides finally agree — a clean data model, automation your admins can read, an AI-ready foundation. In tech, professional services, manufacturing, financial services, media, healthcare, and life sciences.",
     "ctaPrimary": "Book a free strategy session",
     "ctaGhost": "See how we work",
     "proof": [
       "10+ years in the Salesforce ecosystem",
       "16 Salesforce certifications",
-      "Serving the Americas and Europe, in French and English"
+      "Serving clients in North America, South America, and Europe, in French and English"
     ],
     "svgTitle": "A step chart climbing from spreadsheets to one source of truth",
     "nodes": ["spreadsheets", "crm", "marketing automation", "billing + service", "warehouse + bi"],
     "summit": "one source of truth",
-    "caption": "Elevation: GTM maturity"
+    "caption": "Elevation: stack maturity"
   },
 
   "logos": {
@@ -327,32 +327,40 @@
     "headline": "Questions people actually ask.",
     "items": [
       {
-        "q": "Do you replace our ops team or work alongside it?",
-        "a": "Alongside, almost always. Fractional means we plug into your existing team, take a slice of the backlog, and hand back working systems plus the documentation to run them. If you have no ops team yet, we can be it for a while, then help you hire."
+        "q": "Can you fix a messy or failed Salesforce org?",
+        "a": "Yes — it's a big part of what we do. A live org that's drifted — duplicate data, automation nobody understands, reports nobody trusts — usually doesn't need a full rebuild. It needs someone to untangle it. We map what's there, fix what's load-bearing, and retire what isn't."
       },
       {
         "q": "Our Salesforce project is already off the rails. Can you step in mid-flight?",
-        "a": "Yes. Rescue work usually starts with a short audit: what was promised, what was built, what's salvageable. You get that picture before deciding whether we take over the build."
+        "a": "Yes. We start with a short audit — what was promised, what's been built, what's salvageable — so you can decide whether we take over the build or get your current team back on track. Most off-the-rails projects were scoped wrong, not built wrong."
       },
       {
-        "q": "Salesforce or HubSpot, which one do you push?",
-        "a": "Neither by default. We work in both ecosystems and recommend based on your team, your budget, and what you already own. Sometimes the honest answer is \"keep what you have and fix the plumbing.\""
+        "q": "Are you a Salesforce consultant or an implementation partner?",
+        "a": "Both, on purpose. Most shops do strategy or build — you usually need someone who aligns the business side and ships the technical work. We scope what the business actually needs, build it in Salesforce, and hand it over documented."
       },
       {
-        "q": "What does fractional actually mean in hours?",
-        "a": "Anywhere from a few hours a week to a few days. We size it together during the free session, and you can scale it up or down between sprints."
+        "q": "Our sales team won't adopt Salesforce. Can you help?",
+        "a": "Almost always — and it's usually a design problem, not a training problem. We rebuild the parts that fight how your team actually works: fewer clicks, automation they trust, data that's right. The CRM stops being the thing everyone avoids."
       },
       {
-        "q": "Do you work in French?",
-        "a": "Oui. We're Canadian and run projects in French, English, or both, including documentation and training."
+        "q": "Which industries do you work in?",
+        "a": "Tech, professional services, manufacturing, financial services, media, healthcare, and life sciences. The Salesforce problems rhyme across them — messy data, no clear ownership, systems that don't talk — and that's the layer we work on."
       },
       {
-        "q": "Where do you work from?",
-        "a": "Canada. We work remotely with clients across the Americas and Europe, in English or French."
+        "q": "Salesforce or HubSpot — which one do you recommend?",
+        "a": "Neither by default. We work in both and recommend based on your team, your budget, and what you already own. Sometimes the honest answer is: keep what you have and fix the plumbing."
+      },
+      {
+        "q": "What does an \"AI-ready\" Salesforce org actually mean?",
+        "a": "It means your data is clean, governed, and connected — so Agentforce and other AI features have something real to work with. Most AI pilots stall on bad data, not bad models. We fix the foundation first; the AI part gets a lot easier after that."
       },
       {
         "q": "What happens when the project ends?",
-        "a": "You keep everything: documentation, decision logs, and a trained team. Some clients move to a light retainer for upkeep. Some don't need us anymore. Both outcomes count as success on our end."
+        "a": "You keep everything: documentation, decision logs, and a trained team. Some clients move to a light retainer for upkeep; some don't need us anymore. Both count as success on our end."
+      },
+      {
+        "q": "Are you based in Canada? Do you work in French?",
+        "a": "Yes, and oui. We're Canadian, work remotely with clients across the Americas and Europe, and run projects in French, English, or both — documentation and training included."
       }
     ]
   },
@@ -432,7 +440,7 @@
     "h1": "Privacy policy",
     "intro": "This policy explains what personal information we handle through this website, why we handle it, and the choices you have. It covers the website only. Work we do under a signed engagement is also governed by that agreement.",
     "whoTitle": "Who we are",
-    "whoBody": "Elevatek is a trade name of Elevatek Consulting Inc., a go-to-market systems consultancy incorporated in Québec, Canada. We decide why and how your information is handled, which makes us responsible for it under Canadian privacy law. For anything privacy-related, email <a href=\"mailto:info@elevatek.ca\">info@elevatek.ca</a>. Our privacy officer can be reached at the same address.",
+    "whoBody": "Elevatek is a trade name of Elevatek Consulting Inc., a Salesforce consultancy incorporated in Québec, Canada. We decide why and how your information is handled, which makes us responsible for it under Canadian privacy law. For anything privacy-related, email <a href=\"mailto:info@elevatek.ca\">info@elevatek.ca</a>. Our privacy officer can be reached at the same address.",
     "collectTitle": "What information we collect",
     "collectGive": "<b>Information you give us.</b> When you use the contact form, we receive what you type: your name, work email, company, role, the tools in your stack, and your message. When you subscribe to the newsletter, we keep your email address. If you book a call, you enter your details in our scheduling tool to set up the meeting.",
     "collectAuto": "<b>Information collected automatically.</b> Our hosting provider, Netlify, keeps standard server logs for visits to the site. These can include your IP address, browser type, the pages you open, and the date and time. We use them to keep the site running and secure, not to identify you.",
@@ -474,7 +482,7 @@
       },
       {
         "title": "Services",
-        "body": "We provide consulting on go-to-market systems: implementation, integration, fractional revenue operations, and related coaching. The site describes what we do, but nothing on it is an offer or a promise of a particular result. The scope, timeline, and fees for any engagement are set in writing before work starts."
+        "body": "We provide consulting on Salesforce and go-to-market systems: implementation, integration, fractional revenue operations, and related coaching. The site describes what we do, but nothing on it is an offer or a promise of a particular result. The scope, timeline, and fees for any engagement are set in writing before work starts."
       },
       {
         "title": "Intellectual property",
