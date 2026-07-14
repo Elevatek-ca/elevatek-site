@@ -58,6 +58,15 @@ const frUrl = frPath !== undefined ? SITE + frPath : undefined;
 const showAlternates = !noindex && path !== undefined;
 const canonical = showAlternates ? (lang === 'fr' ? frUrl : enUrl) : undefined;
 
+// Header language toggle: the OTHER locale's equivalent of this page. Endonym labels
+// (a French page offers "English"; an English page offers "Français"). Reuses the
+// enPath/frPath above — one alternate-URL source for header, footer, and hreflang.
+const otherPath = lang === 'fr' ? enPath : frPath;
+const otherLangCode = lang === 'fr' ? 'en' : 'fr';
+const otherShort = lang === 'fr' ? 'EN' : 'FR';
+const otherFull = lang === 'fr' ? 'English' : 'Français';
+const otherAria = lang === 'fr' ? 'English version' : 'Version française';
+
 // "Let's talk" target: contact page overrides to #form, otherwise the locale's /contact.
 const cta = ctaHref ?? lp('/contact');
 // Anchor prefix: empty on the home page (same-page scroll), the locale home elsewhere.
@@ -118,12 +127,10 @@ const a = home ? '' : lp('/');
       <a href={`${a}#clients`}>{t('nav.proof')}</a>
       <a href={`${a}#faq`}>{t('nav.faq')}</a>
       {home && <Fragment set:html={`<!-- TODO: swap mailto for your Calendly / booking link -->`} />}
-      {enPath && frPath && (
-        <div class="lang-switch" role="group" aria-label={t('nav.langAria')}>
-          <a class="lang-opt" hreflang="en" href={enPath} aria-current={lang !== 'fr' ? 'true' : undefined}>EN</a>
-          <span class="lang-sep" aria-hidden="true">·</span>
-          <a class="lang-opt" hreflang="fr" href={frPath} aria-current={lang === 'fr' ? 'true' : undefined}>FR</a>
-        </div>
+      {otherPath && (
+        <a class="lang-toggle" hreflang={otherLangCode} href={otherPath} aria-label={otherAria}>
+          <span class="lt-short">{otherShort}</span><span class="lt-full">{otherFull}</span>
+        </a>
       )}
       <a class="btn btn-primary" href={cta}>{t('nav.cta')}</a>
     </nav>
@@ -139,7 +146,7 @@ const a = home ? '' : lp('/');
     <div class="wrap">
       <div class="foot-base" style="border-top:0;padding-top:0">
         <span>© <span id="year">2026</span> {t('footer.copyright')}</span>
-        <span><a href={lp('/privacy')}>{t('footer.privacy')}</a> · <a href={lp('/terms')}>{t('footer.terms')}</a> · <a href={lp('/contact')}>{t('footer.contactLink')}</a> · <button type="button" class="cookie-prefs" data-consent="reopen">{t('footer.cookiePrefs')}</button></span>
+        <span><a href={lp('/privacy')}>{t('footer.privacy')}</a> · <a href={lp('/terms')}>{t('footer.terms')}</a> · <a href={lp('/contact')}>{t('footer.contactLink')}</a> · <button type="button" class="cookie-prefs" data-consent="reopen">{t('footer.cookiePrefs')}</button>{enPath && frPath && (<Fragment> · <a class="foot-lang" hreflang="en" href={enPath} aria-current={lang !== 'fr' ? 'true' : undefined}>English</a> · <a class="foot-lang" hreflang="fr" href={frPath} aria-current={lang === 'fr' ? 'true' : undefined}>Français</a></Fragment>)}</span>
         <span>{t('footer.builtIn')}</span>
       </div>
     </div>
@@ -183,7 +190,7 @@ const a = home ? '' : lp('/');
       </div>
       <div class="foot-base">
         <span>© <span id="year">2026</span> {t('footer.copyright')}</span>
-        <span><a href={lp('/privacy')}>{t('footer.privacy')}</a> · <a href={lp('/terms')}>{t('footer.terms')}</a> · <button type="button" class="cookie-prefs" data-consent="reopen">{t('footer.cookiePrefs')}</button></span>
+        <span><a href={lp('/privacy')}>{t('footer.privacy')}</a> · <a href={lp('/terms')}>{t('footer.terms')}</a> · <button type="button" class="cookie-prefs" data-consent="reopen">{t('footer.cookiePrefs')}</button>{enPath && frPath && (<Fragment> · <a class="foot-lang" hreflang="en" href={enPath} aria-current={lang !== 'fr' ? 'true' : undefined}>English</a> · <a class="foot-lang" hreflang="fr" href={frPath} aria-current={lang === 'fr' ? 'true' : undefined}>Français</a></Fragment>)}</span>
         <span>{t('footer.builtIn')}</span>
       </div>
     </div>

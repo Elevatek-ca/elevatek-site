@@ -97,11 +97,8 @@ h3{font-size:clamp(1.35rem,2.2vw,1.7rem);line-height:1.15}
 }
 .main-nav a:not(.btn):hover{color:var(--ink)}
 .main-nav .btn{padding:.6em 1.15em;font-size:.92rem}
-.lang-switch{display:flex;align-items:center;gap:.45em}
-.main-nav .lang-switch .lang-opt{width:auto;padding:0;font-family:var(--mono);font-size:.72rem;font-weight:500;letter-spacing:.08em;text-transform:uppercase;color:var(--slate);text-decoration:none}
-.main-nav .lang-switch .lang-opt[aria-current="true"]{color:var(--ink)}
-.main-nav .lang-switch .lang-opt:hover{color:var(--ink)}
-.main-nav .lang-switch .lang-sep{color:var(--mist);font-size:.72rem;user-select:none}
+.main-nav a.lang-toggle{font-family:var(--mono);font-size:.72rem;font-weight:500;letter-spacing:.08em;text-transform:uppercase}
+.lang-toggle .lt-full{display:none}
 .nav-toggle{display:none;background:none;border:0;cursor:pointer;padding:10px}
 .nav-toggle span{display:block;width:22px;height:2px;background:var(--ink);margin:5px 0;transition:transform .2s ease,opacity .2s ease}
 
@@ -459,8 +456,9 @@ h3{font-size:clamp(1.35rem,2.2vw,1.7rem);line-height:1.15}
   .main-nav.open{display:flex}
   .main-nav a{padding:12px 0;width:100%;font-size:1.05rem}
   .main-nav .btn{margin-top:10px;justify-content:center;width:100%}
-  .main-nav .lang-switch{width:100%;padding:14px 0 2px;gap:.7em}
-  .main-nav .lang-switch .lang-opt{font-size:.95rem;padding:6px 0}
+  .main-nav a.lang-toggle{font-size:1.05rem;text-transform:none;letter-spacing:.02em}
+  .lang-toggle .lt-short{display:none}
+  .lang-toggle .lt-full{display:inline}
   .nav-toggle{display:block}
   .nav-toggle[aria-expanded="true"] span:nth-child(1){transform:translateY(7px) rotate(45deg)}
   .nav-toggle[aria-expanded="true"] span:nth-child(2){opacity:0}
@@ -525,6 +523,8 @@ h3{font-size:clamp(1.35rem,2.2vw,1.7rem);line-height:1.15}
 .updated{font-family:var(--mono);font-size:.74rem;letter-spacing:.08em;color:var(--slate);text-transform:uppercase;margin-bottom:32px}
 .foot-base a{color:inherit;text-decoration:none}
 .foot-base a:hover{color:var(--ink)}
+.foot-base a.foot-lang[aria-current="true"],
+.foot-base a.foot-lang[aria-current="true"]:hover{color:var(--blue)}
 /* 404 */
 .lost{min-height:60vh;display:grid;place-items:center;text-align:center;padding:80px 24px}
 .lost .big{font-family:var(--display);font-weight:800;font-size:clamp(5rem,16vw,10rem);line-height:1;letter-spacing:.02em}

@@ -26,7 +26,7 @@ if (y) y.textContent = new Date().getFullYear();
 // Language switcher: preserve query string + hash when switching locale (computed
 // at click time), so /contact?type=hourly -> /fr/contact?type=hourly and
 // /#pricing -> /fr/#pricing. The static hrefs still work with JS off.
-document.querySelectorAll('.lang-switch .lang-opt').forEach(a => {
+document.querySelectorAll('.lang-toggle, .foot-lang').forEach(a => {
   const base = a.getAttribute('href');
   a.addEventListener('click', e => {
     const extra = location.search + location.hash;
