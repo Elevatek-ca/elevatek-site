@@ -145,9 +145,20 @@ const a = home ? '' : lp('/');
   <footer class="site-foot">
     <div class="wrap">
       <div class="foot-base" style="border-top:0;padding-top:0">
-        <span>© <span id="year">2026</span> {t('footer.copyright')}</span>
-        <span><a href={lp('/privacy')}>{t('footer.privacy')}</a> · <a href={lp('/terms')}>{t('footer.terms')}</a> · <a href={lp('/contact')}>{t('footer.contactLink')}</a> · <button type="button" class="cookie-prefs" data-consent="reopen">{t('footer.cookiePrefs')}</button>{enPath && frPath && (<Fragment> · <a class="foot-lang" hreflang="en" href={enPath} aria-current={lang !== 'fr' ? 'true' : undefined}>English</a> · <a class="foot-lang" hreflang="fr" href={frPath} aria-current={lang === 'fr' ? 'true' : undefined}>Français</a></Fragment>)}</span>
-        <span>{t('footer.builtIn')}</span>
+        <div class="foot-base-row">
+          <span class="foot-legal"><a href={lp('/privacy')}>{t('footer.privacy')}</a> · <a href={lp('/terms')}>{t('footer.terms')}</a> · <a href={lp('/contact')}>{t('footer.contactLink')}</a> · <button type="button" class="cookie-prefs" data-consent="reopen">{t('footer.cookiePrefs')}</button></span>
+          {enPath && frPath && (
+            <span class="foot-lang-pair">
+              {lang === 'fr' ? <a class="foot-lang" hreflang="en" href={enPath}>English</a> : <span class="foot-lang-active" aria-current="true">English</span>}
+              {' · '}
+              {lang === 'fr' ? <span class="foot-lang-active" aria-current="true">Français</span> : <a class="foot-lang" hreflang="fr" href={frPath}>Français</a>}
+            </span>
+          )}
+        </div>
+        <div class="foot-base-row">
+          <span>© <span id="year">2026</span> {t('footer.copyright')}</span>
+          <span>{t('footer.builtIn')}</span>
+        </div>
       </div>
     </div>
   </footer>
@@ -189,9 +200,20 @@ const a = home ? '' : lp('/');
         </div>
       </div>
       <div class="foot-base">
-        <span>© <span id="year">2026</span> {t('footer.copyright')}</span>
-        <span><a href={lp('/privacy')}>{t('footer.privacy')}</a> · <a href={lp('/terms')}>{t('footer.terms')}</a> · <button type="button" class="cookie-prefs" data-consent="reopen">{t('footer.cookiePrefs')}</button>{enPath && frPath && (<Fragment> · <a class="foot-lang" hreflang="en" href={enPath} aria-current={lang !== 'fr' ? 'true' : undefined}>English</a> · <a class="foot-lang" hreflang="fr" href={frPath} aria-current={lang === 'fr' ? 'true' : undefined}>Français</a></Fragment>)}</span>
-        <span>{t('footer.builtIn')}</span>
+        <div class="foot-base-row">
+          <span class="foot-legal"><a href={lp('/privacy')}>{t('footer.privacy')}</a> · <a href={lp('/terms')}>{t('footer.terms')}</a> · <button type="button" class="cookie-prefs" data-consent="reopen">{t('footer.cookiePrefs')}</button></span>
+          {enPath && frPath && (
+            <span class="foot-lang-pair">
+              {lang === 'fr' ? <a class="foot-lang" hreflang="en" href={enPath}>English</a> : <span class="foot-lang-active" aria-current="true">English</span>}
+              {' · '}
+              {lang === 'fr' ? <span class="foot-lang-active" aria-current="true">Français</span> : <a class="foot-lang" hreflang="fr" href={frPath}>Français</a>}
+            </span>
+          )}
+        </div>
+        <div class="foot-base-row">
+          <span>© <span id="year">2026</span> {t('footer.copyright')}</span>
+          <span>{t('footer.builtIn')}</span>
+        </div>
       </div>
     </div>
   </footer>
