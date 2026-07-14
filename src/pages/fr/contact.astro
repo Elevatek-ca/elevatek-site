@@ -45,8 +45,8 @@ const langs = t('contact.form.langs');
         <div class="fsection">
           <p class="eyebrow">{t('contact.form.s2Eyebrow')}</p>
           <div class="fchips">
-            {stack.map((s: string) => (
-              <label class="fchip"><input type="checkbox" name="stack" value={s}><span>{s}</span></label>
+            {stack.map((s: { value: string; label: string }) => (
+              <label class="fchip"><input type="checkbox" name="stack" value={s.value}><span>{s.label}</span></label>
             ))}
           </div>
         </div>
@@ -54,8 +54,8 @@ const langs = t('contact.form.langs');
         <div class="fsection">
           <p class="eyebrow">{t('contact.form.s3Eyebrow')}</p>
           <div class="fchips">
-            {engagement.map((e: string) => (
-              <label class="fchip"><input type="radio" name="engagement" value={e}><span>{e}</span></label>
+            {engagement.map((e: { value: string; label: string }) => (
+              <label class="fchip"><input type="radio" name="engagement" value={e.value}><span>{e.label}</span></label>
             ))}
           </div>
         </div>
@@ -63,8 +63,8 @@ const langs = t('contact.form.langs');
         <div class="fsection">
           <p class="eyebrow">{t('contact.form.s4Eyebrow')}</p>
           <div class="fchips">
-            {urgency.map((u: string) => (
-              <label class="fchip"><input type="radio" name="urgency" value={u}><span>{u}</span></label>
+            {urgency.map((u: { value: string; label: string }) => (
+              <label class="fchip"><input type="radio" name="urgency" value={u.value}><span>{u.label}</span></label>
             ))}
           </div>
         </div>

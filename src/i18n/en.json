@@ -390,11 +390,30 @@
         { "value": "Other", "label": "Other" }
       ],
       "s2Eyebrow": "02 · Your stack",
-      "stack": ["Salesforce", "HubSpot", "Marketing Cloud", "Pardot / MCAE", "NetSuite", "Dynamics", "Other ERP", "Mostly spreadsheets"],
+      "stack": [
+        { "value": "Salesforce", "label": "Salesforce" },
+        { "value": "HubSpot", "label": "HubSpot" },
+        { "value": "Marketing Cloud", "label": "Marketing Cloud" },
+        { "value": "Pardot / MCAE", "label": "Pardot / MCAE" },
+        { "value": "NetSuite", "label": "NetSuite" },
+        { "value": "Dynamics", "label": "Dynamics" },
+        { "value": "Other ERP", "label": "Other ERP" },
+        { "value": "Mostly spreadsheets", "label": "Mostly spreadsheets" }
+      ],
       "s3Eyebrow": "03 · What you're after",
-      "engagement": ["Free strategy session", "Hourly help", "Retainer", "Not sure yet"],
+      "engagement": [
+        { "value": "Free strategy session", "label": "Free strategy session" },
+        { "value": "Hourly help", "label": "Hourly help" },
+        { "value": "Retainer", "label": "Retainer" },
+        { "value": "Not sure yet", "label": "Not sure yet" }
+      ],
       "s4Eyebrow": "04 · How soon",
-      "urgency": ["Yesterday", "This month", "This quarter", "Just exploring"],
+      "urgency": [
+        { "value": "Yesterday", "label": "Yesterday" },
+        { "value": "This month", "label": "This month" },
+        { "value": "This quarter", "label": "This quarter" },
+        { "value": "Just exploring", "label": "Just exploring" }
+      ],
       "s5Eyebrow": "05 · The details",
       "nameLabel": "Your name",
       "companyLabel": "Company",

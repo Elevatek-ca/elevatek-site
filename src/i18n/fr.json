@@ -1,15 +1,15 @@
 {
   "meta": {
     "home": {
-      "title": "Conseil et implémentation Salesforce | Elevatek (Canada)",
-      "description": "Elevatek est un cabinet-conseil Salesforce canadien. On aligne la business et la tech de votre organisation — un modèle de données propre, de l'automatisation que vos équipes adoptent, une fondation prête pour l'IA. Peu importe votre secteur.",
-      "ogTitle": "Elevatek — conseil Salesforce",
-      "ogDescription": "On met la business et la tech d'accord sur Salesforce : données propres, adoption qui dure, fondation prête pour l'IA. Cabinet-conseil canadien, dans tous les secteurs.",
-      "jsonldDescription": "Conseil et implémentation Salesforce. On aligne la business et la tech de votre organisation — modèle de données, automatisation, intégration, adoption et données prêtes pour l'IA — dans plusieurs secteurs (haute technologie, services professionnels, manufacturier, services financiers, médias, santé et sciences de la vie)."
+      "title": "Conseil et implantation Salesforce | Elevatek (Canada)",
+      "description": "Elevatek est une boutique-conseil québécoise et partenaire d'implantation Salesforce. On aligne votre business et votre tech : un modèle de données propre, des automatisations adoptées par vos équipes et une fondation prête pour l'IA.",
+      "ogTitle": "Elevatek — Partenaire d'implantation Salesforce",
+      "ogDescription": "On met la business et la tech d'accord sur Salesforce : données propres, adoption durable, fondation prête pour l'IA. Boutique-conseil québécoise, peu importe votre secteur.",
+      "jsonldDescription": "Conseil en implantation Salesforce et en transformation numérique au Québec. Elevatek offre des services d’analyse d’affaires, d’architecture de solution, d’implantation CRM, d’intégration, d’automatisation, d’adoption et d’optimisation continue."
     },
     "contact": {
-      "title": "Contactez Elevatek — conseil Salesforce et HubSpot",
-      "description": "Dites-nous ce qui se passe dans votre stack. Cinq questions, deux minutes, et un humain vous répond avec les prochaines étapes. Salesforce, HubSpot, Marketing Cloud, RevOps consulting."
+      "title": "Contactez Elevatek — conseil Salesforce et transformation numérique",
+      "description": "Dites-nous ce qui doit mieux fonctionner dans Salesforce et votre stack technologique. Cinq questions, deux minutes, et un consultant senior vous répond."
     },
     "privacy": {
       "title": "Politique de confidentialité — Elevatek",
@@ -17,7 +17,7 @@
     },
     "terms": {
       "title": "Conditions d'utilisation — Elevatek",
-      "description": "Les conditions qui régissent le site web d'Elevatek et ses mandats de conseil."
+      "description": "Les conditions qui régissent le site Web d'Elevatek et ses mandats de conseil."
     },
     "notFound": {
       "title": "Page introuvable — Elevatek",
@@ -29,30 +29,30 @@
     "skip": "Passer au contenu",
     "menu": "Menu",
     "services": "Ce qu'on fait",
-    "process": "Comment on travaille",
+    "process": "Notre approche",
     "pricing": "Tarifs",
     "proof": "Témoignages",
     "faq": "FAQ",
-    "cta": "Contactez-nous"
+    "cta": "Discutons-en"
   },
 
   "footer": {
-    "blurb": "Un cabinet-conseil Salesforce canadien qui aligne la business et la tech de votre organisation. Au service de nos clients en Amérique du Nord, du Sud et en Europe.",
+    "blurb": "Une boutique-conseil québécoise en transformation numérique et partenaire d'implantation Salesforce, au service de nos clients en Amérique du Nord, du Sud et en Europe.",
     "exploreTitle": "Explorer",
     "contactTitle": "Contact",
-    "contactLink": "Contact",
-    "newsletterTitle": "Un conseil RevOps par mois",
+    "contactLink": "Nous joindre",
+    "newsletterTitle": "Un conseil RevOps concret par mois",
     "copyright": "Elevatek Consulting Inc.",
-    "builtIn": "Conçu au Canada.",
+    "builtIn": "Conçu au Québec, Canada.",
     "privacy": "Confidentialité",
     "terms": "Conditions",
     "cookiePrefs": "Préférences de témoins",
     "news": {
       "hpLabel": "Laissez ce champ vide",
-      "placeholder": "Adresse courriel",
+      "placeholder": "Adresse courriel professionnelle",
       "button": "S'abonner",
-      "note": "Quelque chose que vous pouvez livrer la même semaine. Désabonnement en tout temps.",
-      "success": "Merci — vous êtes sur la liste.",
+      "note": "Des conseils pratiques à appliquer dès cette semaine. Désabonnement en tout temps.",
+      "success": "Merci — votre abonnement est confirmé.",
       "error": "Ça n'a pas fonctionné. Réessayez."
     }
   },
@@ -72,71 +72,71 @@
   },
 
   "hero": {
-    "eyebrow": "Conseil Salesforce · Canada",
-    "headline": "Un Salesforce qui s'entend avec la business.",
-    "lead": "Vos solutions technologiques racontent des histoires différentes. On conçoit, on bâtit et on opère vos plateformes CRM et marketing (Salesforce, HubSpot, Marketing Cloud) pour que la business et la tech finissent par s'entendre — un modèle de données propre, de l'automatisation que vos admins comprennent, une fondation prête pour l'IA. En haute technologie, services professionnels, manufacturier, services financiers, médias, santé et sciences de la vie.",
+    "eyebrow": "Partenaire d’implantation Salesforce · Québec",
+    "headline": "Un Salesforce qui s'entend (enfin) avec la business.",
+    "lead": "Vos systèmes ne racontent pas la même histoire. On conçoit, on bâtit et on optimise vos plateformes CRM et marketing (Salesforce, HubSpot, Marketing Cloud) pour que la business et la tech se parlent enfin — un modèle de données propre, des automatisations que vos admins peuvent maintenir, et une fondation prête pour l'IA. En haute technologie, services professionnels, manufacturier, services financiers, médias et santé.",
     "ctaPrimary": "Réservez une séance gratuite",
-    "ctaGhost": "Voyez comment on travaille",
+    "ctaGhost": "Découvrez notre approche",
     "proof": [
       "Plus de 10 ans dans l'écosystème Salesforce",
       "16 certifications Salesforce",
-      "Au service de nos clients en Amérique du Nord, du Sud et en Europe"
+      "Des mandats bilingues partout en Amérique du Nord, du Sud et en Europe"
     ],
     "svgTitle": "Un graphique qui montre comment passer de feuilles de calcul à une source unique de vérité",
-    "nodes": ["feuilles de calcul", "crm", "automatisation marketing", "facturation + service", "entrepôt + bi"],
+    "nodes": ["fichiers Excel / Sheets", "crm", "automatisation marketing", "facturation + service client", "entrepôt de données + bi"],
     "summit": "une source unique de vérité",
     "caption": "Élévation : maturité de la stack"
   },
 
   "logos": {
     "aria": "Clients",
-    "label": "On a bâti pour des équipes chez"
+    "label": "On a conçu des solutions pour les équipes de"
   },
 
   "l2c": {
-    "eyebrow": "Le problème",
-    "headline": "Le lead to cash est un seul processus. Votre stack le traite comme huit.",
-    "lead": "Quelque part entre la soumission et la facture, les ventes passent le dossier aux finances et le CRM le passe à l'ERP. C'est à cette jonction que les chiffres commencent à dériver. La plupart de ce qu'on appelle un problème de reporting est un problème de transfert.",
-    "widgetLabel": "Lead to cash · tel quel",
+    "eyebrow": "Le défi",
+    "headline": "Le cycle du prospect à l'encaissement (lead-to-cash) est un seul processus. Votre stack le traite comme huit.",
+    "lead": "Quelque part entre la soumission (quote) et la facture, les ventes passent le relais aux finances, et le CRM le passe à l'ERP. C'est à cette jonction que les chiffres commencent à dériver. La majorité des problèmes de reporting sont en fait des problèmes de transfert (handoff).",
+    "widgetLabel": "Lead-to-cash · tel quel",
     "badge": "Stack type du marché intermédiaire",
     "crmCap": "<b>crm</b> · les ventes gèrent ce côté",
     "erpCap": "<b>erp</b> · les finances gèrent ce côté",
-    "crmSteps": ["capture de lead", "opportunité", "soumission", "contrat"],
-    "erpSteps": ["commande", "facturation", "exécution", "constatation des revenus"],
+    "crmSteps": ["capture de leads", "opportunité", "soumission", "contrat"],
+    "erpSteps": ["commande", "facturation", "fulfillment", "reconnaissance des revenus"],
     "seamChip": "le transfert",
     "leaks": [
       "l'attribution se perd à la capture",
-      "commandes ressaisies à la jonction",
-      "constatation des revenus bouclée à la main"
+      "commandes ressaisies manuellement",
+      "reconnaissance des revenus bouclée à la main"
     ],
-    "tools": ["automatisation marketing", "enrichissement", "cpq", "signature électronique", "paiements", "facturation", "exécution", "bi"],
-    "wnote": "chacun garde sa propre version de la vérité."
+    "tools": ["automatisation marketing", "enrichissement de données", "cpq", "signature électronique", "paiements", "facturation", "fulfillment", "bi"],
+    "wnote": "Chacun gagne et conserve sa propre version de la vérité."
   },
 
   "services": {
     "eyebrow": "Ce qu'on fait",
     "headline": "Choisissez l'aide dont vous avez vraiment besoin.",
-    "lead": "Chaque mandat commence pareil : on regarde ce que vous avez avant de proposer ce que vous devriez acheter.",
+    "lead": "Chaque mandat commence de la même façon : on analyse votre stack actuelle avant de vous proposer d'acheter quoi que ce soit d'autre.",
     "items": [
       {
         "glyph": "/r",
-        "title": "RevOps fractionné",
-        "body": "De la capacité ops senior sans l'embauche senior. On se joint à vos standups, on prend en charge un backlog et on livre chaque semaine."
+        "title": "RevOps fractionné (Alignement marketing-ventes-finances)",
+        "body": "De l'expertise RevOps senior pour orchestrer vos opérations de revenus sans le coût d'une embauche à temps plein. On s'intègre à vos standups, on gère votre backlog et on livre des gains d'efficacité chaque semaine."
       },
       {
         "glyph": "/g",
-        "title": "Conception de processus GTM",
-        "body": "Le lead to cash, cartographié de bout en bout. On trouve où les deals fuient entre le marketing, les ventes et le service, puis on rebâtit les transferts."
+        "title": "Processus GTM et parcours client (Lead-to-Cash)",
+        "body": "Votre cycle de mise en marché (Go-To-Market) cartographié de bout en bout. On repère où vos opportunités s'échappent entre le marketing, les ventes et le service, puis on élimine les frictions et la double saisie de données."
       },
       {
         "glyph": "/d",
         "title": "Intégration de données",
-        "body": "Votre CRM, votre plateforme marketing et votre entrepôt de données, qui rapportent tous les mêmes chiffres. Un seul pipeline. Une seule version de la vérité."
+        "body": "Votre CRM, vos plateformes marketing et votre entrepôt de données qui affichent tous les mêmes chiffres. Un seul pipeline de données. Une seule version de la vérité."
       },
       {
         "glyph": "/c",
-        "title": "Coaching d'équipe",
-        "body": "On forme vos admins pour qu'ils aient moins besoin de nous. Chaque réalisation documentée, chaque décision expliquée, transférée pour de vrai."
+        "title": "Pérennité et transfert de connaissances",
+        "body": "On forme vos administrateurs et vos équipes pour qu'ils deviennent 100 % autonomes. Chaque configuration dans Salesforce est documentée et chaque décision d'architecture est expliquée. Aucun secret, aucune dépendance."
       }
     ]
   },
@@ -144,10 +144,10 @@
   "features": {
     "s1": {
       "eyebrow": "Implémentation Salesforce",
-      "headline": "Implémenté comme si vous alliez y vivre. Parce que c'est le cas.",
-      "lead": "Un org Salesforce survit au projet qui l'a bâti. On conçoit l'architecture pour l'équipe que vous aurez dans trois ans : un modèle de données propre, de l'automatisation que vos admins peuvent lire, et des fonctions IA avec de quoi vraiment travailler.",
-      "chips": ["données prêtes pour l'IA", "réalisations documentées", "convivial pour les admins"],
-      "sister": "Vous croulez sous des données sales d'abord ? Notre pratique sœur, <a href=\"https://www.resoluble.com\" target=\"_blank\" rel=\"noopener\">Resoluble</a>, évalue et nettoie les orgs Salesforce avant qu'on bâtisse du neuf par-dessus.",
+      "headline": "Bâti pour y vivre. Parce que c'est votre quotidien.",
+      "lead": "Un org Salesforce doit survivre au projet qui l'a créé. On conçoit votre architecture pour l'équipe que vous aurez dans trois ans : un modèle de données sain, des automatisations faciles à maintenir et des fonctionnalités IA prêtes à performer.",
+      "chips": ["données prêtes pour l'IA", "configurations documentées", "admin-friendly"],
+      "sister": "Vous croulez d'abord sous les données polluées ? Notre pratique sœur, <a href=\"https://www.resoluble.com\" target=\"_blank\" rel=\"noopener\">Resoluble</a>, évalue et nettoie vos orgs Salesforce avant qu'on y bâtisse quoi que ce soit de neuf.",
       "widgetLabel": "Rapport d'avancement",
       "badge": "Exemple",
       "sub": "acme-corp · sprint 6 de 8",
@@ -157,13 +157,13 @@
         { "n": "03", "name": "intégrations", "st": "en cours" },
         { "n": "04", "name": "couche IA", "st": "en attente" }
       ],
-      "wnote": "ordre de construction : de bas en haut. l'IA arrive en dernier, volontairement."
+      "wnote": "ordre de construction : de bas en haut. l'IA arrive à la toute fin, et c'est volontaire."
     },
     "s2": {
       "eyebrow": "Architecture de solution",
       "headline": "L'architecture avant l'automatisation.",
-      "lead": "La plupart des stacks brisées ont été automatisées trop tôt. On cartographie d'abord vos objets, vos intégrations et la responsabilité, pour que chaque flux ajouté ensuite repose sur une fondation. C'est le travail plate qui rend tout le reste pas cher.",
-      "chips": ["cartographie des intégrations", "responsabilités définies", "évolue avec vous"],
+      "lead": "La plupart des stacks dysfonctionnelles ont été automatisées trop vite. On cartographie d'abord vos objets, vos intégrations et la propriété des données (ownership), pour que chaque nouveau flux repose sur des bases solides. C'est ce travail de fond (un peu ingrat, mais payant) qui rend tout le reste infiniment plus rentable par la suite.",
+      "chips": ["cartographie des intégrations", "ownership défini", "conçu pour évoluer"],
       "widgetLabel": "Audit de synchro",
       "badge": "Exemple",
       "sub": "acme-corp · crm ↔ erp",
@@ -173,56 +173,56 @@
       "rows": [
         { "name": "clients et comptes", "st": "synchronisé" },
         { "name": "produits et prix", "st": "synchronisé" },
-        { "name": "soumissions → commandes", "st": "ressaisie manuelle" },
-        { "name": "factures → crm", "st": "ressaisie manuelle" },
+        { "name": "soumissions → commandes", "st": "double saisie manuelle" },
+        { "name": "factures → crm", "st": "double saisie manuelle" },
         { "name": "niveaux d'inventaire", "st": "non connecté" }
       ],
       "stats": [
         { "b": "5", "label": "flux de données" },
         { "b": "2", "label": "synchronisés" },
-        { "b": "3", "label": "à la main" }
+        { "b": "3", "label": "manuels" }
       ],
-      "wnote": "les données ressaisies, c'est là que les chiffres commencent à diverger."
+      "wnote": "La double saisie de données, c'est là que les chiffres commencent à diverger."
     }
   },
 
   "process": {
     "eyebrow": "Comment on travaille",
     "headline": "Trois étapes. Aucun mystère.",
-    "lead": "La première étape vous coûte trente minutes. La troisième se termine avec votre équipe qui n'a plus besoin de nous.",
+    "lead": "La première étape vous prend 30 minutes. À la troisième, votre équipe est autonome et n'a plus besoin de nous.",
     "step1": {
       "title": "Évaluer",
-      "body": "Une séance gratuite de 30 minutes. Vous nous faites visiter la stack, on vous dit quoi régler en premier. Si on n'est pas le bon match, on le dit et on vous oriente vers mieux.",
+      "body": "Une séance gratuite de 30 minutes. Vous nous faites visiter votre stack, on vous dit quoi régler en premier. Si le fit n'est pas là, on vous le dit honnêtement et on vous réoriente vers de meilleures options.",
       "miniData": "données",
       "miniFlows": "flux",
       "miniOwners": "responsables"
     },
     "step2": {
       "title": "Concevoir",
-      "body": "Une feuille de route avec priorités, responsables et prix. Vous voyez le plan au complet avant de vous engager dans quoi que ce soit.",
+      "body": "Une feuille de route claire avec priorités, responsabilités et tarifs. Vous voyez l'ensemble du plan avant de vous engager dans quoi que ce soit.",
       "miniNow": "maintenant",
       "miniNext": "ensuite",
       "miniLater": "plus tard"
     },
     "step3": {
       "title": "Bâtir et opérer",
-      "body": "On livre par incréments hebdomadaires, on documente au fur et à mesure, et on forme votre équipe sur chaque morceau qu'on transfère."
+      "body": "On livre par incréments hebdomadaires, on documente au fur et à mesure, et on forme votre équipe sur chaque module transféré."
     }
   },
 
   "calculator": {
-    "eyebrow": "Calculez vos chiffres",
-    "headline": "Combien vous coûte le désaccord ?",
-    "lead": "Pas notre estimation. La vôtre. Trois curseurs, des maths visibles.",
+    "eyebrow": "Faites vos calculs",
+    "headline": "Combien vous coûte le désalignement ?",
+    "lead": "Pas notre estimation. La vôtre. Trois curseurs, des maths transparentes.",
     "widgetLabel": "Coût de réconciliation",
     "badge": "Vos chiffres",
-    "peopleLabel": "Personnes qui touchent au reporting des revenus",
-    "hoursLabel": "Heures que chacune passe par semaine à réconcilier",
-    "rateLabel": "Coût horaire chargé",
-    "totalSuffix": "par année, juste pour faire concorder les chiffres",
+    "peopleLabel": "Personnes impliquées dans la réconciliation des revenus",
+    "hoursLabel": "Heures perdues par personne, chaque semaine, à réconcilier les chiffres",
+    "rateLabel": "Taux horaire moyen (avec avantages sociaux)",
+    "totalSuffix": "par année, simplement pour faire concorder vos données",
     "mathInitial": "3 personnes × 4 h/sem × 85 $ × 48 semaines",
-    "wnote": "la séance stratégique ne coûte rien de tout ça.",
-    "cta": "Réservez la séance gratuite",
+    "wnote": "Notre séance stratégique ne vous coûtera rien de tout ça.",
+    "cta": "Réservez votre séance gratuite",
     "js": {
       "numberLocale": "fr-CA",
       "currencyPrefix": "",
@@ -238,53 +238,53 @@
   "pricing": {
     "eyebrow": "Tarifs",
     "headline": "Trois façons de commencer.",
-    "lead": "Une réponse rapide, de l'aide sur demande, ou quelqu'un qui prend en charge la feuille de route. Choisissez votre vitesse.",
+    "lead": "Un diagnostic rapide, de l'aide sur demande, ou un partenaire pour piloter votre feuille de route. Choisissez votre rythme.",
     "plans": [
       {
-        "tag": "Obtenez d'abord un avis",
-        "name": "$0",
+        "tag": "Prenez le pouls d'abord",
+        "name": "0 $",
         "sub": "Séance stratégique gratuite",
         "features": [
           "Un appel de 30 minutes, aucune préparation requise",
-          "Un avis honnête sur votre stack actuelle",
+          "Un diagnostic honnête de votre stack actuelle",
           "Quoi régler en premier, et dans quel ordre",
-          "Pas de deck, pas de pitch, aucune obligation"
+          "Zéro pitch, zéro présentation PowerPoint, aucun engagement"
         ],
         "cta": "Réservez la séance"
       },
       {
-        "tag": "Sur demande",
+        "tag": "À la carte",
         "name": "À l'heure",
         "sub": "Contrat flexible",
         "features": [
-          "Payez à l'usage",
-          "Aucun SOW requis",
-          "Consultants seniors seulement",
-          "Une portée aussi étroite ou large que vous voulez"
+          "Banque d'heures (payez à l'usage)",
+          "Aucun SOW complexe requis",
+          "Consultants seniors uniquement",
+          "Une portée aussi précise ou large que vous souhaitez"
         ],
         "cta": "Commencez à l'heure"
       },
       {
-        "tag": "En continu",
+        "tag": "Partenariat continu",
         "name": "Forfait",
-        "sub": "Mandats gérés",
+        "sub": "Mandats gérés (Retainer)",
         "features": [
           "Minimum de trois mois",
-          "Un backlog géré, livré chaque semaine",
-          "Réponse prioritaire",
+          "Un backlog géré et livré chaque semaine",
+          "Temps de réponse prioritaire",
           "Tarification au volume"
         ],
         "cta": "Parlons forfait"
       }
     ],
-    "fineprint": "Vous ne savez pas lequel choisir ? C'est à ça que sert la séance gratuite."
+    "fineprint": "Vous hésitez sur la formule ? C'est exactement à ça que sert notre appel gratuit."
   },
 
   "testimonials": {
     "_doNotTranslate": "Quotes are verbatim LinkedIn recommendations — keep each one in its original language; never translate the `quote` fields.",
     "eyebrow": "Preuves",
     "headline": "Ce que ça donne de travailler avec nous.",
-    "lead": "Tirées directement des recommandations LinkedIn. Non modifiées.",
+    "lead": "Tirés directement de nos recommandations LinkedIn. Sans filtre.",
     "liTitle": "Recommandation LinkedIn",
     "items": [
       {
@@ -327,59 +327,59 @@
     "headline": "Les questions que les gens posent vraiment.",
     "items": [
       {
-        "q": "Pouvez-vous réparer un org Salesforce en désordre ou raté ?",
-        "a": "Oui — c'est une grande partie de ce qu'on fait. Un org en service qui a dérivé — doublons, automatisation que personne ne comprend, rapports auxquels personne ne se fie — n'a habituellement pas besoin d'être refait au complet. Il a besoin de quelqu'un pour le démêler. On cartographie ce qui est là, on répare ce qui est essentiel, et on retire le reste."
+        "q": "Pouvez-vous réparer un environnement Salesforce chaotique ou mal configuré ?",
+        "a": "Oui — c'est une grande partie de ce qu'on fait. Une instance active qui a dérivé (doublons, automatisations incompréhensibles, rapports auxquels personne ne se fie) n'a généralement pas besoin d'être reconstruite au complet. Elle a besoin d'être nettoyée. On cartographie l'existant, on répare ce qui est névralgique, et on élimine le superflu."
       },
       {
-        "q": "Notre projet Salesforce a déjà déraillé. Pouvez-vous embarquer en cours de route ?",
-        "a": "Oui. On commence par un court audit — ce qui a été promis, ce qui a été bâti, ce qui est récupérable — pour que vous puissiez décider si on reprend la réalisation ou si on remet votre équipe sur les rails. La plupart des projets qui déraillent ont été mal cadrés, pas mal bâtis."
+        "q": "Notre projet Salesforce a déraillé. Pouvez-vous intervenir en cours de route ?",
+        "a": "Oui. On commence par un audit de sauvetage rapide : ce qui a été promis, ce qui a été réellement configuré et ce qui est récupérable. Vous pourrez ensuite décider si on reprend le projet en main ou si on remet simplement vos équipes sur les rails. La majorité des projets qui déraillent ont souffert d'un mauvais cadrage initial, pas d'un manque de compétences techniques."
       },
       {
-        "q": "Êtes-vous un conseiller Salesforce ou un partenaire d'implémentation ?",
-        "a": "Les deux, volontairement. La plupart des firmes font la stratégie ou la réalisation — vous avez généralement besoin de quelqu'un qui aligne le côté business et qui livre la partie technique. On cadre ce dont la business a vraiment besoin, on le bâtit dans Salesforce, et on vous le remet documenté."
+        "q": "Êtes-vous des consultants stratégiques ou un partenaire d'implantation ?",
+        "a": "Les deux, et c'est un choix délibéré. La plupart des agences font soit de la stratégie, soit du développement technique. Nous croyons que vous avez besoin d'un partenaire unique capable de traduire vos objectifs d'affaires en architecture technique concrète. On définit ce dont vos équipes ont réellement besoin, on le bâtit proprement dans Salesforce, et on vous livre le tout clés en main, entièrement documenté."
       },
       {
-        "q": "Notre équipe des ventes n'adopte pas Salesforce. Pouvez-vous aider ?",
-        "a": "Presque toujours — et c'est habituellement un problème de conception, pas de formation. On rebâtit les parties qui nuisent à la façon dont votre équipe travaille vraiment : moins de clics, de l'automatisation fiable, des données justes. Le CRM arrête d'être la chose que tout le monde évite."
+        "q": "Nos vendeurs n'utilisent pas Salesforce. Pouvez-vous nous aider ?",
+        "a": "Presque toujours — et c'est généralement un problème d'ergonomie et de processus, pas de formation. On simplifie et on adapte l'outil à la réalité de votre équipe sur le terrain : moins de clics inutiles, des automatisations fiables et des données de confiance. Le CRM cesse d'être la bête noire de l'organisation."
       },
       {
         "q": "Dans quelles industries travaillez-vous ?",
-        "a": "Haute technologie, services professionnels, manufacturier, services financiers, médias, santé et sciences de la vie. Les problèmes Salesforce se ressemblent d'une industrie à l'autre — données en désordre, aucune responsabilité claire, systèmes qui ne se parlent pas — et c'est cette couche qu'on travaille."
+        "a": "Haute technologie, services professionnels, manufacturier, services financiers, médias, santé et sciences de la vie. Les défis Salesforce se ressemblent d'un secteur à l'autre — données désorganisées, absence de propriété claire des processus, systèmes cloisonnés. C'est précisément sur cette couche de fondation qu'on intervient."
       },
       {
         "q": "Salesforce ou HubSpot — lequel recommandez-vous ?",
-        "a": "Ni l'un ni l'autre par défaut. On travaille dans les deux et on recommande selon votre équipe, votre budget et ce que vous possédez déjà. Parfois, la réponse honnête, c'est : gardez ce que vous avez et réparez la plomberie."
+        "a": "Ni l'un ni l'autre par défaut. On maîtrise les deux plateformes et on vous conseille selon les compétences de votre équipe, votre budget et vos outils actuels. Parfois, notre recommandation la plus honnête est simplement de garder vos outils et de réparer la plomberie existante."
       },
       {
-        "q": "Qu'est-ce qu'un org Salesforce « prêt pour l'IA » veut vraiment dire ?",
-        "a": "Ça veut dire que vos données sont propres, gouvernées et connectées — pour qu'Agentforce et les autres fonctions IA aient de quoi vraiment travailler. La plupart des projets d'IA bloquent sur les mauvaises données, pas sur les mauvais modèles. On règle la fondation d'abord ; la partie IA devient pas mal plus facile après."
+        "q": "Qu'est-ce qu'une instance Salesforce « prête pour l'IA » signifie concrètement ?",
+        "a": "Cela signifie que vos données sont structurées, nettoyées et connectées, de sorte qu'Agentforce et les autres outils d'IA disposent d'une matière première de qualité. La plupart des projets d'intelligence artificielle échouent à cause de données de piètre qualité, pas à cause de l'algorithme. On solidifie la fondation ; la magie de l'IA opère beaucoup plus facilement ensuite."
       },
       {
-        "q": "Qu'est-ce qui arrive quand le projet se termine ?",
-        "a": "Vous gardez tout : documentation, journaux de décisions et une équipe formée. Certains clients passent à un léger forfait d'entretien ; d'autres n'ont plus besoin de nous. Les deux comptent comme un succès de notre côté."
+        "q": "Que se passe-t-il après la fin du projet ?",
+        "a": "Vous êtes pleinement propriétaires de tout : documentation rigoureuse, historique des décisions d'architecture et équipe formée à l'interne. Certains clients choisissent de conserver un léger forfait de maintenance avec nous, tandis que d'autres deviennent 100 % autonomes. Dans les deux cas, c'est une victoire pour nous."
       },
       {
-        "q": "Êtes-vous au Canada ? Travaillez-vous en français ?",
-        "a": "Oui. On est canadiens, on travaille à distance avec des clients partout dans les Amériques et en Europe, et on mène des projets en français, en anglais, ou les deux — documentation et formation incluses."
+        "q": "Êtes-vous basés au Canada ? Travaillez-vous en français ?",
+        "a": "Oui. Nous sommes canadiens, nous travaillons à distance avec des clients partout dans les Amériques et en Europe, et nous mène-ons nos projets en français, en anglais, ou dans les deux langues — documentation et formation incluses."
       }
     ]
   },
 
   "closer": {
     "eyebrow": "Prochaine étape",
-    "headline": "Apportez-nous la stack qui vous gêne.",
-    "lead": "Trente minutes. Une réponse franche sur quoi régler en premier. Gratuit dans tous les cas.",
-    "cta": "Réservez une séance stratégique gratuite"
+    "headline": "Amenez-nous la stack technologique qui vous fait grincer des dents.",
+    "lead": "Trente minutes. Un avis franc sur ce qu'il faut régler en premier. Gratuit et sans pression.",
+    "cta": "Réservez votre séance stratégique gratuite"
   },
 
   "contact": {
     "hero": {
       "eyebrow": "Contact",
-      "headline": "Dites-nous ce qui se passe dans la stack.",
-      "lead": "Cinq questions, deux minutes. Un humain répond avec les prochaines étapes, pas un deck."
+      "headline": "Dites-nous ce qui cloche dans votre stack.",
+      "lead": "Cinq questions, deux minutes. Un humain vous répondra avec des pistes concrètes, pas un copier-coller de présentation corporative."
     },
     "form": {
-      "s1Eyebrow": "01 · Qui demande",
+      "s1Eyebrow": "01 · Votre rôle",
       "roles": [
         { "value": "RevOps", "label": "RevOps" },
         { "value": "IT / Systems", "label": "TI / Systèmes" },
@@ -389,45 +389,64 @@
         { "value": "CTO", "label": "CTO" },
         { "value": "Other", "label": "Autre" }
       ],
-      "s2Eyebrow": "02 · Votre stack",
-      "stack": ["Salesforce", "HubSpot", "Marketing Cloud", "Pardot / MCAE", "NetSuite", "Dynamics", "Other ERP", "Mostly spreadsheets"],
-      "s3Eyebrow": "03 · Ce que vous cherchez",
-      "engagement": ["Free strategy session", "Hourly help", "Retainer", "Not sure yet"],
-      "s4Eyebrow": "04 · D'ici quand",
-      "urgency": ["Yesterday", "This month", "This quarter", "Just exploring"],
+      "s2Eyebrow": "02 · Votre stack technologique",
+      "stack": [
+        { "value": "Salesforce", "label": "Salesforce" },
+        { "value": "HubSpot", "label": "HubSpot" },
+        { "value": "Marketing Cloud", "label": "Marketing Cloud" },
+        { "value": "Pardot / MCAE", "label": "Pardot / MCAE" },
+        { "value": "NetSuite", "label": "NetSuite" },
+        { "value": "Dynamics", "label": "Dynamics" },
+        { "value": "Other ERP", "label": "Autre ERP" },
+        { "value": "Mostly spreadsheets", "label": "Principalement des fichiers Excel / Sheets" }
+      ],
+      "s3Eyebrow": "03 · Votre besoin",
+      "engagement": [
+        { "value": "Free strategy session", "label": "Séance stratégique gratuite" },
+        { "value": "Hourly help", "label": "Aide à l'heure (ad hoc)" },
+        { "value": "Retainer", "label": "Forfait continu (Retainer)" },
+        { "value": "Not sure yet", "label": "Je ne sais pas encore" }
+      ],
+      "s4Eyebrow": "04 · Pour quand",
+      "urgency": [
+        { "value": "Yesterday", "label": "Hier" },
+        { "value": "This month", "label": "Ce mois-ci" },
+        { "value": "This quarter", "label": "Ce trimestre" },
+        { "value": "Just exploring", "label": "Simple exploration" }
+      ],
       "s5Eyebrow": "05 · Les détails",
       "nameLabel": "Votre nom",
       "companyLabel": "Entreprise",
       "emailLabel": "Courriel professionnel",
-      "messageLabel": "Qu'est-ce qui se passe dans la stack ?",
-      "messagePlaceholder": "Le symptôme suffit. On trouvera la cause ensemble.",
-      "langAria": "Langue préférée",
+      "messageLabel": "Qu'est-ce qui se passe dans votre stack ?",
+      "messagePlaceholder": "Décrivez simplement vos symptômes. On posera le diagnostic ensemble.",
+      "langAria": "Langue de préférence",
       "langs": [
         { "value": "English", "label": "Anglais" },
         { "value": "Français", "label": "Français" },
         { "value": "Either", "label": "Les deux" }
       ],
       "hpLabel": "Laissez ce champ vide",
-      "submit": "Envoyez",
-      "error": "Un nom et un courriel professionnel valide, et c'est bon.",
-      "note": "Ça va directement dans notre boîte de réception. Un humain le lit.",
-      "bookLine": "Prêt à réserver ?",
-      "bookBtn": "Choisissez un moment →",
-      "bookContact": "Écrivez à <a href=\"mailto:info@elevatek.ca\">info@elevatek.ca</a> ou appelez le <a href=\"tel:+15149618625\">+1 (514) 961-8625</a>. Les mêmes humains dans les deux cas.",
-      "sentTitle": "C'est reçu.",
-      "sentBody": "Un humain va lire ça et répondre avec les prochaines étapes. À bientôt."
+      "submit": "Envoyer la demande",
+      "error": "Un nom et un courriel professionnel valide, et le tour est joué.",
+      "note": "Votre message arrive directement dans notre boîte de réception. Un humain va le lire.",
+      "bookLine": "Prêt à choisir un moment ?",
+      "bookBtn": "Sélectionnez un créneau →",
+      "bookContact": "Écrivez-nous à <a href=\"mailto:info@elevatek.ca\">info@elevatek.ca</a> ou appelez au <a href=\"tel:+15149618625\">+1 (514) 961-8625</a>. Les mêmes humains vous répondent.",
+      "sentTitle": "C'est bien reçu.",
+      "sentBody": "Un humain va lire vos réponses et vous revenir rapidement avec les prochaines étapes. À bientôt !"
     },
     "req": {
-      "aria": "Votre demande jusqu'ici",
+      "aria": "Résumé de votre demande",
       "widgetLabel": "Votre demande",
       "badge": "En direct",
       "role": "Rôle",
-      "stack": "Stack",
-      "after": "Objectif",
-      "when": "Quand",
+      "stack": "Stack technologique",
+      "after": "Besoin",
+      "when": "Échéancier",
       "language": "Langue",
       "langDefault": "Les deux",
-      "wnote": "on revient avec les prochaines étapes, pas un pitch."
+      "wnote": "On revient vers vous avec des prochaines étapes claires, pas un pitch de vente."
     }
   },
 
@@ -438,81 +457,81 @@
 
   "privacy": {
     "h1": "Politique de confidentialité",
-    "intro": "Cette politique explique quels renseignements personnels nous traitons via ce site web, pourquoi, et les choix qui s'offrent à vous. Elle couvre uniquement le site web. Le travail réalisé dans le cadre d'un mandat signé est aussi régi par cette entente.",
+    "intro": "Cette politique explique comment nous traitons vos renseignements personnels sur ce site Web, pourquoi nous le faisons et les options qui s'offrent à vous. Elle s'applique uniquement à ce site. Nos mandats de conseil sont régis en priorité par nos ententes de services officielles.",
     "whoTitle": "Qui nous sommes",
-    "whoBody": "Elevatek est un nom commercial d'Elevatek Consulting Inc., un cabinet-conseil Salesforce constitué au Québec, Canada. Nous décidons pourquoi et comment vos renseignements sont traités, ce qui nous en rend responsables en vertu des lois canadiennes sur la protection des renseignements personnels. Pour toute question liée à la vie privée, écrivez à <a href=\"mailto:info@elevatek.ca\">info@elevatek.ca</a>. Notre responsable de la protection des renseignements personnels est joignable à la même adresse.",
+    "whoBody": "Elevatek est un nom commercial d'Elevatek Consulting Inc., une boutique-conseil en transformation numérique et partenaire d'implantation Salesforce constituée au Québec, Canada. Nous déterminons les fins et les moyens du traitement des renseignements personnels recueillis par ce site Web et en sommes responsables en vertu des lois canadiennes et québécoises applicables. Pour toute question, écrivez-nous à <a href=\"mailto:info@elevatek.ca\">info@elevatek.ca</a>. Notre responsable de la protection des renseignements personnels est joignable à cette même adresse.",
     "collectTitle": "Quels renseignements nous recueillons",
-    "collectGive": "<b>Les renseignements que vous nous fournissez.</b> Quand vous utilisez le formulaire de contact, nous recevons ce que vous saisissez : votre nom, votre courriel professionnel, votre entreprise, votre rôle, les outils de votre stack et votre message. Quand vous vous abonnez à l'infolettre, nous conservons votre adresse courriel. Si vous réservez un appel, vous saisissez vos coordonnées dans notre outil de planification pour fixer la rencontre.",
-    "collectAuto": "<b>Les renseignements recueillis automatiquement.</b> Notre hébergeur, Netlify, conserve des journaux de serveur standards pour les visites du site. Ils peuvent inclure votre adresse IP, le type de navigateur, les pages que vous ouvrez, ainsi que la date et l'heure. Nous les utilisons pour garder le site fonctionnel et sécurisé, pas pour vous identifier.",
+    "collectGive": "<b>Renseignements que vous fournissez.</b> Lorsque vous utilisez le formulaire de contact, nous recevons les renseignements saisis : votre nom, courriel professionnel, entreprise, rôle, votre stack technologique et votre message. Si vous vous abonnez à notre infolettre, nous conservons votre adresse courriel. Si vous planifiez un appel, vous transmettez vos coordonnées à notre outil de planification pour fixer le rendez-vous.",
+    "collectAuto": "<b>Renseignements recueillis automatiquement.</b> Notre fournisseur d'hébergement, Netlify, conserve des journaux de serveur standards pour les visites du site (adresse IP, type de navigateur, pages consultées, date et heure). Nous les utilisons uniquement pour assurer la sécurité et le bon fonctionnement du site, sans chercher à vous identifier.",
     "whyTitle": "Pourquoi nous les recueillons",
-    "whyBody": "Nous utilisons vos renseignements pour vous répondre, pour cadrer et réaliser le travail de conseil que vous nous demandez, et pour envoyer l'infolettre à laquelle vous vous êtes abonné. C'est tout. Nous ne vendons ni ne louons vos renseignements, et nous ne les utilisons pas à des fins publicitaires.",
+    "whyBody": "Nous utilisons vos renseignements pour répondre à vos requêtes, évaluer et réaliser les mandats de services-conseils demandés, administrer les appels planifiés et envoyer l’infolettre à laquelle vous vous êtes abonné. C'est tout. Nous ne vendons ni ne louons vos renseignements personnels et ne les utilisons pas à des fins publicitaires.",
     "shareTitle": "Avec qui nous les partageons",
-    "shareIntro": "Nous ne partageons vos renseignements qu'avec les fournisseurs de services qui nous aident à exploiter le site et à faire notre travail. Chacun ne traite vos données que pour nous fournir son service, et seulement dans la mesure nécessaire.",
+    "shareIntro": "We don't share your information except with the service providers that help us run the site and our work. Each one only processes your data to provide its service to us, and only as far as that needs.",
     "shareList": [
-      "<b>Hébergement et formulaires :</b> Netlify héberge le site et reçoit les soumissions du formulaire de contact et de l'infolettre via Netlify Forms.",
-      "<b>Courriel et envoi de l'infolettre :</b> aucun fournisseur dédié n'est encore en place ; pour l'instant, les inscriptions à l'infolettre sont conservées avec les soumissions de formulaire ci-dessus.",
-      "<b>Planification :</b> si vous réservez un appel, Calendly reçoit les renseignements que vous saisissez pour organiser la rencontre.",
-      "<b>Analytique :</b> Google Analytics 4, et seulement si vous acceptez les témoins d'analyse. Google reçoit des données d'utilisation anonymes pour fournir le service d'analyse ; rien ne se charge avant votre consentement."
+      "<b>Hébergement et formulaires :</b> Netlify héberge le site Web et traite les soumissions des formulaires de contact et d’infolettre au moyen de Netlify Forms.",
+      "<b>Envoi de courriels et infolettre :</b> Aucun fournisseur tiers d’infolettre n’est configuré pour le moment ; les inscriptions sont temporairement conservées avec les soumissions de formulaires Netlify.",
+      "<b>Planification :</b> Calendly reçoit les données que vous saisissez lors de la réservation d'un appel.",
+      "<b>Analytique :</b> Google Analytics 4, et uniquement si vous acceptez les témoins d'analyse. Aucun outil d'analyse ne se charge avant votre consentement."
     ],
     "retainTitle": "Combien de temps nous les conservons",
-    "retainBody": "Nous conservons les soumissions de contact aussi longtemps que nécessaire pour traiter votre demande et tout mandat qui en découle, puis nous les supprimons. Nous conservons les courriels d'infolettre jusqu'à votre désabonnement, que vous pouvez faire depuis n'importe quel numéro.",
+    "retainBody": "Nous conservons vos demandes de contact le temps nécessaire pour traiter votre dossier et réaliser tout mandat subséquent, puis nous en disposons de façon sécuritaire. Nous conservons votre adresse courriel pour l'infolettre jusqu'à ce que vous choisissiez de vous désabonner.",
     "whereTitle": "Où ils sont traités",
-    "whereBody": "Certains de nos fournisseurs peuvent stocker ou traiter vos renseignements à l'extérieur du Canada, notamment aux États-Unis. La Loi 25 du Québec nous demande de vous prévenir quand cela peut se produire, alors nous vous le disons ici. Si vous souhaitez plus de détails avant de nous envoyer quoi que ce soit, écrivez-nous d'abord.",
+    "whereBody": "Certains de nos fournisseurs peuvent stocker ou traiter vos données à l'extérieur du Canada, notamment aux États-Unis. La Loi 25 du Québec exige que nous vous en informions. Si vous souhaitez obtenir plus de précisions avant de nous soumettre des informations, écrivez-nous.",
     "rightsTitle": "Vos droits en vertu de la LPRPDE et de la Loi 25",
-    "rightsBody": "En vertu de la LPRPDE du Canada et de la Loi 25 du Québec, vous pouvez demander quels renseignements personnels nous détenons à votre sujet, nous demander de les corriger, de les supprimer, et retirer un consentement que vous nous avez donné — par exemple, en vous désabonnant. Pour exercer l'un de ces droits, écrivez à <a href=\"mailto:info@elevatek.ca\">info@elevatek.ca</a>. Nous confirmerons votre identité, répondrons dans le délai prévu par la loi, et vous dirons s'il y a une raison pour laquelle nous ne pouvons pas donner suite à une demande.",
+    "rightsBody": "En vertu de la LPRPDE (fédérale) et de la Loi 25 (Québec), vous disposez d'un droit d'accès, de rectification et de suppression de vos renseignements personnels. Vous pouvez également retirer votre consentement à tout moment (ex. en vous désabonnant). Pour exercer ces droits, contactez-nous à <a href=\"mailto:info@elevatek.ca\">info@elevatek.ca</a>. Nous validerons votre identité et répondrons dans les délais prescrits par la loi.",
     "cookiesTitle": "Témoins",
-    "cookiesBody": "Nous utilisons Google Analytics 4 pour comprendre comment le site est utilisé — quelles pages les gens ouvrent, d'où viennent approximativement les visites, et comment les gens naviguent dans le site. Il dépose des témoins et partage ces données d'utilisation avec Google. Ces témoins sont désactivés tant que vous ne les acceptez pas : rien lié à l'analytique ne se charge avant votre consentement dans notre bandeau de témoins, et choisir « Refuser » les garde désactivés. Nous n'utilisons pas de témoins publicitaires et ne vous profilons pas sur d'autres sites. Vous pouvez modifier ou retirer votre choix en tout temps via le lien « Préférences de témoins » dans le pied de page.",
+    "cookiesBody": "Nous utilisons Google Analytics 4 pour comprendre le parcours des utilisateurs sur notre site. Cet outil dépose des témoins et partage des données d'utilisation anonymes avec Google. Ces témoins sont inactifs par défaut : rien ne se charge avant que vous cliquiez sur « Accepter » dans notre bandeau. Nous n'utilisons pas de cookies publicitaires. Vous pouvez modifier vos choix en tout temps via le lien « Préférences de témoins » situé dans le pied de page.",
     "changesTitle": "Modifications",
-    "changesBody": "Si cette politique change, nous la mettrons à jour ici et modifierons la date d'entrée en vigueur en haut. Un changement important sera évident à partir de cette date.",
+    "changesBody": "Toute modification de cette politique sera publiée sur cette page avec la date de mise à jour révisée au haut du document.",
     "contactTitle": "Contact",
-    "contactBody": "Des questions sur votre vie privée ou sur cette politique ? Écrivez à notre responsable de la protection des renseignements personnels à <a href=\"mailto:info@elevatek.ca\">info@elevatek.ca</a> et nous vous aiderons."
+    "contactBody": "Pour toute question relative à vos données personnelles ou à notre politique de confidentialité, écrivez à notre responsable de la protection des renseignements personnels à <a href=\"mailto:info@elevatek.ca\">info@elevatek.ca</a>."
   },
 
   "terms": {
     "h1": "Conditions d'utilisation",
-    "intro": "Ces conditions encadrent votre utilisation de ce site web. Les mandats de conseil sont d'abord régis par leur énoncé de travail signé ou leur entente écrite ; ces conditions comblent les vides et établissent les règles du site lui-même.",
+    "intro": "Ces conditions encadrent l'utilisation de ce site Web. Les mandats de conseil sont régis en priorité par leur énoncé de travail (SOW) ou entente de services signée ; les présentes conditions régissent le site lui-même et comblent les vides juridiques.",
     "sections": [
       {
         "title": "Les bases",
-        "body": "Ce site web est exploité par Elevatek Consulting Inc. (« Elevatek », « nous »). En utilisant le site, vous acceptez ces conditions. Si vous n'êtes pas d'accord avec elles, veuillez ne pas utiliser le site."
+        "body": "Ce site Web est exploité par Elevatek Consulting Inc. (« Elevatek », « nous »). En naviguant sur ce site, vous acceptez ces conditions d'utilisation. Si vous ne les acceptez pas, veuillez cesser d'utiliser le site."
       },
       {
         "title": "Utilisation acceptable",
-        "body": "Veuillez utiliser le site de bonne foi. N'essayez pas de le briser, de le surcharger ou d'atteindre des parties qui ne sont pas destinées à être publiques. Ne l'utilisez pas à des fins illégales, et ne le copiez ni ne le moissonnez pour faire passer notre matériel pour le vôtre. Si le site est mal utilisé, nous pouvons limiter ou bloquer l'accès."
+        "body": "Nous vous demandons d'utiliser ce site de bonne foi. N'essayez pas d'en perturber le fonctionnement, de le surcharger ou d'accéder à des sections non publiques. Il est interdit d'utiliser notre contenu à des fins illégales ou de copier nos textes et visuels pour vous les approprier. En cas d'abus, nous nous réservons le droit de bloquer votre accès."
       },
       {
         "title": "Services",
-        "body": "Nous offrons du conseil sur Salesforce et les systèmes go-to-market : implémentation, intégration, opérations de revenus fractionnées et coaching connexe. Le site décrit ce que nous faisons, mais rien n'y constitue une offre ni une promesse d'un résultat particulier. La portée, l'échéancier et les honoraires de tout mandat sont établis par écrit avant le début des travaux."
+        "body": "Nous offrons des services de conseil sur Salesforce et l'optimisation des systèmes go-to-market (implémentation, intégration, RevOps fractionné et coaching d'équipes). Ce site décrit nos services, mais ne constitue pas une offre contractuelle ferme ni une garantie de résultat spécifique. La portée exacte, l'échéancier et les tarifs de chaque projet sont définis par écrit avant le début de tout mandat."
       },
       {
         "title": "Propriété intellectuelle",
-        "body": "Le contenu de ce site — texte, design et graphiques — appartient à Elevatek sauf indication contraire. Pour le travail de mandat, vous êtes propriétaire des livrables que nous construisons pour vous une fois le paiement complet effectué. Nous conservons la propriété de nos outils, gabarits et méthodes préexistants, et vous obtenez une licence pour continuer à utiliser tout élément qui nous appartient et qui est intégré à vos livrables."
+        "body": "Le contenu de ce site (textes, design, logos, graphiques) appartient à Elevatek, sauf indication contraire. Pour les projets clients, la propriété des livrables développés vous est entièrement transférée dès réception du paiement complet. Nous conservons la propriété de nos outils, gabarits et méthodologies préexistants, et vous accordons une licence d'utilisation pour tout élément intégré à vos livrables."
       },
       {
         "title": "Confidentialité",
-        "body": "Nous traitons vos données et vos renseignements d'affaires comme confidentiels, et nous attendons la même chose pour les nôtres. Une entente signée peut préciser cela davantage."
+        "body": "Nous traitons vos données et vos informations d'affaires avec la plus grande confidentialité, et nous attendons la même réciprocité de votre part. Une entente signée distincte peut encadrer nos échanges de manière plus détaillée."
       },
       {
         "title": "Aucune garantie",
-        "body": "Le site web est fourni « tel quel » et « selon sa disponibilité », sans garantie d'aucune sorte. Nous ne pouvons pas promettre qu'il sera toujours disponible, exempt d'erreurs ou sécurisé. Ceci s'applique au site web seulement. Cela ne change rien aux engagements que nous prenons pour les livrables de mandat, qui demeurent régis par l'énoncé de travail ou l'entente écrite."
+        "body": "Le site Web est fourni « tel quel » et selon sa disponibilité, sans garantie d'aucune sorte. Nous ne pouvons garantir qu'il sera en tout temps accessible, exempt d'erreurs ou sécurisé. Cette clause s'applique uniquement à l'utilisation du site Web et ne modifie pas les engagements convenus par écrit dans le cadre d'un mandat client."
       },
       {
         "title": "Limitation de responsabilité",
-        "body": "Dans la mesure permise par la loi, notre responsabilité totale pour tout mandat est plafonnée aux honoraires que vous nous avez versés pour ce mandat. Aucune des parties n'est responsable envers l'autre des dommages indirects, accessoires ou consécutifs. Rien ici ne limite ce qui ne peut être limité par la loi."
+        "body": "Dans la pleine mesure permise par la loi, notre responsabilité totale pour tout mandat client est plafonnée aux honoraires réels que vous nous avez versés pour ce mandat spécifique. Aucune des parties ne pourra être tenue responsable de dommages indirects, spéciaux ou consécutifs. Rien dans les présentes n'exclut une responsabilité qui ne peut légalement être limitée."
       },
       {
         "title": "Droit applicable",
-        "body": "Ces conditions sont régies par les lois de la province de Québec et les lois fédérales du Canada qui y sont applicables."
+        "body": "Ces conditions d'utilisation sont régies et interprétées selon les lois de la province de Québec et les lois fédérales du Canada qui s'y appliquent."
       },
       {
         "title": "Modifications",
-        "body": "Nous pouvons mettre à jour ces conditions de temps à autre. Lorsque nous le faisons, nous modifions la date d'entrée en vigueur en haut. Si vous continuez à utiliser le site après un changement, cela signifie que vous acceptez les conditions mises à jour."
+        "body": "Nous pouvons réviser ces conditions d'utilisation à tout moment. La date de dernière mise à jour en haut de page sera alors modifiée. Le fait de continuer à utiliser le site après une mise à jour constitue votre acceptation des nouvelles conditions."
       }
     ]
   },
 
   "notFound": {
-    "eyebrow": "Hors carte",
+    "eyebrow": "Hors-piste",
     "lead": "Cette page n'est pas sur le sentier. Le lien est brisé, ou la page a déménagé.",
     "cta": "Retour au camp de base"
   }
