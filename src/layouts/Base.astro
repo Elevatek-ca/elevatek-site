@@ -46,13 +46,17 @@ const lp = (p: string) => localizePath(p, lang);
 const socialTitle = ogTitle ?? title;
 const socialDesc = ogDescription ?? description;
 
-// Per-locale canonical + hreflang. English stays unprefixed; French sits at /fr/.
-// Only emitted for indexable pages that declare a `path`.
+// Per-page locale alternates — the SINGLE source of truth for both the hreflang
+// tags and the language switcher, so the two can never disagree. Derived from the
+// locale-agnostic `path` ('' = home, 'contact', 'privacy', 'terms', '404').
 const SITE = 'https://elevatek.ca';
-const hasAlternates = !noindex && path !== undefined;
-const enUrl = path !== undefined ? SITE + (path ? `/${path}` : '/') : undefined;
-const frUrl = path !== undefined ? SITE + (path ? `/fr/${path}` : '/fr/') : undefined;
-const canonical = hasAlternates ? (lang === 'fr' ? frUrl : enUrl) : undefined;
+const enPath = path !== undefined ? (path ? `/${path}` : '/') : undefined;
+const frPath = path !== undefined ? (path ? `/fr/${path}` : '/fr/') : undefined;
+const enUrl = enPath !== undefined ? SITE + enPath : undefined;
+const frUrl = frPath !== undefined ? SITE + frPath : undefined;
+// hreflang + canonical: indexable pages only. The switcher renders on every page.
+const showAlternates = !noindex && path !== undefined;
+const canonical = showAlternates ? (lang === 'fr' ? frUrl : enUrl) : undefined;
 
 // "Let's talk" target: contact page overrides to #form, otherwise the locale's /contact.
 const cta = ctaHref ?? lp('/contact');
@@ -68,7 +72,7 @@ const a = home ? '' : lp('/');
 {description && <meta name="description" content={description} />}
 {noindex && <meta name="robots" content="noindex" />}
 {canonical && <link rel="canonical" href={canonical} />}
-{hasAlternates && (
+{showAlternates && (
   <>
     <link rel="alternate" hreflang="en-CA" href={enUrl} />
     <link rel="alternate" hreflang="fr-CA" href={frUrl} />
@@ -85,7 +89,7 @@ const a = home ? '' : lp('/');
 {socialDesc && <meta property="og:description" content={socialDesc} />}
 {canonical && <meta property="og:url" content={canonical} />}
 <meta property="og:locale" content={lang === 'fr' ? 'fr_CA' : 'en_CA'}>
-{hasAlternates && <meta property="og:locale:alternate" content={lang === 'fr' ? 'en_CA' : 'fr_CA'} />}
+{showAlternates && <meta property="og:locale:alternate" content={lang === 'fr' ? 'en_CA' : 'fr_CA'} />}
 <meta property="og:image" content="https://elevatek.ca/og.png">
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="630">
@@ -114,6 +118,13 @@ const a = home ? '' : lp('/');
       <a href={`${a}#clients`}>{t('nav.proof')}</a>
       <a href={`${a}#faq`}>{t('nav.faq')}</a>
       {home && <Fragment set:html={`<!-- TODO: swap mailto for your Calendly / booking link -->`} />}
+      {enPath && frPath && (
+        <div class="lang-switch" role="group" aria-label={t('nav.langAria')}>
+          <a class="lang-opt" hreflang="en" href={enPath} aria-current={lang !== 'fr' ? 'true' : undefined}>EN</a>
+          <span class="lang-sep" aria-hidden="true">·</span>
+          <a class="lang-opt" hreflang="fr" href={frPath} aria-current={lang === 'fr' ? 'true' : undefined}>FR</a>
+        </div>
+      )}
       <a class="btn btn-primary" href={cta}>{t('nav.cta')}</a>
     </nav>
   </div>
