@@ -1,0 +1,42 @@
+---
+import Base from '../../layouts/Base.astro';
+import { getCollection, render } from 'astro:content';
+import { getAllBlogPosts, findCounterpart, postAlternates, readingMinutes, formatPostDate, articleJsonLd } from '../../lib/blog';
+import { useTranslations } from '../../i18n/utils';
+
+export async function getStaticPaths() {
+  const posts = await getCollection('blog', (p) => p.data.lang === 'en' && (import.meta.env.PROD ? !p.data.draft : true));
+  return posts.map((post) => ({ params: { slug: post.id }, props: { post } }));
+}
+
+const { post } = Astro.props;
+const lang = 'en';
+const t = useTranslations(lang);
+const all = await getAllBlogPosts();
+const counterpart = findCounterpart(post, all);
+const alt = postAlternates(post, counterpart);
+const canonical = 'https://elevatek.ca' + alt.en;
+const { Content } = await render(post);
+const mins = readingMinutes(post);
+---
+<Base
+  title={`${post.data.title} — Elevatek`}
+  description={post.data.description}
+  ogType="article"
+  enHref={alt.en}
+  frHref={alt.fr}
+  hreflangPair={alt.hreflang}
+>
+  <Fragment slot="head-end" set:html={articleJsonLd(post, canonical, lang)} />
+  <Fragment slot="head">
+    <meta property="article:published_time" content={post.data.pubDate.toISOString()} />
+    <meta property="article:modified_time" content={(post.data.updatedDate ?? post.data.pubDate).toISOString()} />
+  </Fragment>
+  <section class="page-hero"><div class="wrap">
+    <p class="eyebrow">{formatPostDate(post.data.pubDate, lang)} · {mins} {t('blog.readingTime')}</p>
+    <h1>{post.data.title}</h1>
+  </div></section>
+  <div class="wrap"><article class="page post">
+    <Content />
+  </article></div>
+</Base>

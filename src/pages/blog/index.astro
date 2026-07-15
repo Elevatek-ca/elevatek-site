@@ -1,0 +1,37 @@
+---
+import Base from '../../layouts/Base.astro';
+import { getBlogPosts, postPath, readingMinutes, formatPostDate } from '../../lib/blog';
+import { useTranslations } from '../../i18n/utils';
+
+const lang = 'en';
+const t = useTranslations(lang);
+const posts = await getBlogPosts('en');
+---
+<Base
+  title={`${t('blog.indexTitle')} — Elevatek`}
+  description={t('blog.indexDescription')}
+  enHref="/blog"
+  frHref="/fr/blogue"
+  hreflangPair={true}
+>
+  <section class="page-hero"><div class="wrap">
+    <p class="eyebrow">{t('blog.eyebrow')}</p>
+    <h1>{t('blog.indexTitle')}</h1>
+    <p class="lead">{t('blog.indexDescription')}</p>
+  </div></section>
+  <div class="wrap"><div class="page">
+    {posts.length === 0 ? (
+      <p>{t('blog.empty')}</p>
+    ) : (
+      <ul class="blog-list">
+        {posts.map((post) => (
+          <li class="blog-item">
+            <p class="eyebrow">{formatPostDate(post.data.pubDate, lang)} · {readingMinutes(post)} {t('blog.readingTime')}{post.data.draft ? ` · ${t('blog.draftLabel')}` : ''}</p>
+            <h2><a href={postPath(post)}>{post.data.title}</a></h2>
+            <p>{post.data.description}</p>
+          </li>
+        ))}
+      </ul>
+    )}
+  </div></div>
+</Base>

@@ -20,8 +20,19 @@ export default defineConfig({
         defaultLocale: 'en',
         locales: { en: 'en-CA', fr: 'fr-CA' },
       },
-      // Keep noindex pages (privacy, terms, 404 — en and /fr/ alike) out of the sitemap.
-      filter: (page) => !['privacy', 'terms', '404'].some((s) => page.includes('/' + s)),
+      // Keep noindex pages (privacy, terms, 404 — en and /fr/ alike) and the RSS feed
+      // out of the sitemap.
+      filter: (page) => !['privacy', 'terms', '404', 'rss'].some((s) => page.includes('/' + s)),
+      // Blog uses localized slugs (EN /blog, FR /fr/blogue) that the i18n auto-pairing
+      // can't map — it would emit a bogus /fr/blog. Drop the sitemap alternates for blog
+      // URLs; the correct hreflang is emitted in each page's HTML head instead.
+      serialize(item) {
+        const path = new URL(item.url).pathname;
+        if (/^\/blog(\/|$)/.test(path) || /^\/fr\/blogue(\/|$)/.test(path)) {
+          delete item.links;
+        }
+        return item;
+      },
     }),
   ],
 });

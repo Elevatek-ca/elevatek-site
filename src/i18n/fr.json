@@ -33,6 +33,7 @@
     "pricing": "Tarifs",
     "proof": "Témoignages",
     "faq": "FAQ",
+    "blog": "Blogue",
     "cta": "Discutons-en"
   },
 
@@ -534,5 +535,14 @@
     "eyebrow": "Hors-piste",
     "lead": "Cette page n'est pas sur le sentier. Le lien est brisé, ou la page a déménagé.",
     "cta": "Retour au camp de base"
+  },
+
+  "blog": {
+    "eyebrow": "Notes de terrain",
+    "indexTitle": "Blogue",
+    "indexDescription": "Des notes de terrain sur Salesforce, le RevOps, et l'art de faire s'entendre le business et la tech.",
+    "readingTime": "min de lecture",
+    "empty": "Aucun billet pour l'instant — revenez bientôt.",
+    "draftLabel": "Brouillon"
   }
 }

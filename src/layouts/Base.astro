@@ -12,6 +12,15 @@ export interface Props {
    * that should carry no canonical/hreflang (none currently).
    */
   path?: string;
+  /**
+   * Explicit per-locale alternate paths. Blog pages pass these directly because
+   * their slugs are localized (EN /blog/<slug>, FR /fr/blogue/<slug>) — when set,
+   * they override the `path`-derived alternates and feed both the selector AND hreflang.
+   */
+  enHref?: string;
+  frHref?: string;
+  /** Emit the hreflang pair? Blog posts pass false when no translation exists. */
+  hreflangPair?: boolean;
   /** Open Graph type; defaults to "website". */
   ogType?: string;
   /** OG/Twitter title; defaults to the page title. */
@@ -31,6 +40,9 @@ const {
   description,
   noindex = false,
   path,
+  enHref,
+  frHref,
+  hreflangPair,
   ogType = 'website',
   ogTitle,
   ogDescription,
@@ -50,13 +62,15 @@ const socialDesc = ogDescription ?? description;
 // tags and the language switcher, so the two can never disagree. Derived from the
 // locale-agnostic `path` ('' = home, 'contact', 'privacy', 'terms', '404').
 const SITE = 'https://elevatek.ca';
-const enPath = path !== undefined ? (path ? `/${path}` : '/') : undefined;
-const frPath = path !== undefined ? (path ? `/fr/${path}` : '/fr/') : undefined;
+const enPath = enHref ?? (path !== undefined ? (path ? `/${path}` : '/') : undefined);
+const frPath = frHref ?? (path !== undefined ? (path ? `/fr/${path}` : '/fr/') : undefined);
 const enUrl = enPath !== undefined ? SITE + enPath : undefined;
 const frUrl = frPath !== undefined ? SITE + frPath : undefined;
-// hreflang + canonical: indexable pages only. The switcher renders on every page.
-const showAlternates = !noindex && path !== undefined;
-const canonical = showAlternates ? (lang === 'fr' ? frUrl : enUrl) : undefined;
+const selfUrl = lang === 'fr' ? frUrl : enUrl;
+// Self-referencing canonical on every indexable page.
+const canonical = (!noindex && selfUrl) ? selfUrl : undefined;
+// hreflang pair: standard indexable pages always pair; blog only when a translation exists.
+const showAlternates = !noindex && (hreflangPair ?? (path !== undefined));
 
 // Header language toggle: the OTHER locale's equivalent of this page. Endonym labels
 // (a French page offers "English"; an English page offers "Français"). Reuses the
@@ -71,6 +85,8 @@ const otherAria = lang === 'fr' ? 'English version' : 'Version française';
 const cta = ctaHref ?? lp('/contact');
 // Anchor prefix: empty on the home page (same-page scroll), the locale home elsewhere.
 const a = home ? '' : lp('/');
+// Blog index for this locale (FR uses "blogue"); real page links, not anchors.
+const blogHref = lang === 'fr' ? '/fr/blogue' : '/blog';
 ---
 <!DOCTYPE html>
 <html lang={lang}>
@@ -126,6 +142,7 @@ const a = home ? '' : lp('/');
       <a href={`${a}#pricing`}>{t('nav.pricing')}</a>
       <a href={`${a}#clients`}>{t('nav.proof')}</a>
       <a href={`${a}#faq`}>{t('nav.faq')}</a>
+      <a href={blogHref}>{t('nav.blog')}</a>
       {home && <Fragment set:html={`<!-- TODO: swap mailto for your Calendly / booking link -->`} />}
       {otherPath && (
         <a class="lang-toggle" hreflang={otherLangCode} href={otherPath} aria-label={otherAria}>
@@ -177,6 +194,7 @@ const a = home ? '' : lp('/');
             <li><a href={`${a}#process`}>{t('nav.process')}</a></li>
             <li><a href={`${a}#pricing`}>{t('nav.pricing')}</a></li>
             <li><a href={`${a}#faq`}>{t('nav.faq')}</a></li>
+            <li><a href={blogHref}>{t('nav.blog')}</a></li>
             <li><a href={lp('/contact')}>{t('footer.contactLink')}</a></li>
           </ul>
         </div>

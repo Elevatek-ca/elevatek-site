@@ -33,6 +33,7 @@
     "pricing": "Pricing",
     "proof": "Proof",
     "faq": "FAQ",
+    "blog": "Blog",
     "cta": "Let's talk"
   },
 
@@ -534,5 +535,14 @@
     "eyebrow": "Off the map",
     "lead": "This page isn't on the trail. The link is broken, or the page moved.",
     "cta": "Back to base camp"
+  },
+
+  "blog": {
+    "eyebrow": "Field notes",
+    "indexTitle": "Blog",
+    "indexDescription": "Field notes on Salesforce, RevOps, and getting the business and tech sides to agree.",
+    "readingTime": "min read",
+    "empty": "No posts yet — check back soon.",
+    "draftLabel": "Draft"
   }
 }
