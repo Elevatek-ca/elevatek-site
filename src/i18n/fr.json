@@ -143,7 +143,7 @@
 
   "features": {
     "s1": {
-      "eyebrow": "Implémentation Salesforce",
+      "eyebrow": "Implantation Salesforce",
       "headline": "Bâti pour y vivre. Parce que c'est votre quotidien.",
       "lead": "Un org Salesforce doit survivre au projet qui l'a créé. On conçoit votre architecture pour l'équipe que vous aurez dans trois ans : un modèle de données sain, des automatisations faciles à maintenir et des fonctionnalités IA prêtes à performer.",
       "chips": ["données prêtes pour l'IA", "configurations documentées", "admin-friendly"],
@@ -501,7 +501,7 @@
       },
       {
         "title": "Services",
-        "body": "Nous offrons des services de conseil sur Salesforce et l'optimisation des systèmes go-to-market (implémentation, intégration, RevOps fractionné et coaching d'équipes). Ce site décrit nos services, mais ne constitue pas une offre contractuelle ferme ni une garantie de résultat spécifique. La portée exacte, l'échéancier et les tarifs de chaque projet sont définis par écrit avant le début de tout mandat."
+        "body": "Nous offrons des services de conseil sur Salesforce et l'optimisation des systèmes go-to-market (implantation, intégration, RevOps fractionné et coaching d'équipes). Ce site décrit nos services, mais ne constitue pas une offre contractuelle ferme ni une garantie de résultat spécifique. La portée exacte, l'échéancier et les tarifs de chaque projet sont définis par écrit avant le début de tout mandat."
       },
       {
         "title": "Propriété intellectuelle",
