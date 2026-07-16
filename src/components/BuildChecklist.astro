@@ -1,0 +1,48 @@
+---
+import { useTranslations } from '../i18n/utils';
+const t = useTranslations(Astro.currentLocale);
+
+type Check = { s: 'done' | 'doing' | 'next'; t: string };
+type Layer = { n: string; k: 'done' | 'doing' | 'next'; name: string; st: string; w: string; checks: Check[] };
+
+const w = t('salesforceImpl.widget');
+const layers: Layer[] = w.layers;
+
+// Bar colour tracks the layer state, matching the homepage build report:
+// shipped = good, in progress = blue, queued = empty track.
+const barColor: Record<string, string> = {
+  done: 'var(--good)',
+  doing: '#6E89FF',
+  next: 'var(--blue)',
+};
+---
+<!-- ════════════════════════════════════════════════════
+     COMPONENT: BuildChecklist.astro
+     The homepage build report, expanded per layer. Same
+     dark-card system, same sample framing: states only,
+     no invented metrics.
+     ════════════════════════════════════════════════════ -->
+<div class="feature-art dark">
+  <div class="widget-head">
+    <span class="widget-label">{w.label}</span>
+    <span class="badge-sample">{w.badge}</span>
+  </div>
+  <p class="widget-sub">{w.sub}</p>
+
+  {layers.map((l) => (
+    <div class="brow">
+      <div class="brow-top">
+        <span class="brow-name"><b>{l.n}</b>{l.name}</span>
+        <span class={`st ${l.k}`}>{l.st}</span>
+      </div>
+      <div class="bar"><i style={`--w:${l.w}%;--c:${barColor[l.k]}`}></i></div>
+      <ul class="bchecks">
+        {l.checks.map((c) => (
+          <li class={`bcheck ${c.s}`}>{c.t}</li>
+        ))}
+      </ul>
+    </div>
+  ))}
+
+  <p class="wnote">{w.wnote}</p>
+</div>

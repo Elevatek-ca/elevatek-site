@@ -13,9 +13,12 @@ export interface Props {
    */
   path?: string;
   /**
-   * Explicit per-locale alternate paths. Blog pages pass these directly because
-   * their slugs are localized (EN /blog/<slug>, FR /fr/blogue/<slug>) — when set,
-   * they override the `path`-derived alternates and feed both the selector AND hreflang.
+   * Explicit per-locale alternate paths, for pages whose slug is localized and so
+   * can't be derived from a shared `path`:
+   *   blog posts   — EN /blog/<slug>      ↔ FR /fr/blogue/<slug>
+   *   service pages — /salesforce-implementation ↔ /fr/implantation-salesforce
+   * When set they override the `path`-derived alternates and feed both the language
+   * selector AND the hreflang tags, so the two can never disagree.
    */
   enHref?: string;
   frHref?: string;
@@ -69,7 +72,8 @@ const frUrl = frPath !== undefined ? SITE + frPath : undefined;
 const selfUrl = lang === 'fr' ? frUrl : enUrl;
 // Self-referencing canonical on every indexable page.
 const canonical = (!noindex && selfUrl) ? selfUrl : undefined;
-// hreflang pair: standard indexable pages always pair; blog only when a translation exists.
+// hreflang pair: standard indexable pages always pair; blog posts and localized-slug
+// pages pair only when a real counterpart exists (they pass hreflangPair explicitly).
 const showAlternates = !noindex && (hreflangPair ?? (path !== undefined));
 
 // Header language toggle: the OTHER locale's equivalent of this page. Endonym labels

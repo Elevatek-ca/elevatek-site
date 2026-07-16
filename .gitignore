@@ -23,8 +23,8 @@ pnpm-debug.log*
 # jetbrains setting folder
 .idea/
 
-# translation review scratch file (not part of the build)
-fr-review.md
+# translation review scratch files (not part of the build)
+fr-review*.md
 
 # local backup copies (e.g. fr.json.backup)
 *.backup

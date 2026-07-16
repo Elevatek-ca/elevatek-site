@@ -219,6 +219,18 @@ h3{font-size:clamp(1.35rem,2.2vw,1.7rem);line-height:1.15}
 .bar i{display:block;height:100%;border-radius:999px;width:var(--w,0);background:var(--c,var(--blue))}
 .bar i.off{margin-left:var(--x,0)}
 .wnote{font-family:var(--mono);font-size:.72rem;letter-spacing:.04em;color:var(--mist);margin-top:16px}
+/* per-layer checklist inside the expanded build report (service pages) */
+.bchecks{list-style:none;margin:12px 0 2px;padding:0;display:grid;gap:7px}
+.bcheck{
+  font-family:var(--mono);font-size:.71rem;letter-spacing:.02em;line-height:1.5;
+  color:var(--mist);display:flex;align-items:flex-start;gap:.7em;
+}
+.bcheck::before{flex:none;width:.8em}
+.bcheck.done{color:#E6EAF5}
+.bcheck.done::before{content:"✓";color:var(--good)}
+.bcheck.doing{color:#9DB1FF}
+.bcheck.doing::before{content:"→";color:#9DB1FF}
+.bcheck.next::before{content:"·";color:var(--mist)}
 /* system map */
 .feature-art svg .t{font-size:12.5px;font-weight:500}
 .feature-art.dark svg text{fill:#E6EAF5}
@@ -486,6 +498,16 @@ h3{font-size:clamp(1.35rem,2.2vw,1.7rem);line-height:1.15}
 /* ── contact form ───────────────────────────────────── */
 .page-hero{padding:72px 0 16px}
 .page-hero h1{font-size:clamp(2.2rem,4.4vw,3.4rem);margin-bottom:18px}
+
+/* ── service pages ──────────────────────────────────── */
+.flink{display:inline-block;margin-top:24px;color:var(--blue);font-weight:600;text-decoration:none;font-size:.98rem}
+.flink::after{content:" →"}
+.flink:hover{text-decoration:underline}
+.sblock{max-width:680px}
+.sblock + .sblock{margin-top:56px;padding-top:56px;border-top:1px solid var(--line)}
+.feature-copy h2,.sblock h2{font-size:clamp(1.5rem,2.5vw,2rem);margin-top:8px}
+.sbody{color:var(--slate);margin-top:14px;line-height:1.7}
+.hero-cta{margin-top:30px}
 /* Vertical padding only — horizontal gutter stays sourced from .wrap (don't zero it). */
 .contact-grid{display:grid;grid-template-columns:1.15fr .85fr;gap:48px;align-items:start;padding-top:40px;padding-bottom:96px}
 .fsection{margin-bottom:34px}

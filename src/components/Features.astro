@@ -1,6 +1,9 @@
 ---
 import { useTranslations } from '../i18n/utils';
-const t = useTranslations(Astro.currentLocale);
+const lang = Astro.currentLocale ?? 'en';
+const t = useTranslations(lang);
+// Localized slug, so it can't go through localizePath().
+const implHref = lang === 'fr' ? '/fr/implantation-salesforce' : '/salesforce-implementation';
 const s1chips = t('features.s1.chips');
 const s1rows = t('features.s1.rows');
 const s2chips = t('features.s2.chips');
@@ -21,6 +24,7 @@ const s2stats = t('features.s2.stats');
         <div class="chip-row">
           {s1chips.map((c: string) => <span class="chip">{c}</span>)}
         </div>
+        <a class="flink" href={implHref}>{t('features.s1.pageLink')}</a>
         <!-- Optional cross-link to the sister practice. -->
         <div class="sister" set:html={t('features.s1.sister')}></div>
       </div>

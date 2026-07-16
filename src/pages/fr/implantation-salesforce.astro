@@ -1,0 +1,82 @@
+---
+import Base from '../../layouts/Base.astro';
+import BuildChecklist from '../../components/BuildChecklist.astro';
+import { useTranslations, localizePath } from '../../i18n/utils';
+
+const lang = Astro.currentLocale ?? 'fr';
+const t = useTranslations(lang);
+const lp = (p: string) => localizePath(p, lang);
+
+const hero = t('salesforceImpl.hero');
+const order = t('salesforceImpl.order');
+const rescue = t('salesforceImpl.rescue');
+const handover = t('salesforceImpl.handover');
+const cta = t('salesforceImpl.cta');
+
+// Localized slugs (/salesforce-implementation ↔ /fr/implantation-salesforce) can't
+// be derived from a shared `path`, so the pair is passed explicitly.
+const EN_HREF = '/salesforce-implementation';
+const FR_HREF = '/fr/implantation-salesforce';
+---
+<Base
+  title={t('meta.salesforceImpl.title')}
+  description={t('meta.salesforceImpl.description')}
+  enHref={EN_HREF}
+  frHref={FR_HREF}
+  hreflangPair={true}
+>
+
+  <section class="page-hero">
+    <div class="wrap">
+      <p class="eyebrow">{hero.eyebrow}</p>
+      <h1>{hero.h1}</h1>
+      <p class="lead">{hero.lead}</p>
+      <div class="chip-row">
+        {hero.chips.map((c: string) => <span class="chip">{c}</span>)}
+      </div>
+      <p class="hero-cta">
+        <a class="btn btn-primary" href={lp('/contact?type=session')}>{hero.cta}</a>
+      </p>
+    </div>
+  </section>
+
+  <!-- Build order sits beside the build report: the copy states the order, the
+       widget shows it running. -->
+  <section class="section" style="padding-top:48px">
+    <div class="wrap">
+      <div class="feature reveal">
+        <div class="feature-copy">
+          <p class="eyebrow">{order.eyebrow}</p>
+          <h2>{order.headline}</h2>
+          {order.body.map((p: string) => <p class="sbody">{p}</p>)}
+        </div>
+        <BuildChecklist />
+      </div>
+    </div>
+  </section>
+
+  <section class="section" style="padding-top:0">
+    <div class="wrap">
+      <div class="sblock reveal">
+        <p class="eyebrow">{rescue.eyebrow}</p>
+        <h2>{rescue.headline}</h2>
+        {rescue.body.map((p: string) => <p class="sbody">{p}</p>)}
+      </div>
+      <div class="sblock reveal">
+        <p class="eyebrow">{handover.eyebrow}</p>
+        <h2>{handover.headline}</h2>
+        {handover.body.map((p: string) => <p class="sbody">{p}</p>)}
+        <div class="sister" set:html={hero.sister}></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="closer on-dark">
+    <div class="wrap reveal">
+      <h2>{cta.headline}</h2>
+      <p class="lead">{cta.body}</p>
+      <a class="btn btn-primary" href={lp('/contact?type=session')}>{cta.button}</a>
+    </div>
+  </section>
+
+</Base>

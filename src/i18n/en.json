@@ -11,6 +11,10 @@
       "title": "Contact Elevatek — Salesforce & HubSpot consulting",
       "description": "Tell us what's going on in your stack. Five questions, two minutes, and a human replies with next steps — not a deck. Salesforce, HubSpot, RevOps."
     },
+    "salesforceImpl": {
+      "title": "Salesforce implementation | Elevatek (Canada)",
+      "description": "We build Salesforce orgs your team can still run in three years: a clean data model, automation your admins can read, an AI-ready foundation. Rescues and mid-flight takeovers included."
+    },
     "privacy": {
       "title": "Privacy policy — Elevatek",
       "description": "What Elevatek collects, why, and your rights under PIPEDA and Québec's Law 25."
@@ -148,6 +152,7 @@
       "headline": "Implemented like you'll live in it. Because you will.",
       "lead": "A Salesforce org outlives the project that built it. We architect for the team you'll have in three years: a clean data model, automation your admins can read, and AI features with something real to work with.",
       "chips": ["ai-ready data", "documented builds", "admin-friendly"],
+      "pageLink": "How we implement Salesforce",
       "sister": "Drowning in dirty data first? Our sister practice, <a href=\"https://www.resoluble.com\" target=\"_blank\" rel=\"noopener\">Resoluble</a>, scores and cleans Salesforce orgs before anything new gets built on top.",
       "widgetLabel": "Build report",
       "badge": "Sample",
@@ -184,6 +189,90 @@
         { "b": "3", "label": "by hand" }
       ],
       "wnote": "re-keyed data is where the numbers start to disagree."
+    }
+  },
+
+  "salesforceImpl": {
+    "hero": {
+      "eyebrow": "Salesforce implementation",
+      "h1": "The org outlives the project that built it.",
+      "lead": "We architect for the team you'll have in three years: a clean data model, automation your admins can read, and AI features with something real to work with.",
+      "chips": ["ai-ready data", "documented builds", "admin-friendly"],
+      "cta": "Book a free strategy session",
+      "sister": "Drowning in dirty data first? Our sister practice, <a href=\"https://www.resoluble.com\" target=\"_blank\" rel=\"noopener\">Resoluble</a>, scores and cleans Salesforce orgs before anything new gets built on top."
+    },
+    "widget": {
+      "label": "Build report",
+      "badge": "Sample",
+      "sub": "acme-corp · sprint 6 of 8",
+      "layers": [
+        {
+          "n": "01", "k": "done", "name": "data model", "st": "shipped", "w": "100",
+          "checks": [
+            { "s": "done", "t": "objects, fields, and ownership mapped" },
+            { "s": "done", "t": "duplicate rules live" },
+            { "s": "done", "t": "record history kept" }
+          ]
+        },
+        {
+          "n": "02", "k": "done", "name": "automation", "st": "shipped", "w": "100",
+          "checks": [
+            { "s": "done", "t": "one automation path per object" },
+            { "s": "done", "t": "every flow documented" },
+            { "s": "done", "t": "errors route to a named human" }
+          ]
+        },
+        {
+          "n": "03", "k": "doing", "name": "integrations", "st": "in progress", "w": "62",
+          "checks": [
+            { "s": "done", "t": "crm ↔ erp field map signed off" },
+            { "s": "doing", "t": "quotes → orders" },
+            { "s": "next", "t": "invoices → crm" },
+            { "s": "next", "t": "inventory levels" }
+          ]
+        },
+        {
+          "n": "04", "k": "next", "name": "ai readiness", "st": "queued", "w": "0",
+          "checks": [
+            { "s": "next", "t": "data cleaned and governed" },
+            { "s": "next", "t": "permissions scoped per role" },
+            { "s": "next", "t": "agentforce grounded on real records" }
+          ]
+        }
+      ],
+      "wnote": "build order: bottom up. ai ships last, on purpose."
+    },
+    "order": {
+      "eyebrow": "Build order",
+      "headline": "Most broken orgs were automated too early.",
+      "body": [
+        "Every layer sits on the one under it. Automation built on a data model nobody agreed on is automation you'll build twice.",
+        "So the data model goes first: who owns which record, what counts as a customer, where history lives. It's the boring work that makes everything after it cheap.",
+        "Automation second, once there's something stable to automate. Integrations third, once the objects on both sides mean the same thing.",
+        "AI last, because it has the least tolerance for a weak foundation. Agentforce grounded on duplicate records gives you confident wrong answers, fast."
+      ]
+    },
+    "rescue": {
+      "eyebrow": "Rescue",
+      "headline": "Most rescues aren't rebuilds.",
+      "body": [
+        "A live org that's drifted rarely needs to be torn down. Duplicate data, automation nobody understands, reports nobody trusts: that's an untangling job. We map what's there, fix what's load-bearing, and retire what isn't.",
+        "If the build is still running and already off the rails, it starts with a short audit: what was promised, what's been built, what's salvageable. You get a straight read and a choice: we take over the build, or we get your current team back on track.",
+        "Most off-the-rails projects were scoped wrong, not built wrong. The work that's there is usually fine. What broke was the agreement about what it was for."
+      ]
+    },
+    "handover": {
+      "eyebrow": "Handover",
+      "headline": "We build to need us less.",
+      "body": [
+        "Handover isn't a week at the end. Every build gets documented as it ships. Every architecture decision gets written down with the reason behind it, and your admins are in the room when it's made.",
+        "When the engagement ends, you keep all of it: the documentation, the decision log, and a team that can read its own org. Some clients move to a light retainer for upkeep. Some don't need us anymore. Both count as success here."
+      ]
+    },
+    "cta": {
+      "headline": "Show us the org first.",
+      "body": "A free 30-minute session. You walk us through the stack, we tell you what we'd fix first. If we're not the right fit, we say so and point you somewhere better.",
+      "button": "Book a free strategy session"
     }
   },
 

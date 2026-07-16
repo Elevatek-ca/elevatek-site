@@ -11,6 +11,10 @@
       "title": "Contactez Elevatek — conseil Salesforce et transformation numérique",
       "description": "Dites-nous ce qui doit mieux fonctionner dans Salesforce et votre stack technologique. Cinq questions, deux minutes, et un consultant senior vous répond."
     },
+    "salesforceImpl": {
+      "title": "Implantation Salesforce | Elevatek (Canada)",
+      "description": "On bâtit des orgs Salesforce que votre équipe pourra encore faire rouler dans trois ans : un modèle de données sain, des automatisations lisibles et une fondation prête pour l'IA. Sauvetages et reprises en cours de route inclus."
+    },
     "privacy": {
       "title": "Politique de confidentialité — Elevatek",
       "description": "Ce qu'Elevatek collecte, pourquoi, et vos droits en vertu de la LPRPDE et de la Loi 25 du Québec."
@@ -148,6 +152,7 @@
       "headline": "Bâti pour y vivre. Parce que c'est votre quotidien.",
       "lead": "Un org Salesforce doit survivre au projet qui l'a créé. On conçoit votre architecture pour l'équipe que vous aurez dans trois ans : un modèle de données sain, des automatisations faciles à maintenir et des fonctionnalités IA prêtes à performer.",
       "chips": ["données prêtes pour l'IA", "configurations documentées", "admin-friendly"],
+      "pageLink": "Comment on implante Salesforce",
       "sister": "Vous croulez d'abord sous les données polluées ? Notre pratique sœur, <a href=\"https://www.resoluble.com\" target=\"_blank\" rel=\"noopener\">Resoluble</a>, évalue et nettoie vos orgs Salesforce avant qu'on y bâtisse quoi que ce soit de neuf.",
       "widgetLabel": "Rapport d'avancement",
       "badge": "Exemple",
@@ -184,6 +189,90 @@
         { "b": "3", "label": "manuels" }
       ],
       "wnote": "La double saisie de données, c'est là que les chiffres commencent à diverger."
+    }
+  },
+
+  "salesforceImpl": {
+    "hero": {
+      "eyebrow": "Implantation Salesforce",
+      "h1": "L'org survit au projet qui l'a créé.",
+      "lead": "On conçoit votre architecture pour l'équipe que vous aurez dans trois ans : un modèle de données sain, des automatisations faciles à maintenir et des fonctionnalités IA prêtes à performer.",
+      "chips": ["données prêtes pour l'IA", "configurations documentées", "admin-friendly"],
+      "cta": "Réservez une séance gratuite",
+      "sister": "Vous croulez d'abord sous les données polluées ? Notre pratique sœur, <a href=\"https://www.resoluble.com\" target=\"_blank\" rel=\"noopener\">Resoluble</a>, évalue et nettoie vos orgs Salesforce avant qu'on y bâtisse quoi que ce soit de neuf."
+    },
+    "widget": {
+      "label": "Rapport d'avancement",
+      "badge": "Exemple",
+      "sub": "acme-corp · sprint 6 de 8",
+      "layers": [
+        {
+          "n": "01", "k": "done", "name": "modèle de données", "st": "livré", "w": "100",
+          "checks": [
+            { "s": "done", "t": "objets, champs et ownership cartographiés" },
+            { "s": "done", "t": "règles de doublons actives" },
+            { "s": "done", "t": "historique des enregistrements conservé" }
+          ]
+        },
+        {
+          "n": "02", "k": "done", "name": "automatisation", "st": "livré", "w": "100",
+          "checks": [
+            { "s": "done", "t": "un seul chemin d'automatisation par objet" },
+            { "s": "done", "t": "chaque flux documenté" },
+            { "s": "done", "t": "les erreurs sont redirigées vers une personne nommée" }
+          ]
+        },
+        {
+          "n": "03", "k": "doing", "name": "intégrations", "st": "en cours", "w": "62",
+          "checks": [
+            { "s": "done", "t": "correspondance des champs crm ↔ erp approuvée" },
+            { "s": "doing", "t": "soumissions → commandes" },
+            { "s": "next", "t": "factures → crm" },
+            { "s": "next", "t": "niveaux d'inventaire" }
+          ]
+        },
+        {
+          "n": "04", "k": "next", "name": "préparation IA", "st": "en attente", "w": "0",
+          "checks": [
+            { "s": "next", "t": "données nettoyées et gouvernées" },
+            { "s": "next", "t": "permissions définies par rôle" },
+            { "s": "next", "t": "agentforce ancré sur de vrais enregistrements" }
+          ]
+        }
+      ],
+      "wnote": "ordre de construction : de bas en haut. l'IA arrive à la toute fin, et c'est volontaire."
+    },
+    "order": {
+      "eyebrow": "Ordre de construction",
+      "headline": "La plupart des orgs brisées ont été automatisées trop vite.",
+      "body": [
+        "Chaque couche repose sur celle du dessous. Une automatisation bâtie sur un modèle de données que personne n'a validé, c'est une automatisation que vous allez refaire.",
+        "Le modèle de données passe donc en premier : qui possède quel enregistrement, ce qui compte comme un client, où vit l'historique. C'est ce travail de fond qui rend tout le reste beaucoup moins cher par la suite.",
+        "L'automatisation ensuite, quand il y a enfin quelque chose de stable à automatiser. Les intégrations après, quand les objets des deux côtés veulent dire la même chose.",
+        "L'IA en dernier, parce que c'est elle qui tolère le moins une fondation fragile. Agentforce ancré sur des doublons vous donne des réponses fausses, mais dites avec assurance."
+      ]
+    },
+    "rescue": {
+      "eyebrow": "Sauvetage",
+      "headline": "La plupart des sauvetages ne sont pas des reconstructions.",
+      "body": [
+        "Un org qui a dérivé a rarement besoin d'être démoli. Données en double, automatisations que personne ne comprend, rapports auxquels personne ne se fie : c'est un travail de démêlage. On cartographie ce qui existe, on répare ce qui porte la structure et on retire le reste.",
+        "Si le projet roule encore et déraille déjà, on commence par un court audit : ce qui a été promis, ce qui a été bâti, ce qui est récupérable. Vous obtenez un portrait franc et un choix : on reprend la construction, ou on remet votre équipe actuelle sur les rails.",
+        "La plupart des projets qui déraillent ont été mal cadrés, pas mal bâtis. Le travail déjà livré est généralement correct. Ce qui a cassé, c'est l'entente sur ce à quoi il devait servir."
+      ]
+    },
+    "handover": {
+      "eyebrow": "Transfert",
+      "headline": "On bâtit pour que vous ayez moins besoin de nous.",
+      "body": [
+        "Le transfert, ce n'est pas une semaine à la fin. Chaque build est documenté au fur et à mesure. Chaque décision d'architecture est écrite avec la raison derrière, et vos admins sont dans la pièce quand elle se prend.",
+        "À la fin du mandat, vous gardez tout : la documentation, le journal des décisions et une équipe capable de lire son propre org. Certains clients passent à un forfait léger pour l'entretien. D'autres n'ont plus besoin de nous. Les deux comptent comme une réussite ici."
+      ]
+    },
+    "cta": {
+      "headline": "Montrez-nous l'org.",
+      "body": "Une séance gratuite de 30 minutes. Vous nous faites visiter votre stack, on vous dit ce qu'on réglerait en premier. Si le fit n'est pas là, on vous le dit honnêtement et on vous réoriente vers de meilleures options.",
+      "button": "Réservez une séance gratuite"
     }
   },
 
