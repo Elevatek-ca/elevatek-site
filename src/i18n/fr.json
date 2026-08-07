@@ -100,10 +100,10 @@
 
   "l2c": {
     "eyebrow": "Le défi",
-    "headline": "Le cycle du prospect à l'encaissement (lead-to-cash) est un seul processus. Votre stack le traite comme huit.",
+    "headline": "Le lead to cash est un seul processus. Votre stack le traite comme huit.",
     "lead": "Quelque part entre la soumission (quote) et la facture, les ventes passent le relais aux finances, et le CRM le passe à l'ERP. C'est à cette jonction que les chiffres commencent à dériver. La majorité des problèmes de reporting sont en fait des problèmes de transfert (handoff).",
-    "widgetLabel": "Lead-to-cash · tel quel",
-    "badge": "Stack type du marché intermédiaire",
+    "widgetLabel": "Lead to cash · tel quel",
+    "badge": "Stack typique · moyenne entreprise",
     "crmCap": "<b>crm</b> · les ventes gèrent ce côté",
     "erpCap": "<b>erp</b> · les finances gèrent ce côté",
     "crmSteps": ["capture de leads", "opportunité", "soumission", "contrat"],
