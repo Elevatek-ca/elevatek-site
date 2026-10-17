@@ -1,0 +1,64 @@
+---
+import Base from '../../layouts/Base.astro';
+import { useTranslations, localizePath } from '../../i18n/utils';
+
+const lang = Astro.currentLocale ?? 'fr';
+const t = useTranslations(lang);
+const lp = (p: string) => localizePath(p, lang);
+
+const hero = t('about.hero');
+const business = t('about.business');
+const tech = t('about.tech');
+const wrong = t('about.wrong');
+const cta = t('about.cta');
+
+// Localized slugs (/about ↔ /fr/a-propos) can't be derived from a shared `path`,
+// so the pair is passed explicitly.
+const EN_HREF = '/about';
+const FR_HREF = '/fr/a-propos';
+---
+<Base
+  title={t('meta.about.title')}
+  description={t('meta.about.description')}
+  enHref={EN_HREF}
+  frHref={FR_HREF}
+  hreflangPair={true}
+>
+
+  <section class="page-hero">
+    <div class="wrap">
+      <p class="eyebrow">{hero.eyebrow}</p>
+      <h1>{hero.h1}</h1>
+      <p class="lead">{hero.lead}</p>
+    </div>
+  </section>
+
+  <section class="section" style="padding-top:48px">
+    <div class="wrap">
+      <div class="sblock reveal">
+        <p class="eyebrow">{business.eyebrow}</p>
+        <h2>{business.headline}</h2>
+        <p class="sbody">{business.body}</p>
+      </div>
+      <div class="sblock reveal">
+        <p class="eyebrow">{tech.eyebrow}</p>
+        <h2>{tech.headline}</h2>
+        <p class="sbody">{tech.body}</p>
+      </div>
+      <div class="sblock reveal">
+        <p class="eyebrow">{wrong.eyebrow}</p>
+        <h2>{wrong.headline}</h2>
+        <p class="sbody">{wrong.body}</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="closer on-dark">
+    <div class="wrap reveal">
+      <h2>{cta.headline}</h2>
+      <p class="lead">{cta.body}</p>
+      <a class="btn btn-primary" href={lp('/contact?type=session')}>{cta.button}</a>
+    </div>
+  </section>
+
+</Base>

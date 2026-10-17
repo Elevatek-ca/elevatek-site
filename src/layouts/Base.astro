@@ -91,6 +91,8 @@ const cta = ctaHref ?? lp('/contact');
 const a = home ? '' : lp('/');
 // Blog index for this locale (FR uses "blogue"); real page links, not anchors.
 const blogHref = lang === 'fr' ? '/fr/blogue' : '/blog';
+// About page, also a localized slug (/about ↔ /fr/a-propos).
+const aboutHref = lang === 'fr' ? '/fr/a-propos' : '/about';
 ---
 <!DOCTYPE html>
 <html lang={lang}>
@@ -199,8 +201,7 @@ const blogHref = lang === 'fr' ? '/fr/blogue' : '/blog';
             <li><a href={`${a}#pricing`}>{t('nav.pricing')}</a></li>
             <li><a href={`${a}#faq`}>{t('nav.faq')}</a></li>
             <li><a href={blogHref}>{t('nav.blog')}</a></li>
-            {/* About is English-only until the French page ships; then link /fr/ too. */}
-            {lang === 'en' && <li><a href="/about">{t('footer.about')}</a></li>}
+            <li><a href={aboutHref}>{t('footer.about')}</a></li>
             <li><a href={lp('/contact')}>{t('footer.contactLink')}</a></li>
           </ul>
         </div>

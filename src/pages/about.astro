@@ -12,18 +12,17 @@ const tech = t('about.tech');
 const wrong = t('about.wrong');
 const cta = t('about.cta');
 
-// English only until the French About page ships. Like an untranslated blog post,
-// the language toggle falls back to the French home and no hreflang pair is emitted
-// (no alternate advertised that doesn't exist yet). Pair it once the FR page lands.
+// Localized slugs (/about ↔ /fr/a-propos) can't be derived from a shared `path`,
+// so the pair is passed explicitly.
 const EN_HREF = '/about';
-const FR_HREF = '/fr/';
+const FR_HREF = '/fr/a-propos';
 ---
 <Base
   title={t('meta.about.title')}
   description={t('meta.about.description')}
   enHref={EN_HREF}
   frHref={FR_HREF}
-  hreflangPair={false}
+  hreflangPair={true}
 >
 
   <section class="page-hero">
