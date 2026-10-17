@@ -2,10 +2,10 @@
   "meta": {
     "home": {
       "title": "Salesforce consulting & implementation | Elevatek (Canada)",
-      "description": "Elevatek is a Canadian Salesforce consultancy. We align the business and tech sides of your org — a clean data model, automation that gets adopted, an AI-ready foundation — across industries.",
+      "description": "A Salesforce consultancy founded by a former sales and marketing VP. We get business and tech to agree, then build a Salesforce your people actually use.",
       "ogTitle": "Elevatek — Salesforce consulting",
       "ogDescription": "We get the business and tech sides to agree on Salesforce: clean data, adoption that sticks, an AI-ready foundation. Canadian, across industries.",
-      "jsonldDescription": "Salesforce consulting and implementation. We align the business and tech sides of your organization — data model, automation, integration, adoption, and AI-ready data — across industries (tech, professional services, manufacturing, financial services, media, healthcare, and life sciences)."
+      "jsonldDescription": "Salesforce consulting and implementation: data model, automation, integration, adoption, and AI-ready data. We get business and tech to agree on Salesforce, across industries (tech, professional services, manufacturing, financial services, media, healthcare, and life sciences)."
     },
     "contact": {
       "title": "Contact Elevatek — Salesforce & HubSpot consulting",
@@ -14,6 +14,10 @@
     "salesforceImpl": {
       "title": "Salesforce implementation | Elevatek (Canada)",
       "description": "We build Salesforce orgs your team can still run in three years: a clean data model, automation your admins can read, an AI-ready foundation. Rescues and mid-flight takeovers included."
+    },
+    "about": {
+      "title": "About Simon Jasmin, founder | Elevatek (Canada)",
+      "description": "Simon Jasmin ran sales and marketing at a manufacturer, then spent 11 years in the Salesforce ecosystem. He founded Elevatek."
     },
     "privacy": {
       "title": "Privacy policy — Elevatek",
@@ -46,6 +50,7 @@
     "exploreTitle": "Explore",
     "contactTitle": "Contact",
     "contactLink": "Contact",
+    "about": "About",
     "newsletterTitle": "One RevOps tip a month",
     "copyright": "Elevatek Consulting Inc.",
     "builtIn": "Built in Canada.",
@@ -79,11 +84,11 @@
   "hero": {
     "eyebrow": "Salesforce consulting · Canada",
     "headline": "A Salesforce org your team trusts — and actually uses.",
-    "lead": "Your tools tell different stories, so your numbers do too. We design, build, and run your CRM and marketing platforms (Salesforce, HubSpot, Marketing Cloud) so the business and tech sides finally agree — you get one set of numbers you trust, automation your admins can read, and a foundation AI can actually use. In tech, professional services, manufacturing, financial services, media, healthcare, and life sciences.",
+    "lead": "Your tools tell different stories, so your numbers do too. We design, build, and run your Salesforce, HubSpot, and Marketing Cloud so the business and tech sides finally agree on one set of numbers. Our founder, Simon Jasmin, has been on both sides: running sales and marketing at a manufacturer, then building the systems those teams run on.",
     "ctaPrimary": "Book a free strategy session",
     "ctaGhost": "See how we work",
     "proof": [
-      "10+ years in the Salesforce ecosystem",
+      "11 years in the Salesforce ecosystem",
       "16 Salesforce certifications",
       "Serving clients in North America, South America, and Europe, in French and English"
     ],
@@ -121,7 +126,7 @@
   "services": {
     "eyebrow": "What we do",
     "headline": "Pick the help you actually need.",
-    "lead": "Every engagement starts the same way: we look at what you have before proposing what you should buy.",
+    "lead": "Every engagement starts the same way: we look at your business process and your tech before proposing what you should buy.",
     "items": [
       {
         "glyph": "/r",
@@ -276,6 +281,34 @@
     }
   },
 
+  "about": {
+    "hero": {
+      "eyebrow": "About",
+      "h1": "Salesforce projects break in the gap between business and tech.",
+      "lead": "Simon Jasmin has been on both sides of that gap. He founded Elevatek, and he sometimes works with freelancers and other collaborators."
+    },
+    "business": {
+      "eyebrow": "The business side",
+      "headline": "First, he ran sales and marketing.",
+      "body": "Simon was a director, then a vice president, in sales and marketing at a manufacturing company. He managed his own team, plus external agents, distributors, and sales teams. He studied business administration, and he understands sales, marketing, and customer success operations."
+    },
+    "tech": {
+      "eyebrow": "The tech side",
+      "headline": "Then 11 years building on Salesforce.",
+      "body": "He has always thrived on technology: building apps that save time, and improving operations with automation and now AI. He came to Deloitte through Nubik, a partner firm that Deloitte acquired, and spent about a year there as a manager. There, people built small pieces of a global solution, and the pieces didn't fit together well. At Elevatek, he works on the whole picture: business process and technology, across stacks."
+    },
+    "wrong": {
+      "eyebrow": "What goes wrong",
+      "headline": "The system goes live. People don't use it.",
+      "body": "This is the failure Simon sees most. Solutions get built without a shared understanding of what the business needs, and users don't test the actual solution before go-live."
+    },
+    "cta": {
+      "headline": "Show us the org first.",
+      "body": "A free 30-minute session. You walk us through the stack, we tell you what we'd fix first. If we're not the right fit, we say so and point you somewhere better.",
+      "button": "Book a free strategy session"
+    }
+  },
+
   "process": {
     "eyebrow": "How we work",
     "headline": "Three steps. No mystery.",
@@ -374,7 +407,7 @@
     "_doNotTranslate": "Quotes are verbatim LinkedIn recommendations — keep each one in its original language; never translate the `quote` fields.",
     "eyebrow": "Proof",
     "headline": "What it's like to work with us.",
-    "lead": "Pulled straight from LinkedIn recommendations. Unedited.",
+    "lead": "Simon sometimes works with freelancers and other collaborators. These LinkedIn recommendations are about him. Unedited.",
     "liTitle": "LinkedIn recommendation",
     "items": [
       {
@@ -426,11 +459,11 @@
       },
       {
         "q": "Are you a Salesforce consultant or an implementation partner?",
-        "a": "Both, on purpose. Most shops do strategy or build — you usually need someone who aligns the business side and ships the technical work. We scope what the business actually needs, build it in Salesforce, and hand it over documented."
+        "a": "Both, on purpose. Most shops do strategy or build. Projects usually break in the gap between business and tech. We scope what the business needs, build it in Salesforce, and hand it over documented."
       },
       {
         "q": "Our sales team won't adopt Salesforce. Can you help?",
-        "a": "Almost always — and it's usually a design problem, not a training problem. We rebuild the parts that fight how your team actually works: fewer clicks, automation they trust, data that's right. The CRM stops being the thing everyone avoids."
+        "a": "Almost always. It's usually a design problem, not a training problem. Our founder managed sales teams before he started building Salesforce orgs. We rebuild the parts that fight how your team actually works: fewer clicks, automation they trust, data that's right. The CRM stops being the thing everyone avoids."
       },
       {
         "q": "Which industries do you work in?",
