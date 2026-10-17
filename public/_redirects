@@ -5,7 +5,6 @@
 # Host canonicalization (www -> apex, http -> https) is handled by Netlify's
 # primary-domain setting, not here. These are path-only rules.
 
-/about                /             301
 /services             /#services    301
 /salesforce-services  /#services    301
 /legal                /privacy      301

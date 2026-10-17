@@ -15,6 +15,9 @@ const LOCALIZED_SLUGS = [
   /^\/fr\/blogue(\/|$)/,
   /^\/salesforce-implementation(\/|$)/,
   /^\/fr\/implantation-salesforce(\/|$)/,
+  // English-only for now: without this the sitemap would pair /about with a
+  // nonexistent /fr/about. Add the French slug here when that page ships.
+  /^\/about(\/|$)/,
 ];
 
 // https://astro.build/config
