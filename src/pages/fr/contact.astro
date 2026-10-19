@@ -153,14 +153,16 @@ const read = () => {
   };
 };
 
-// live summary
+// live summary: show the label the visitor clicked (localized), not the
+// submitted value; read() still sends the values in the form and the email.
+const shown = n => [...form.querySelectorAll(`input[name="${n}"]:checked`)]
+  .map(i => (i.nextElementSibling || i).textContent || i.value).join(', ');
 const sync = () => {
-  const d = read();
-  document.getElementById('s-role').textContent = d.role;
-  document.getElementById('s-stack').textContent = d.stack;
-  document.getElementById('s-engagement').textContent = d.engagement;
-  document.getElementById('s-urgency').textContent = d.urgency;
-  document.getElementById('s-lang').textContent = d.lang;
+  document.getElementById('s-role').textContent = shown('role');
+  document.getElementById('s-stack').textContent = shown('stack');
+  document.getElementById('s-engagement').textContent = shown('engagement');
+  document.getElementById('s-urgency').textContent = shown('urgency');
+  document.getElementById('s-lang').textContent = shown('lang');
 };
 form.addEventListener('change', sync);
 

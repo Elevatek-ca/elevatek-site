@@ -46,7 +46,7 @@
   },
 
   "footer": {
-    "blurb": "Une boutique-conseil québécoise en transformation numérique et partenaire d'implantation Salesforce, au service de nos clients en Amérique du Nord, du Sud et en Europe.",
+    "blurb": "Une boutique-conseil québécoise et partenaire d'implantation Salesforce, qui met les affaires et les TI d'accord. Au service de nos clients en Amérique du Nord, du Sud et en Europe.",
     "exploreTitle": "Explorer",
     "contactTitle": "Contact",
     "contactLink": "Nous joindre",
@@ -133,13 +133,13 @@
     "items": [
       {
         "glyph": "/r",
-        "title": "RevOps fractionné (Alignement marketing-ventes-finances)",
-        "body": "De l'expertise RevOps senior pour orchestrer vos opérations de revenus sans le coût d'une embauche à temps plein. On s'intègre à vos standups, on gère votre backlog et on livre des gains d'efficacité chaque semaine."
+        "title": "RevOps fractionné (marketing, ventes et finances)",
+        "body": "De l'expertise RevOps senior pour orchestrer vos opérations de revenus, sans le coût d'une embauche à temps plein. On s'intègre à vos standups, on gère votre backlog et on livre chaque semaine."
       },
       {
         "glyph": "/g",
-        "title": "Processus GTM et parcours client (Lead-to-Cash)",
-        "body": "Votre cycle de mise en marché (Go-To-Market) cartographié de bout en bout. On repère où vos opportunités s'échappent entre le marketing, les ventes et le service, puis on élimine les frictions et la double saisie de données."
+        "title": "Processus GTM et parcours client (lead to cash)",
+        "body": "Votre cycle de mise en marché (go-to-market) cartographié de bout en bout. On repère où vos opportunités s'échappent entre le marketing, les ventes et le service, puis on élimine les frictions et la double saisie de données."
       },
       {
         "glyph": "/d",
@@ -158,7 +158,7 @@
     "s1": {
       "eyebrow": "Implantation Salesforce",
       "headline": "Bâti pour y vivre. Parce que c'est votre quotidien.",
-      "lead": "Un org Salesforce doit survivre au projet qui l'a créé. On conçoit votre architecture pour l'équipe que vous aurez dans trois ans : un modèle de données sain, des automatisations faciles à maintenir et des fonctionnalités IA prêtes à performer.",
+      "lead": "Un org Salesforce doit survivre au projet qui l'a créé. On conçoit votre architecture pour l'équipe que vous aurez dans trois ans : un modèle de données sain, des automatisations faciles à maintenir et des fonctionnalités IA qui s'appuient sur de vraies données.",
       "chips": ["données prêtes pour l'IA", "configurations documentées", "admin-friendly"],
       "pageLink": "Comment on implante Salesforce",
       "sister": "Vous croulez d'abord sous les données polluées ? Notre pratique sœur, <a href=\"https://www.resoluble.com\" target=\"_blank\" rel=\"noopener\">Resoluble</a>, évalue et nettoie vos orgs Salesforce avant qu'on y bâtisse quoi que ce soit de neuf.",
@@ -171,7 +171,7 @@
         { "n": "03", "name": "intégrations", "st": "en cours" },
         { "n": "04", "name": "couche IA", "st": "en attente" }
       ],
-      "wnote": "ordre de construction : de bas en haut. l'IA arrive à la toute fin, et c'est volontaire."
+      "wnote": "Ordre de construction : de bas en haut. L'IA arrive à la toute fin, et c'est volontaire."
     },
     "s2": {
       "eyebrow": "Architecture de solution",
@@ -204,7 +204,7 @@
     "hero": {
       "eyebrow": "Implantation Salesforce",
       "h1": "L'org survit au projet qui l'a créé.",
-      "lead": "On conçoit votre architecture pour l'équipe que vous aurez dans trois ans : un modèle de données sain, des automatisations faciles à maintenir et des fonctionnalités IA prêtes à performer.",
+      "lead": "On conçoit votre architecture pour l'équipe que vous aurez dans trois ans : un modèle de données sain, des automatisations faciles à maintenir et des fonctionnalités IA qui s'appuient sur de vraies données.",
       "chips": ["données prêtes pour l'IA", "configurations documentées", "admin-friendly"],
       "cta": "Réservez une séance gratuite",
       "sister": "Vous croulez d'abord sous les données polluées ? Notre pratique sœur, <a href=\"https://www.resoluble.com\" target=\"_blank\" rel=\"noopener\">Resoluble</a>, évalue et nettoie vos orgs Salesforce avant qu'on y bâtisse quoi que ce soit de neuf."
@@ -248,11 +248,11 @@
           ]
         }
       ],
-      "wnote": "ordre de construction : de bas en haut. l'IA arrive à la toute fin, et c'est volontaire."
+      "wnote": "Ordre de construction : de bas en haut. L'IA arrive à la toute fin, et c'est volontaire."
     },
     "order": {
       "eyebrow": "Ordre de construction",
-      "headline": "La plupart des orgs brisées ont été automatisées trop vite.",
+      "headline": "La plupart des orgs dysfonctionnels ont été automatisés trop vite.",
       "body": [
         "Chaque couche repose sur celle du dessous. Une automatisation bâtie sur un modèle de données que personne n'a validé, c'est une automatisation que vous allez refaire.",
         "Le modèle de données passe donc en premier : qui possède quel enregistrement, ce qui compte comme un client, où vit l'historique. C'est ce travail de fond qui rend tout le reste beaucoup moins cher par la suite.",
@@ -273,13 +273,13 @@
       "eyebrow": "Transfert",
       "headline": "On bâtit pour que vous ayez moins besoin de nous.",
       "body": [
-        "Le transfert, ce n'est pas une semaine à la fin. Chaque build est documenté au fur et à mesure. Chaque décision d'architecture est écrite avec la raison derrière, et vos admins sont dans la pièce quand elle se prend.",
+        "Le transfert, ce n'est pas une semaine à la fin. Chaque configuration est documentée au fur et à mesure. Chaque décision d'architecture est écrite avec la raison derrière, et vos admins sont dans la pièce quand elle se prend.",
         "À la fin du mandat, vous gardez tout : la documentation, le journal des décisions et une équipe capable de lire son propre org. Certains clients passent à un forfait léger pour l'entretien. D'autres n'ont plus besoin de nous. Les deux comptent comme une réussite ici."
       ]
     },
     "cta": {
       "headline": "Montrez-nous l'org.",
-      "body": "Une séance gratuite de 30 minutes. Vous nous faites visiter votre stack, on vous dit ce qu'on réglerait en premier. Si le fit n'est pas là, on vous le dit honnêtement et on vous réoriente vers de meilleures options.",
+      "body": "Une séance gratuite de 30 minutes. Vous nous faites visiter votre stack, on vous dit ce qu'on réglerait en premier. Si on n'est pas le bon partenaire pour vous, on vous le dit honnêtement et on vous réoriente vers de meilleures options.",
       "button": "Réservez une séance gratuite"
     }
   },
@@ -307,7 +307,7 @@
     },
     "cta": {
       "headline": "Montrez-nous d'abord l'org.",
-      "body": "Une séance gratuite de 30 minutes. Vous nous faites visiter votre stack, on vous dit quoi régler en premier. Si le fit n'est pas là, on vous le dit honnêtement et on vous réoriente vers de meilleures options.",
+      "body": "Une séance gratuite de 30 minutes. Vous nous faites visiter votre stack, on vous dit quoi régler en premier. Si on n'est pas le bon partenaire pour vous, on vous le dit honnêtement et on vous réoriente vers de meilleures options.",
       "button": "Réservez une séance gratuite"
     }
   },
@@ -318,7 +318,7 @@
     "lead": "La première étape vous prend 30 minutes. À la troisième, votre équipe est autonome et n'a plus besoin de nous.",
     "step1": {
       "title": "Évaluer",
-      "body": "Une séance gratuite de 30 minutes. Vous nous faites visiter votre stack, on vous dit quoi régler en premier. Si le fit n'est pas là, on vous le dit honnêtement et on vous réoriente vers de meilleures options.",
+      "body": "Une séance gratuite de 30 minutes. Vous nous faites visiter votre stack, on vous dit quoi régler en premier. Si on n'est pas le bon partenaire pour vous, on vous le dit honnêtement et on vous réoriente vers de meilleures options.",
       "miniData": "données",
       "miniFlows": "flux",
       "miniOwners": "responsables"
@@ -339,7 +339,7 @@
   "calculator": {
     "eyebrow": "Faites vos calculs",
     "headline": "Combien vous coûte le désaccord ?",
-    "lead": "Pas notre estimation. La vôtre. Trois curseurs, des maths transparentes.",
+    "lead": "Pas notre estimation. La vôtre. Trois curseurs, le calcul sous vos yeux.",
     "widgetLabel": "Coût de réconciliation",
     "badge": "Vos chiffres",
     "peopleLabel": "Personnes impliquées dans la réconciliation des revenus",
@@ -470,7 +470,7 @@
       },
       {
         "q": "Dans quelles industries travaillez-vous ?",
-        "a": "Haute technologie, services professionnels, manufacturier, services financiers, médias, santé et sciences de la vie. Les défis Salesforce se ressemblent d'un secteur à l'autre — données désorganisées, absence de propriété claire des processus, systèmes cloisonnés. C'est précisément sur cette couche de fondation qu'on intervient."
+        "a": "Haute technologie, services professionnels, manufacturier, services financiers, médias, santé et sciences de la vie. Les défis Salesforce se ressemblent d'un secteur à l'autre : données désorganisées, absence de propriété claire des processus, systèmes cloisonnés. C'est précisément sur cette couche de fondation qu'on intervient."
       },
       {
         "q": "Salesforce ou HubSpot — lequel recommandez-vous ?",
@@ -478,7 +478,7 @@
       },
       {
         "q": "Qu'est-ce qu'une instance Salesforce « prête pour l'IA » signifie concrètement ?",
-        "a": "Cela signifie que vos données sont structurées, nettoyées et connectées, de sorte qu'Agentforce et les autres outils d'IA disposent d'une matière première de qualité. La plupart des projets d'intelligence artificielle échouent à cause de données de piètre qualité, pas à cause de l'algorithme. On solidifie la fondation ; la magie de l'IA opère beaucoup plus facilement ensuite."
+        "a": "Cela signifie que vos données sont structurées, nettoyées et connectées, de sorte qu'Agentforce et les autres outils d'IA disposent d'une matière première de qualité. La plupart des projets d'intelligence artificielle échouent à cause de données de piètre qualité, pas à cause de l'algorithme. On solidifie d'abord la fondation. Ensuite, le volet IA devient beaucoup plus simple."
       },
       {
         "q": "Que se passe-t-il après la fin du projet ?",
@@ -502,7 +502,7 @@
     "hero": {
       "eyebrow": "Contact",
       "headline": "Dites-nous ce qui cloche dans votre stack.",
-      "lead": "Cinq questions, deux minutes. Un humain vous répondra avec des pistes concrètes, pas un copier-coller de présentation corporative."
+      "lead": "Cinq questions, deux minutes. Un humain vous répondra avec des pistes concrètes, pas un copier-coller de présentation PowerPoint."
     },
     "form": {
       "s1Eyebrow": "01 · Votre rôle",
@@ -577,7 +577,7 @@
   },
 
   "legal": {
-    "eyebrow": "Légal",
+    "eyebrow": "Juridique",
     "updated": "Dernière mise à jour : juin 2026"
   },
 
@@ -627,7 +627,7 @@
       },
       {
         "title": "Services",
-        "body": "Nous offrons des services de conseil sur Salesforce et l'optimisation des systèmes go-to-market (implantation, intégration, RevOps fractionné et coaching d'équipes). Ce site décrit nos services, mais ne constitue pas une offre contractuelle ferme ni une garantie de résultat spécifique. La portée exacte, l'échéancier et les tarifs de chaque projet sont définis par écrit avant le début de tout mandat."
+        "body": "Nous offrons des services de conseil sur Salesforce et les systèmes go-to-market (implantation, intégration, RevOps fractionné et coaching d'équipes). Ce site décrit nos services, mais ne constitue pas une offre contractuelle ferme ni une garantie de résultat spécifique. La portée exacte, l'échéancier et les tarifs de chaque projet sont définis par écrit avant le début de tout mandat."
       },
       {
         "title": "Propriété intellectuelle",
