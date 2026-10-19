@@ -2,10 +2,10 @@
   "meta": {
     "home": {
       "title": "Conseil et implantation Salesforce | Elevatek (Canada)",
-      "description": "Fondée par un ancien VP ventes et marketing, Elevatek met la business et la tech d'accord, puis bâtit un Salesforce que vos équipes utilisent vraiment.",
+      "description": "Fondée par un ancien VP ventes et marketing, Elevatek met les affaires et les TI d'accord, puis bâtit un Salesforce que vos équipes utilisent vraiment.",
       "ogTitle": "Elevatek — Partenaire d'implantation Salesforce",
-      "ogDescription": "On met la business et la tech d'accord sur Salesforce : données propres, adoption durable, fondation prête pour l'IA. Boutique-conseil québécoise, peu importe votre secteur.",
-      "jsonldDescription": "Conseil et implantation Salesforce au Québec : modèle de données, automatisation, intégration, adoption et données prêtes pour l'IA. On met la business et la tech d'accord sur Salesforce, dans plusieurs secteurs (haute technologie, services professionnels, manufacturier, services financiers, médias, santé et sciences de la vie)."
+      "ogDescription": "On met les affaires et les TI d'accord sur Salesforce : données propres, adoption durable, fondation prête pour l'IA. Boutique-conseil québécoise, peu importe votre secteur.",
+      "jsonldDescription": "Conseil et implantation Salesforce au Québec : modèle de données, automatisation, intégration, adoption et données prêtes pour l'IA. On met les affaires et les TI d'accord sur Salesforce, dans plusieurs secteurs (haute technologie, services professionnels, manufacturier, services financiers, médias, santé et sciences de la vie)."
     },
     "contact": {
       "title": "Contactez Elevatek — conseil Salesforce et transformation numérique",
@@ -85,7 +85,7 @@
     "eyebrow": "Partenaire d’implantation Salesforce · Québec",
     "headline": "Un Salesforce que votre équipe utilise vraiment.",
     "lead": [
-      "Vos systèmes ne racontent pas la même histoire, et vos chiffres non plus. On conçoit, on bâtit et on fait rouler vos plateformes Salesforce, HubSpot et Marketing Cloud pour que la business et la tech s'entendent enfin sur les mêmes chiffres.",
+      "Vos systèmes ne racontent pas la même histoire, et vos chiffres non plus. On conçoit, on bâtit et on fait rouler vos plateformes Salesforce, HubSpot et Marketing Cloud pour que les affaires et les TI s'entendent enfin sur les mêmes chiffres.",
       "Notre fondateur, Simon Jasmin, a connu les deux côtés. Il a d'abord dirigé les ventes et le marketing d'un manufacturier, puis il s'est mis à bâtir les systèmes que ces équipes utilisent."
     ],
     "ctaPrimary": "Réservez une séance gratuite",
@@ -287,16 +287,16 @@
   "about": {
     "hero": {
       "eyebrow": "À propos",
-      "h1": "Les projets Salesforce déraillent dans le fossé entre la business et la tech.",
+      "h1": "Les projets Salesforce déraillent dans le fossé entre les affaires et les TI.",
       "lead": "Simon Jasmin a connu les deux côtés du fossé. Il a fondé Elevatek et il travaille parfois avec des pigistes et d'autres collaborateurs."
     },
     "business": {
-      "eyebrow": "Le côté business",
+      "eyebrow": "Le côté affaires",
       "headline": "D'abord, il a dirigé les ventes et le marketing.",
       "body": "Simon a été directeur, puis vice-président, des ventes et du marketing dans une entreprise manufacturière. Il gérait sa propre équipe, ainsi que des agents externes, des distributeurs et des équipes de vente. Il a étudié en administration des affaires et il connaît bien les opérations de vente, de marketing et de succès client."
     },
     "tech": {
-      "eyebrow": "Le côté tech",
+      "eyebrow": "Le côté TI",
       "headline": "Puis 11 ans à bâtir sur Salesforce.",
       "body": "Il a toujours carburé à la technologie : créer des applications qui font gagner du temps, améliorer les opérations grâce à l'automatisation et, maintenant, à l'IA. Il est arrivé chez Deloitte avec Nubik, une firme partenaire acquise par Deloitte, et il y a passé environ un an comme directeur. Là-bas, chacun bâtissait un petit morceau d'une solution globale, et les morceaux s'emboîtaient mal. Chez Elevatek, il travaille sur l'ensemble : les processus d'affaires et la technologie, d'une stack à l'autre."
     },
@@ -338,7 +338,7 @@
 
   "calculator": {
     "eyebrow": "Faites vos calculs",
-    "headline": "Combien vous coûte le désalignement ?",
+    "headline": "Combien vous coûte le désaccord ?",
     "lead": "Pas notre estimation. La vôtre. Trois curseurs, des maths transparentes.",
     "widgetLabel": "Coût de réconciliation",
     "badge": "Vos chiffres",
@@ -462,7 +462,7 @@
       },
       {
         "q": "Êtes-vous des consultants stratégiques ou un partenaire d'implantation ?",
-        "a": "Les deux, et c'est un choix délibéré. La plupart des agences font soit de la stratégie, soit du développement technique. C'est généralement dans le fossé entre la business et la tech que les projets déraillent. On définit ce dont vos équipes ont besoin, on le bâtit proprement dans Salesforce et on vous livre le tout, entièrement documenté."
+        "a": "Les deux, et c'est un choix délibéré. La plupart des agences font soit de la stratégie, soit du développement technique. C'est généralement dans le fossé entre les affaires et les TI que les projets déraillent. On définit ce dont vos équipes ont besoin, on le bâtit proprement dans Salesforce et on vous livre le tout, entièrement documenté."
       },
       {
         "q": "Nos vendeurs n'utilisent pas Salesforce. Pouvez-vous nous aider ?",
@@ -665,7 +665,7 @@
   "blog": {
     "eyebrow": "Notes de terrain",
     "indexTitle": "Blogue",
-    "indexDescription": "Ce qu'on apprend sur le terrain : Salesforce, RevOps et comment mettre la business et la tech d'accord.",
+    "indexDescription": "Ce qu'on apprend sur le terrain : Salesforce, RevOps et comment mettre les affaires et les TI d'accord.",
     "readingTime": "min de lecture",
     "empty": "Aucun billet pour l'instant — revenez bientôt.",
     "draftLabel": "Brouillon"
