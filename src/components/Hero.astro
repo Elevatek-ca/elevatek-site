@@ -5,6 +5,8 @@ const t = useTranslations(lang);
 const lp = (p: string) => localizePath(p, lang);
 const proof = t('hero.proof');
 const nodes = t('hero.nodes');
+// The lead is one paragraph (string) or several (array of strings).
+const leadParas: string[] = [t('hero.lead')].flat();
 ---
 <!-- ════════════════════════════════════════════════════
      COMPONENT: Hero.astro
@@ -14,7 +16,7 @@ const nodes = t('hero.nodes');
     <div class="hero-copy">
       <p class="eyebrow">{t('hero.eyebrow')}</p>
       <h1>{t('hero.headline')}</h1>
-      <p class="lead">{t('hero.lead')}</p>
+      {leadParas.map((p: string) => <p class="lead">{p}</p>)}
       <div class="hero-cta">
         <a class="btn btn-primary" href={lp('/contact?type=session')}>{t('hero.ctaPrimary')}</a>
         <a class="btn btn-ghost" href="#process">{t('hero.ctaGhost')}</a>

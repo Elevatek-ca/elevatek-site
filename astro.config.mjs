@@ -5,6 +5,7 @@ import sitemap from '@astrojs/sitemap';
 // Pages whose French slug is localized rather than a /fr/ + same-slug mirror:
 //   /blog                     ↔ /fr/blogue
 //   /salesforce-implementation ↔ /fr/implantation-salesforce
+//   /about                     ↔ /fr/a-propos
 // The sitemap's i18n auto-pairing can't map these — it would emit a bogus
 // /fr/blog or /fr/salesforce-implementation — so their sitemap alternates are
 // dropped here and the correct hreflang is emitted in each page's HTML head
@@ -15,9 +16,8 @@ const LOCALIZED_SLUGS = [
   /^\/fr\/blogue(\/|$)/,
   /^\/salesforce-implementation(\/|$)/,
   /^\/fr\/implantation-salesforce(\/|$)/,
-  // English-only for now: without this the sitemap would pair /about with a
-  // nonexistent /fr/about. Add the French slug here when that page ships.
   /^\/about(\/|$)/,
+  /^\/fr\/a-propos(\/|$)/,
 ];
 
 // https://astro.build/config

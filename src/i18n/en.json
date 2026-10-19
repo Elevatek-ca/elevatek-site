@@ -84,7 +84,10 @@
   "hero": {
     "eyebrow": "Salesforce consulting · Canada",
     "headline": "A Salesforce org your team trusts — and actually uses.",
-    "lead": "Your tools tell different stories, so your numbers do too. We design, build, and run your Salesforce, HubSpot, and Marketing Cloud so the business and tech sides finally agree on one set of numbers. Our founder, Simon Jasmin, has been on both sides: running sales and marketing at a manufacturer, then building the systems those teams run on.",
+    "lead": [
+      "Your tools tell different stories, so your numbers do too. We design, build, and run your Salesforce, HubSpot, and Marketing Cloud so the business and tech sides finally agree on one set of numbers.",
+      "Our founder, Simon Jasmin, has been on both sides: running sales and marketing at a manufacturer, then building the systems those teams run on."
+    ],
     "ctaPrimary": "Book a free strategy session",
     "ctaGhost": "See how we work",
     "proof": [
