@@ -84,7 +84,10 @@
   "hero": {
     "eyebrow": "Partenaire d’implantation Salesforce · Québec",
     "headline": "Un Salesforce que votre équipe utilise vraiment.",
-    "lead": "Vos systèmes ne racontent pas la même histoire, et vos chiffres non plus. On conçoit, on bâtit et on fait rouler vos plateformes Salesforce, HubSpot et Marketing Cloud pour que la business et la tech s'entendent enfin sur les mêmes chiffres. Notre fondateur, Simon Jasmin, a connu les deux côtés : il a dirigé les ventes et le marketing d'un manufacturier, puis il s'est mis à bâtir les systèmes sur lesquels ces équipes s'appuient.",
+    "lead": [
+      "Vos systèmes ne racontent pas la même histoire, et vos chiffres non plus. On conçoit, on bâtit et on fait rouler vos plateformes Salesforce, HubSpot et Marketing Cloud pour que la business et la tech s'entendent enfin sur les mêmes chiffres.",
+      "Notre fondateur, Simon Jasmin, a connu les deux côtés. Il a d'abord dirigé les ventes et le marketing d'un manufacturier, puis il s'est mis à bâtir les systèmes que ces équipes utilisent."
+    ],
     "ctaPrimary": "Réservez une séance gratuite",
     "ctaGhost": "Découvrez notre approche",
     "proof": [
@@ -662,7 +665,7 @@
   "blog": {
     "eyebrow": "Notes de terrain",
     "indexTitle": "Blogue",
-    "indexDescription": "Des notes de terrain sur Salesforce, le RevOps, et l'art de faire s'entendre le business et la tech.",
+    "indexDescription": "Ce qu'on apprend sur le terrain : Salesforce, RevOps et comment mettre la business et la tech d'accord.",
     "readingTime": "min de lecture",
     "empty": "Aucun billet pour l'instant — revenez bientôt.",
     "draftLabel": "Brouillon"

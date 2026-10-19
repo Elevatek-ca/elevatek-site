@@ -107,6 +107,7 @@ h3{font-size:clamp(1.35rem,2.2vw,1.7rem);line-height:1.15}
 .hero .wrap{display:grid;grid-template-columns:1.08fr .92fr;gap:56px;align-items:center}
 .hero h1{margin-bottom:22px}
 .hero .lead{margin-bottom:34px}
+.hero .lead:has(+ .lead){margin-bottom:16px}
 .hero-cta{display:flex;flex-wrap:wrap;gap:14px;margin-bottom:42px}
 .proof-row{
   display:flex;flex-wrap:wrap;gap:10px 28px;
